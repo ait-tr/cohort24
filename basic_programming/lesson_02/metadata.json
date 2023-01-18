@@ -1,0 +1,9 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/hello_world/src/Main.java"
+  ],
+  "video": "https://us02web.zoom.us/rec/share/Pd7aphTi-mF7pEi83hzzSPrEnGB0tCPmnrpQCQ4H5lLmkk6qLB4JhIzqiRxK_aMJ.o4TP1IHRDrHR_twI"
+}
