@@ -1,0 +1,10 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/bot/src/Homework.java",
+    "code/bot/src/Bot.java"
+  ],
+  "video": "https://us02web.zoom.us/rec/share/_r-l8PWT5-nM0stYnCoUrL0gUnlmYn564LSc38AOyb3FPDskvK3LncYWD-GTxIIL.WjXLF8tDFtTtaveu"
+}
