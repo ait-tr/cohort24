@@ -1,0 +1,13 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/calculator/src/Part_1.java",
+    "code/calculator/src/Part_2.java",
+    "code/calculator/src/Part_3.java",
+    "code/calculator/src/Part_4.java",
+    "code/calculator/src/PizzaCalculator.java"
+  ],
+  "video": "https://us02web.zoom.us/rec/share/BffQiUakcGlTlitTtOkosPAx4j6B4vDCHoR01MJDmTBkA-_MZk3KVAIBnLqz_tky.M6F8s7R0aqprx0t5"
+}
