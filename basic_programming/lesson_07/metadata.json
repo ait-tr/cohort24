@@ -1,0 +1,14 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/strings/src/Homework.java",
+    "code/strings/src/Methods.java",
+    "code/strings/src/Strings.java",
+    "code/strings/src/Greeting.java",
+    "code/strings/src/Equation.java",
+    "code/strings/src/Format.java"
+  ],
+  "video": "https://us02web.zoom.us/rec/share/T2h6qHsMtSx7-feE0eCIgfTKO7aPMOuRQn_jFcHVEOCEvKX25AZNmPn5Ebeip1ti.B60JnGdu6LFXhuyg"
+}
