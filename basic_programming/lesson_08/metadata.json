@@ -1,0 +1,15 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/boolean/src/homework_07/Task1.java",
+    "code/boolean/src/homework_07/Task1v2.java",
+    "code/boolean/src/homework_07/Task2.java",
+    "code/boolean/src/Main.java",
+    "code/boolean/src/Comparisons.java",
+    "code/boolean/src/Age.java",
+    "code/boolean/src/Numbers.java"
+  ],
+  "video": ""
+}

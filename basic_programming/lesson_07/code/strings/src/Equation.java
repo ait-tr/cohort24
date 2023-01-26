@@ -17,6 +17,6 @@ public class Equation {
 //        System.out.println(String.format("%d + %d + %d = %d", num1, num2, num3, sum));
         // System.out.printf - форматированный вывод без переноса строки
         // - с переносом строки - в конце формата %n или \n
-        System.out.printf("%d + %d + %d = %d", num1, num2, num3, sum);
+        System.out.printf("%d + %d + %d = %d%n", num1, num2, num3, sum);
     }
 }
