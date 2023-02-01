@@ -1,0 +1,15 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/logic/src/Homework11_1_1.java",
+    "code/logic/src/Homework11_1_2.java",
+    "code/logic/src/Not.java",
+    "code/logic/src/And.java",
+    "code/logic/src/Or.java",
+    "code/logic/src/LeapYearLogical.java",
+    "code/logic/src/Bot.java"
+  ],
+  "video": ""
+}
