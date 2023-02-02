@@ -1,0 +1,14 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/additional_logic/src/Homework12_1.java",
+    "code/additional_logic/src/Main.java",
+    "code/additional_logic/src/Sale.java",
+    "code/additional_logic/src/Promo.java",
+    "code/additional_logic/src/AgeCheck.java",
+    "code/additional_logic/src/Homework12_2.java"
+  ],
+  "video": ""
+}

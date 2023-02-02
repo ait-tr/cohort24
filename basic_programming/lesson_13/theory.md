@@ -69,7 +69,7 @@ switch (day) {
 }
 ```
 
-Подробности про разные версии Java: https://javarush.com/groups/posts/operator-switch-v-java
+[Подробности про разные версии Java](https://javarush.com/groups/posts/operator-switch-v-java)
 
 # Тернарный оператор
 
@@ -77,6 +77,7 @@ switch (day) {
 
 Раньше:
 ```java
+String securityAnswer;
 if (age >= 18) {
   securityAnswer = "Все в порядке, проходите!";
 } else {
@@ -102,5 +103,5 @@ String securityAnswer = (age >= 18) ?
 
 Например, в этом случае использовать тернарный оператор будет плохой идеей:
 ```java
-String securityAnswer = (age >= 18 && (hasTicket || hasTicket) && !hasChild) ? "Проходите!" : "Вы не можете пройти!";
+String securityAnswer = (age >= 18 && (hasTicket || hasCoupon) && !hasChild) ? "Проходите!" : "Вы не можете пройти!";
 ```
