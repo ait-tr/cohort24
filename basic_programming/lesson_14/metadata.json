@@ -1,0 +1,13 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/while_loop/src/AgeCheck.java",
+    "code/while_loop/src/Homework13.java",
+    "code/while_loop/src/MoneyCalc.java",
+    "code/while_loop/src/MoneyCalcNoComments.java",
+    "code/while_loop/src/PizzaCheck.java"
+  ],
+  "video": ""
+}
