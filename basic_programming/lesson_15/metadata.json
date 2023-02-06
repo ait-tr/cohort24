@@ -1,0 +1,16 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/for_loop/src/homework_14/Task1.java",
+    "code/for_loop/src/homework_14/Task2.java",
+    "code/for_loop/src/Arithmetics.java",
+    "code/for_loop/src/PrefixPostfix.java",
+    "code/for_loop/src/ForEven.java",
+    "code/for_loop/src/ForLoop.java",
+    "code/for_loop/src/BreakContinue.java",
+    "code/for_loop/src/Rectangle.java"
+  ],
+  "video": ""
+}
