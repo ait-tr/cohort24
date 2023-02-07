@@ -1,0 +1,15 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/break_continue/src/homework_15/Task1.java",
+    "code/break_continue/src/homework_15/Task2.java",
+    "code/break_continue/src/homework_15/Task2_2.java",
+    "code/break_continue/src/Quest.java",
+    "code/break_continue/src/Triangle.java",
+    "code/break_continue/src/Triangle2.java",
+    "code/break_continue/src/Multiplying.java"
+  ],
+  "video": ""
+}
