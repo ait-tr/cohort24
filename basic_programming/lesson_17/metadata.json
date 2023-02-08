@@ -1,0 +1,15 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/arrays/src/Homework16.java",
+    "code/arrays/src/ArrayNumbers.java",
+    "code/arrays/src/ArrayStrings.java",
+    "code/arrays/src/Months1.java",
+    "code/arrays/src/Months2.java",
+    "code/arrays/src/Months3.java",
+    "code/arrays/src/Adder.java"
+  ],
+  "video": ""
+}
