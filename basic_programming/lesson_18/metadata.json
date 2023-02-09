@@ -1,0 +1,15 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/methods/src/Homework17_1.java",
+    "code/methods/src/Homework17_2.java",
+    "code/methods/src/Homework17_3.java",
+    "code/methods/src/arrays/ArrayPrint.java",
+    "code/methods/src/TestArrayMethods.java",
+    "code/methods/src/PrintSmth.java",
+    "code/methods/src/Bot.java"
+  ],
+  "video": ""
+}
