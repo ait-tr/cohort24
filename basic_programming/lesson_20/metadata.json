@@ -3,6 +3,9 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
+    "code/exceptions/src/Homework19.java",
+    "code/exceptions/src/SimpleCalc.java",
+    "code/exceptions/src/Triangle.java"
   ],
   "video": ""
 }

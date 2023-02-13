@@ -14,10 +14,10 @@
 
 # Разновидности исключений
 
-`IOException`
-`ArithmeticException`
-`ArrayIndexOutOfBoundsException`
-`NumberFormatException`
+- `IOException`
+- `ArithmeticException`
+- `ArrayIndexOutOfBoundsException`
+- `NumberFormatException`
 
 # Вид сообщений об ошибке
 
