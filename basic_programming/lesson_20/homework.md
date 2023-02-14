@@ -1,6 +1,6 @@
 # Задача 0
 
-Дописать программу [Triangle](code/exceptions/src/Triangle.java)
+Дописать программу [Triangle](https://github.com/ait-tr/cohort24/blob/main/basic_programming/lesson_20/code/exceptions/src/Triangle.java)
 
 # Задача 1
 
