@@ -3,6 +3,13 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
+    "code/try_catch/src/homework_20/Task1.java",
+    "code/try_catch/src/homework_20/Triangle.java",
+    "code/try_catch/src/SimpleCalc1.java",
+    "code/try_catch/src/SimpleCalc2.java",
+    "code/try_catch/src/SimpleCalc3.java",
+    "code/try_catch/src/Triangle.java",
+    "code/try_catch/src/PhoneBook.java"
   ],
   "video": ""
 }
