@@ -3,6 +3,11 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
+    "code/array_list/src/Homework_21.java",
+    "code/array_list/src/Task1.java",
+    "code/array_list/src/Task2.java",
+    "code/array_list/src/Task3ArrayStrings.java",
+    "code/array_list/src/Task4ArrayNumbers.java"
   ],
   "video": ""
 }
