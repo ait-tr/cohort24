@@ -12,7 +12,7 @@
 | --- | --- | --- |
 | Создание контейнера элементов | `String[] list = new String[10];` | `ArrayList<String> list = new ArrayList<String>();` |
 | Получение количества элементов | `int n = list.length;` | `int n = list.size();` |
-| Взятие элемента из массива/коллекции | `String s = list[3];` | `String s = list[3];` |
+| Взятие элемента из массива/коллекции | `String s = list[3];` | `String s = list.get(3);` |
 | Запись элемента в массив | `list[3] = s;` | `list.set(3, s);` |
 
 # Преимущества `ArrayList`
