@@ -1,0 +1,12 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/practice/src/Homework23.java",
+    "code/practice/src/Task1.java",
+    "code/practice/src/Task2.java",
+    "code/practice/src/Task3ToDoList.java"
+  ],
+  "video": ""
+}
