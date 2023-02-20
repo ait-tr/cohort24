@@ -74,3 +74,8 @@
 
 Кубики, которые есть только у Бори (всего 1):
 - 3
+
+## Примечание
+Прочитайте про метод (https://docs.oracle.com/javase/6/docs/api/java/util/Set.html#retainAll(java.util.Collection))[retainAll] и используйте его.
+
+Используйте также метод (https://docs.oracle.com/javase/6/docs/api/java/util/Set.html#removeAll(java.util.Collection))[removeAll].

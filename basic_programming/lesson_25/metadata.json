@@ -3,10 +3,11 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/practice/src/Homework23.java",
-    "code/practice/src/Task1.java",
-    "code/practice/src/Task2.java",
-    "code/practice/src/Task3ToDoList.java"
+    "code/sets/src/Homework24ToDoList.java",
+    "code/sets/src/Task0Set.java",
+    "code/sets/src/Task1_1.java",
+    "code/sets/src/Task1_2.java",
+    "code/sets/src/Task2.java"
   ],
   "video": ""
 }
