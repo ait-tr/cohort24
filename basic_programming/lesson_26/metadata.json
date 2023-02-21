@@ -1,0 +1,13 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/dicts/src/Homework25_1.java",
+    "code/dicts/src/Homework25_2.java",
+    "code/dicts/src/Task0Dict.java",
+    "code/dicts/src/Task1PhoneBook.java",
+    "code/dicts/src/Task2WordCounter.java"
+  ],
+  "video": ""
+}
