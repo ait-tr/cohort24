@@ -7,7 +7,7 @@
 
 Написать метод
 ```java
-public static String DecToBin(int number)
+public static String decToBin(int number)
 ```
 который получит число и вернёт строку с его **двоичной** записью.
 
@@ -23,7 +23,7 @@ public static int maxDecDigit(int number)
 
 Написать свою версию метода
 ```java
-public static String DecToHex(int number)
+public static String decToHex(int number)
 ```
 из классной работы с использованием кодов символов (и знанием того, что символы `A`-`F` в таблице символов идут подряд).
 
@@ -31,7 +31,7 @@ public static String DecToHex(int number)
 
 Написать метод
 ```java
-public static int HexToBin(String digits)
+public static int hexToBin(String digits)
 ```
 который получит шестнадцатеричную запись числа и вернёт его двоичную запись.
 
