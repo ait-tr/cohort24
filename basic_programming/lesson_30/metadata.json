@@ -1,0 +1,13 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/numeral/src/homework_29/Task1SymbolsCounter.java",
+    "code/numeral/src/homework_29/Task2DogsByOwners.java",
+    "code/numeral/src/Task1Digits.java",
+    "code/numeral/src/Task2HexDigitsV1.java",
+    "code/numeral/src/Task2HexDigitsV2.java"
+  ],
+  "video": ""
+}
