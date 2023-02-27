@@ -7,7 +7,7 @@
 
 Написать метод
 ```java
-public static String BinToHex(int number)
+public static String DecToBin(int number)
 ```
 который получит число и вернёт строку с его **двоичной** записью.
 
