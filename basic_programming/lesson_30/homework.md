@@ -31,7 +31,7 @@ public static String decToHex(int number)
 
 Написать метод
 ```java
-public static int hexToBin(String digits)
+public static String hexToBin(String digits)
 ```
 который получит шестнадцатеричную запись числа и вернёт его двоичную запись.
 
