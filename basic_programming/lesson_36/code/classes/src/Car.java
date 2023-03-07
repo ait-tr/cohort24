@@ -13,6 +13,7 @@
 // - Класс - единица кода, большая, чем метод
 
 public class Car {
+
   // атрибуты - свойства конкретного экземпляра или класса в целом
   private double enginePower; // мощность двигателя
   private String model; // модель
@@ -70,8 +71,21 @@ public class Car {
     return String.format("%s: %s (%f)", model, plate, enginePower);
   }
 
+  // методы для изменения атрибутов принято называть сеттерами (setters)
+  // название метода традиционно выглядит как setАтрибут(ТипАтрибута новоеЗначение)
   // метод для изменения (задания, если его не было) номера
   public void setPlate(String plate) {
     this.plate = plate;
   }
+
+  public void setEnginePower(double enginePower) {
+    this.enginePower = enginePower;
+  }
+
+  public void setModel(String model) {
+    this.model = model;
+  }
+
+  // Сеттеры создаются сразу для всех атрибутов, которые пользователь (другой код) должен
+  // иметь возможность менять.
 }
