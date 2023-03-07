@@ -27,7 +27,13 @@ public class Main {
   // сеттеры
 
   // важное ключевое слово:
-  // static
+  // static - статичный, не связанный с конкретным экземпляром
+  // антоним - динамичный, меняющийся вместе с конкретным экземпляром
+  // статичные методы и атрибуты СВЯЗАНЫ с классом
+  // НО НИЧЕГО не знают про АТРИБУТЫ и методы КОНКРЕТНОГО объекта
+  // Пример: String.format() - отдаёт форматированную строку, но собирает её из аргументов
+  // метод определённо связан с классом String, но никак не связан с любой уже существующей строкой
+  // например, статичными будут все константы
 
   // GitHub
   // добавление файлов онлайн (лицензия) к существующему проекту
@@ -55,5 +61,18 @@ public class Main {
 
     System.out.println();
     System.out.println("Модель anotherCar: " + anotherCar.getModel());
+
+    System.out.println();
+    System.out.println("Car.minimalAge = " + Car.getMinimalAge());
+    myCar.setDriverAge(15);
+    System.out.println("myCar.driverAge = " + myCar.getDriverAge());
+    System.out.println("anotherCar.driverAge = " + anotherCar.getDriverAge());
+
+    System.out.println();
+    Car.setMinimalAge(14); // для всех автомобилей вообще
+    System.out.println("Car.minimalAge = " + Car.getMinimalAge());
+    anotherCar.setDriverAge(15);
+    System.out.println("myCar.driverAge = " + myCar.getDriverAge());
+    System.out.println("anotherCar.driverAge = " + anotherCar.getDriverAge());
   }
 }

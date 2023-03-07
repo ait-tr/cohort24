@@ -18,6 +18,8 @@ public class Car {
   private double enginePower; // мощность двигателя
   private String model; // модель
   private String plate; // номерной знак
+  private static int minimalAge = 18; // никак не связан с конкретной машиной -- общий для всех машин
+  private int driverAge;
 
   // обычно атрибуты напрямую (из других классов) менять нельзя
   // они должны быть недоступны
@@ -108,4 +110,30 @@ public class Car {
 
   // Геттеры создаются сразу для всех атрибутов, которые пользователь (другой код) должен
   // иметь возможность смотреть.
+
+  public static int getMinimalAge() {
+    // нельзя написать this - метод статичный и ничего не знает про конкретный объект
+    return minimalAge;
+  }
+
+//    public static void setMinimalAge(int newMinimalAge) {
+//    // нельзя написать this - метод статичный и ничего не знает про конкретный объект
+//    minimalAge = newMinimalAge;
+//  }
+  public static void setMinimalAge(int minimalAge) {
+    // нельзя написать this - метод статичный и ничего не знает про конкретный объект
+    Car.minimalAge = minimalAge; // обращаюсь через имя класса, потому что атрибут общий для класса
+  }
+
+  public void setDriverAge(int age) {
+    if (age < minimalAge) { // использовали статичный атрибут
+      System.out.println("Возраст " + age + " недостаточен для управления автомобилем");
+      return;
+    }
+    driverAge = age;
+  }
+
+  public int getDriverAge() {
+    return driverAge;
+  }
 }
