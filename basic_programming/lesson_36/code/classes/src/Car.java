@@ -69,4 +69,9 @@ public class Car {
   public String getInfo() {
     return String.format("%s: %s (%f)", model, plate, enginePower);
   }
+
+  // метод для изменения (задания, если его не было) номера
+  public void setPlate(String plate) {
+    this.plate = plate;
+  }
 }

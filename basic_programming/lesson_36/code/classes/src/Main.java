@@ -45,5 +45,11 @@ public class Main {
     // для вызова метода мы пишем: имяОбъекта.метод(аргументы)
     myCar.printInfo();
     System.out.println("anotherCar: " + anotherCar.getInfo());
+
+    // используем setPlate()
+    myCar.setPlate("DE 234"); // задали номер - раньше его не было, было значение по умолчанию
+    System.out.println("myCar: " + myCar.getInfo());
+    anotherCar.setPlate("US 357"); // изменили номер - предыдущий задали при создании
+    System.out.println("anotherCar: " + anotherCar.getInfo());
   }
 }
