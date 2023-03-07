@@ -46,10 +46,14 @@ public class Main {
     myCar.printInfo();
     System.out.println("anotherCar: " + anotherCar.getInfo());
 
+    System.out.println();
     // используем setPlate()
     myCar.setPlate("DE 234"); // задали номер - раньше его не было, было значение по умолчанию
     System.out.println("myCar: " + myCar.getInfo());
     anotherCar.setPlate("US 357"); // изменили номер - предыдущий задали при создании
     System.out.println("anotherCar: " + anotherCar.getInfo());
+
+    System.out.println();
+    System.out.println("Модель anotherCar: " + anotherCar.getModel());
   }
 }
