@@ -35,8 +35,6 @@ public class Main {
   // метод определённо связан с классом String, но никак не связан с любой уже существующей строкой
   // например, статичными будут все константы
 
-  // GitHub
-  // добавление файлов онлайн (лицензия) к существующему проекту
   public static void main(String[] args) {
     Car myCar = new Car("Tesla Model S");
     Car anotherCar = new Car("Volkswagen Golf", "EN 123");
