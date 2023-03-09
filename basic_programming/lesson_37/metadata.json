@@ -3,6 +3,12 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
+    "code/access/src/homework_36/Soda.java",
+    "code/access/src/homework_36/Triangle.java",
+    "code/access/src/homework_36/HomeworkMain.java",
+    "code/access/src/LessonTriangle.java",
+    "code/access/src/LessonMain.java",
+    "code/access/src/Pawn.java"
   ],
   "video": ""
 }
