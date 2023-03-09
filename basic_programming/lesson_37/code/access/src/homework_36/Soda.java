@@ -11,4 +11,9 @@ package homework_36;
 // Если добавки нет, нужно вернуть строку `"Обычная газировка"`.
 public class Soda {
 
+  private String supplement;
+
+  public Soda(String supplement) {
+    this.supplement = supplement;
+  }
 }
