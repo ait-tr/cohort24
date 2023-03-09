@@ -1,5 +1,6 @@
 // При провале любой из проверок нужно вывести на экран соответствующее сообщение.
 public class LessonTriangle {
+
   private int sideA;
   private int sideB;
   private int sideC;
@@ -26,25 +27,20 @@ public class LessonTriangle {
     this.sideB = checkSide(sideB);
     this.sideC = checkSide(sideC);
 
-    if (!check()) {
-      System.out.println("Такого треугольника не бывает: " + sideA + ", " + sideB + ", " + sideC);
-    }
+    check();
   }
 
-  private static boolean checkMainSide(int main, int left, int right) {
-    return main < LessonMain.sum(left, right); // сторона меньше суммы двух других
+  private static void checkMainSide(int main, int left, int right) {
+    if (main >= LessonMain.sum(left, right)) {
+      throw new IllegalArgumentException(
+          String.format("Некорректные стороны: %d > %d + %d", main, left, right));
+    }
+    // сторона меньше суммы двух других
   }
 
-  private boolean check() {
-    if (!checkMainSide(sideA, sideB, sideC)) {
-      return false;
-    }
-    if (!checkMainSide(sideB, sideA, sideC)) {
-      return false;
-    }
-    if (!checkMainSide(sideC, sideA, sideB)) {
-      return false;
-    }
-    return true;
+  private void check() {
+    checkMainSide(sideA, sideB, sideC);
+    checkMainSide(sideB, sideA, sideC);
+    checkMainSide(sideC, sideA, sideB);
   }
 }
