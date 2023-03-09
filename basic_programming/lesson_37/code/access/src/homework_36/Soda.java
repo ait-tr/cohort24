@@ -15,12 +15,16 @@ public class Soda {
   // "Газировка и {добавка}" в случае наличия добавки.
   // Если добавки нет, нужно вернуть строку "Обычная газировка".
   public String getMyDrinkString() {
-    // if (!(supplement == null || supplement.isEmpty())) {
-    if (supplement != null && !supplement.isEmpty()) {
-      return "Газировка и " + supplement;
-//      return String.format("Газировка и %s", supplement);
-    } else {
+    // условие-стражник: если всё плохо
+    // важно написать именно в таком порядке, потому что условия проверяются слева направо.
+    // если написать их в другом порядке, то возможен вызов isEmpty() для null
+    // и будет NullPointerException
+    if (supplement == null || supplement.isEmpty()) {
       return "Обычная газировка";
     }
+
+    // после условия-стражника - когда всё хорошо, "основной" return
+    return "Газировка и " + supplement;
+//    return String.format("Газировка и %s", supplement);
   }
 }
