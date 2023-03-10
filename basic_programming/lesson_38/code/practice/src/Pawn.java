@@ -35,7 +35,9 @@ public class Pawn {
   // не static, потому что для конкретной фигуры
   public void setCoordinates(int row, int column) {
     checkCoordinates(row, column);
-    // TODO проверка возможности хода
+    int diffRow = row - this.row; // если вверх, то +, если вниз, то - (минус)
+    int diffColumn = column - this.column; // если вправо, то +, если влево, то - (минус)
+
   }
 
   // проверка корректности координат
