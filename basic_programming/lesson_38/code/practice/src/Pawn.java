@@ -37,7 +37,9 @@ public class Pawn {
     checkCoordinates(row, column);
     int diffRow = row - this.row; // если вверх, то +, если вниз, то - (минус)
     int diffColumn = column - this.column; // если вправо, то +, если влево, то - (минус)
-
+    if (diffRow == 0 && diffColumn == 0) {
+      throw new IllegalArgumentException("Нельзя шагать на месте");
+    }
   }
 
   // проверка корректности координат
