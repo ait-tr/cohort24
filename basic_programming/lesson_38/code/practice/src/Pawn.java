@@ -1,9 +1,5 @@
 // класс "Пешка"
 public class Pawn {
-  public enum Color {
-    WHITE,
-    BLACK,
-  }
 
   private Color color;
   private int row;
@@ -42,6 +38,9 @@ public class Pawn {
     }
     if (diffColumn != 0) { // попытались изменить столбец
       throw new IllegalArgumentException("Пешка не может двигаться по горизонтали");
+    }
+    if (color == Color.WHITE && diffRow < 0 || color == Color.BLACK && diffRow > 0) {
+      throw new IllegalArgumentException("Пешка не может ходить назад");
     }
   }
 
