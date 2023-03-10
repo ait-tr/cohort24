@@ -2,21 +2,29 @@ package students;
 
 public class Student {
 
+  // статический - общий для всех студентов - счётчик
+  private static int counter = 0;
+
   // final - нельзя менять
   // private - доступен только внутри студента
   // static - общий для всех студентов
   final private static char SEP = ','; // определяем разделитель как символ запятой
+  private int id; // идентификатор студента, должен заполняться автоматически
+  // у каждого студента должен быть свой идентификатор
   private String name;
   private String group;
   private String eMail;
 
   public Student(String name, String group) {
+    this.id = ++counter; // увеличиваем и записываем в id увеличенное значение
     this.name = name;
     this.group = group;
     this.eMail = null; // eMail'а нет
   }
 
   public Student(String name, String group, String eMail) {
+    ++counter;
+    this.id = counter;
     this.name = name;
     this.group = group;
     this.eMail = eMail;
@@ -46,6 +54,7 @@ public class Student {
     this.eMail = eMail;
   }
 
+  // фабричный метод - производит объект из чего-то
   // - прочитать информацию о студентах - "имя" или "имя,e-mail" для каждого в отдельной строке
   // и вернуть получившегося студента
   // метод статический - вызывается сам по себе и возвращает нового прочитанного студента
