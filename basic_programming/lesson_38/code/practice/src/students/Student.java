@@ -52,9 +52,12 @@ public class Student {
   public static Student parseStudent(String group, String line) {
     int sepIndex = line.indexOf(SEP); // ищем запятую в переданной строке
     if (sepIndex != -1) {
-      // есть запятая - строка "имя,e-mail"
+      String name = line.substring(0, sepIndex);
+      String eMail = line.substring(sepIndex + 1); // начинаем ПОСЛЕ разделителя
+
     } else {
-      // нет запятой - строка "имя"
+      String name = line;
+
     }
   }
 }
