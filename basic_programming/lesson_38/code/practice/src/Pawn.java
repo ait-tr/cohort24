@@ -40,6 +40,9 @@ public class Pawn {
     if (diffRow == 0 && diffColumn == 0) {
       throw new IllegalArgumentException("Нельзя шагать на месте");
     }
+    if (diffColumn != 0) { // попытались изменить столбец
+      throw new IllegalArgumentException("Пешка не может двигаться по горизонтали");
+    }
   }
 
   // проверка корректности координат
