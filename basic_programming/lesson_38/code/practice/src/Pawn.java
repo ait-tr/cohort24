@@ -25,12 +25,10 @@ public class Pawn {
     return column;
   }
 
-  // сеттеров отдельно для строки и столбца не будет - можно только менять координаты вместе
-  // "сеттер" для координат
-  // public, потому что сеттер
-  // не static, потому что для конкретной фигуры
-  public void setCoordinates(int row, int column) {
+  // проверка возможности хода
+  private void checkMove(int row, int column) {
     checkCoordinates(row, column);
+
     int diffRow = row - this.row; // если вверх, то +, если вниз, то - (минус)
     int diffColumn = column - this.column; // если вправо, то +, если влево, то - (минус)
     if (diffRow == 0 && diffColumn == 0) {
@@ -53,6 +51,14 @@ public class Pawn {
       throw new IllegalArgumentException("Пешка не может ходить так далеко");
     }
     // если попали сюда, то прошли все проверки и метод просто завершается без ошибок
+  }
+
+  // сеттеров отдельно для строки и столбца не будет - можно только менять координаты вместе
+  // "сеттер" для координат
+  // public, потому что сеттер
+  // не static, потому что для конкретной фигуры
+  public void setCoordinates(int row, int column) {
+    checkMove(row, column);
     // меняем координаты, наконец-то можно
     this.row = row;
     this.column = column;
