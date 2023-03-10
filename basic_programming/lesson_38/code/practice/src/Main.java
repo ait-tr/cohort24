@@ -1,5 +1,3 @@
-import chess.Color;
-import chess.Pawn;
 import students.Student;
 
 public class Main {
