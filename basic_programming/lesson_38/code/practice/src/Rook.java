@@ -34,7 +34,14 @@ public class Rook {
     if (diffRow == 0 && diffColumn == 0) {
       throw new IllegalArgumentException("Нельзя шагать на месте");
     }
-    // TODO проверка хода ладьи
+    // движение по одной линии (горизонтали или вертикали)
+    // diffRow == 0 || diffColumn == 0 - либо строка, либо столбец не меняются - всё хорошо
+    // !(diffRow == 0 || diffColumn == 0) - всё плохо
+    // diffRow != 0 && diffColumn != 0 - меняется одновременно и строка, и столбец - всё плохо
+    if (!(diffRow == 0 || diffColumn == 0)) {
+      throw new IllegalArgumentException(
+          "Ладья может ходить только по горизонтали или по вертикали");
+    }
     // если попали сюда, то прошли все проверки и метод просто завершается без ошибок
   }
 
