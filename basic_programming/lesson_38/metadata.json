@@ -3,6 +3,11 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
+    "code/practice/src/chess/Color.java",
+    "code/practice/src/chess/Pawn.java",
+    "code/practice/src/chess/Rook.java",
+    "code/practice/src/students/Student.java",
+    "code/practice/src/Main.java"
   ],
   "video": ""
 }
