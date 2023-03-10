@@ -55,9 +55,9 @@ public class Student {
       String name = line.substring(0, sepIndex);
       String eMail = line.substring(sepIndex + 1); // начинаем ПОСЛЕ разделителя
       return new Student(name, group, eMail);
-    } else {
-      String name = line;
-      return new Student(name, group);
     }
+    // запятой нет - в строке line только имя
+//    String name = line;
+    return new Student(/*name*/line, group);
   }
 }

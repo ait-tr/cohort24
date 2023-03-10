@@ -12,6 +12,7 @@ public class Main {
   // - прочитать информацию о студентах - "имя" или "имя,e-mail" для каждого в отдельной строке
   // красиво вывести состав групп на экран
   public static void main(String[] args) {
-    Student student = new Student("Kirill", "");
+    Student student = Student.parseStudent("cohort24", "Vadim,vadim@vadim.info");
+    System.out.println();
   }
 }
