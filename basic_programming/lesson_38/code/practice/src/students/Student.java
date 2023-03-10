@@ -2,10 +2,13 @@ package students;
 
 public class Student {
 
+  // final - нельзя менять
+  // private - доступен только внутри студента
+  // static - общий для всех студентов
+  final private static char SEP = ','; // определяем разделитель как символ запятой
   private String name;
   private String group;
   private String eMail;
-  // String eMail = ""; // так тоже можно
 
   public Student(String name, String group) {
     this.name = name;
@@ -46,7 +49,12 @@ public class Student {
   // - прочитать информацию о студентах - "имя" или "имя,e-mail" для каждого в отдельной строке
   // и вернуть получившегося студента
   // метод статический - вызывается сам по себе и возвращает нового прочитанного студента
-  public static Student parseStudent() {
-    // TODO
+  public static Student parseStudent(String group, String line) {
+    int sepIndex = line.indexOf(SEP); // ищем запятую в переданной строке
+    if (sepIndex != -1) {
+      // есть запятая - строка "имя,e-mail"
+    } else {
+      // нет запятой - строка "имя"
+    }
   }
 }
