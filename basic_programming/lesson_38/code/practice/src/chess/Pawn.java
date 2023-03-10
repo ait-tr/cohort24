@@ -1,3 +1,5 @@
+package chess;
+
 // класс "Пешка"
 public class Pawn {
 

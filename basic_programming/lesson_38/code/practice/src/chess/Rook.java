@@ -1,3 +1,5 @@
+package chess;
+
 // класс "Ладья"
 public class Rook {
 
