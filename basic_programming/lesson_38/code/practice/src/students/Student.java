@@ -42,4 +42,11 @@ public class Student {
   public void setEMail(String eMail) {
     this.eMail = eMail;
   }
+
+  // - прочитать информацию о студентах - "имя" или "имя,e-mail" для каждого в отдельной строке
+  // и вернуть получившегося студента
+  // метод статический - вызывается сам по себе и возвращает нового прочитанного студента
+  public static Student parseStudent() {
+    // TODO
+  }
 }
