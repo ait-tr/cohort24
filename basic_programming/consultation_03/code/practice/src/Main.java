@@ -33,20 +33,22 @@ public class Main {
 
     System.out.print("Введите количество товаров: ");
     int itemsAmount = Integer.parseInt(br.readLine());
-    for (int i = 0; i < itemsAmount; ++i) {
-      System.out.print("Введите артикул товара: ");
+    for (int i = 1; i <= itemsAmount; ++i) {
+      System.out.println("Ввод информации о товаре " + i);
+
+      System.out.print("Введите артикул: ");
       String article = br.readLine();
       // проверяем на уникальность
       while (itemsBase.containsKey(article)) {
         System.out.println("Артикул не уникален!");
-        System.out.print("Введите артикул товара: ");
+        System.out.print("Введите артикул: ");
         article = br.readLine();
       }
 
-      System.out.print("Введите название товара: ");
+      System.out.print("Введите название: ");
       String title = br.readLine();
 
-      System.out.print("Введите стоимость (дробное число):");
+      System.out.print("Введите стоимость (дробное число): ");
       double price = Double.parseDouble(br.readLine());
 
       System.out.print("Введите валюту: ");
