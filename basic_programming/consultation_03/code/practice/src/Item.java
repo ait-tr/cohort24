@@ -26,6 +26,8 @@ public class Item {
     return price;
   }
 
+  // нет setArticle() - нельзя поменять артикул, он final
+
   public void setTitle(String title) {
     this.title = title;
   }
