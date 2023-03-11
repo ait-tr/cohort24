@@ -1,6 +1,5 @@
 public class Main {
 
-  // - геттеры и сеттеры
   // - файл Main
   // - взаимоотношения классов
   // - циклы
@@ -22,6 +21,7 @@ public class Main {
   // - либо сразу пишем методы
   // - либо сначала пишем программу в целом, используя только заготовки методов
   public static void main(String[] args) {
-    System.out.println("Hello world!");
+    Item tovar1 = new Item("art1", "Молоко", new Money());
+    System.out.println(tovar1.getTitle());
   }
 }
