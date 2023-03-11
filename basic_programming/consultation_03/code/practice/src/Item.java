@@ -35,4 +35,11 @@ public class Item {
   public void setPrice(Money price) {
     this.price = price;
   }
+
+  // "фальшивый" геттер
+  // вернём красивую строку для печати
+  public String getItemString() {
+    // "Товар (артикул: артикул), стоимость: красиваяСтоимость"
+    return String.format("%s (артикул: %s), стоимость: %s", title, article, price.getMoneyString());
+  }
 }

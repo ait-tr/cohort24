@@ -23,6 +23,7 @@ public class Money {
   // нет getCurrency() - отдельно валюта нам не нужна
 
   // "фальшивый" геттер
+  // вернём красивую строку для печати
   public String getMoneyString() {
     return String.format("%.2f %s", getAmount(), currency);
   }

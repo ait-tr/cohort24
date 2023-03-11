@@ -22,7 +22,6 @@ public class Main {
   // - либо сначала пишем программу в целом, используя только заготовки методов
   public static void main(String[] args) {
     Item tovar1 = new Item("art1", "Молоко", new Money(75, "RUB"));
-    System.out.println(tovar1.getTitle());
-    System.out.println(tovar1.getPrice().getMoneyString());
+    System.out.println(tovar1.getItemString());
   }
 }
