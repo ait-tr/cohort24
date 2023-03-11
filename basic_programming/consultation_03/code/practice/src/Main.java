@@ -47,7 +47,7 @@ public class Main {
       String title = br.readLine();
 
       System.out.print("Введите стоимость (дробное число):");
-      Double price = Double.parseDouble(br.readLine());
+      double price = Double.parseDouble(br.readLine());
 
       System.out.print("Введите валюту: ");
       String currency = br.readLine();
