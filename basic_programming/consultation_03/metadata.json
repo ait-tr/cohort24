@@ -3,6 +3,9 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
+    "code/practice/src/Money.java",
+    "code/practice/src/Item.java",
+    "code/practice/src/Main.java"
   ],
   "video": ""
 }
