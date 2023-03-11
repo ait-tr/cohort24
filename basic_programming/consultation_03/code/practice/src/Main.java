@@ -56,5 +56,11 @@ public class Main {
       Item item = new Item(article, title, itemPrice);
       itemsBase.put(article, item);
     }
+
+    // перебираем "значения" из базы данных товаров - то есть все товары в базе
+    // в каждом товаре и так хранится его артикул
+    for (Item item : itemsBase.values()) {
+      System.out.println(item.getItemString());
+    }
   }
 }
