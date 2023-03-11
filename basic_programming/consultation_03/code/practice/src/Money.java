@@ -14,12 +14,16 @@ public class Money {
 
   // нет setCurrency() - нельзя поменять валюту, она final
 
-  // нет getAmount() - отдельно количество денег нам не нужно
+  // "фальшивый" геттер - возвращаем "рубли" в виде double,
+  // а хранить продолжаем "копейки" в виде long
+  public double getAmount() {
+    return amount / 100.0;
+  }
 
   // нет getCurrency() - отдельно валюта нам не нужна
 
   // "фальшивый" геттер
   public String getMoneyString() {
-    return String.format("%.2f %s", amount / 100.0, currency);
+    return String.format("%.2f %s", getAmount(), currency);
   }
 }
