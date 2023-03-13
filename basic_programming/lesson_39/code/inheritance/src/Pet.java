@@ -8,8 +8,6 @@ public class Pet {
   //   - "дата рождения" (тип `String`),
   //   - вес (тип `double`);
   // - конструктор, сеттеры, геттеры;
-  // - статический метод для создания животного при прочтении данных из строки `"dog,кличка"`,
-  //   `"cat,кличка,вес"`, `"turtle,кличка,вес,дата рождения"`.
   //
   // Создать класс `Main`, в котором данные будут считываться с консоли и красиво выводиться на
   // экран.
@@ -64,5 +62,30 @@ public class Pet {
 
   public double getWeight() {
     return weight;
+  }
+
+  // - статический метод для создания животного при прочтении данных из строки `"dog,кличка"`,
+  //   `"cat,кличка,вес"`, `"turtle,кличка,вес,дата рождения"`.
+  public static Pet parsePet(String line) {
+    String[] parts = line.split(","); // разбить строку на подстроки по запятым
+    Kind kind = parseKind(parts[0]);
+    String name = parts[1];
+//    double weight;
+//    if (parts.length > 2) {
+//      weight = Double.parseDouble(parts[2]);
+//    } else {
+//      weight = 0.0;
+//    }
+    double weight = parts.length > 2 ? Double.parseDouble(parts[2]) : 0.0;
+    String dateOfBirth = parts.length > 3 ? parts[3] : null;
+    return new Pet(kind, name, dateOfBirth, weight);
+  }
+
+  private static Kind parseKind(String line) {
+    try {
+      return Kind.valueOf(line.toUpperCase());
+    } catch (IllegalArgumentException e) {
+      return Kind.OTHER;
+    }
   }
 }
