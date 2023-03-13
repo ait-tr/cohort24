@@ -4,7 +4,7 @@ import pets.Cat;
 import pets.Dog;
 import pets.Pet;
 
-public class Main {
+public class PetsMain {
 
   // Inheritance
   // Наследование — это инструмент, позволяющий описать новый класс на основе уже существующего
