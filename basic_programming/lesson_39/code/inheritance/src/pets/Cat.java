@@ -7,6 +7,6 @@ public class Cat extends pets.Pet {
   }
 
   public void makePurr() {
-    System.out.println("Мррр...");
+    System.out.println(getName() + ": Мррр...");
   }
 }

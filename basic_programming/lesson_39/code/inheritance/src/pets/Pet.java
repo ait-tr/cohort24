@@ -39,6 +39,6 @@ public class Pet {
   }
 
   public void makeSomeNoise() {
-    System.out.println("Звуки животного мира");
+    System.out.println(getName() + ": Звуки животного мира");
   }
 }

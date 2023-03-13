@@ -19,6 +19,6 @@ public class Dog extends Pet {
     // default - доступен в рамках одного пакета
     // protected - как default, но доступен потомкам даже за пределами пакета
     weight -= 0.001;
-    System.out.println("Собаки могут носить тапочки. А могут и не носить...");
+    System.out.println(getName() + ": Собаки могут носить тапочки. А могут и не носить...");
   }
 }
