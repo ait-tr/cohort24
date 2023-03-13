@@ -11,7 +11,6 @@ public class Person {
   private static int counter = 0;
   final private int id;
   private String name;
-  private int age;
   private String phone;
 
   public Person(String name, String phone) {
@@ -24,10 +23,6 @@ public class Person {
     this.name = name;
   }
 
-  public void setAge(int age) {
-    this.age = age;
-  }
-
   public void setPhone(String phone) {
     this.phone = phone;
   }
@@ -36,13 +31,9 @@ public class Person {
     return name;
   }
 
-  public int getAge() {
-    return age;
-  }
-
   public String getPersonString() {
 //    return String.format("%d: %s (%d) - %s", id, name, age, phone);
-    return String.format("%d: %s- %s", id, name, phone);
+    return String.format("%d: %s - %s", id, name, phone);
   }
 
   public void makeCall() {
