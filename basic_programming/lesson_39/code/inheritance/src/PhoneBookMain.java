@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import phonebook.DigitalPerson;
 import phonebook.Person;
 
 public class PhoneBookMain {
@@ -9,6 +10,8 @@ public class PhoneBookMain {
     records.add(new Person("Кирилл", "+1234567"));
     records.get(0).makeCall();
     records.add(new Person("Мефодий", "+2345678"));
+
+    records.add(new DigitalPerson("Иннокентий", "kesha@gmail.com"));
 
     printAllRecords(records);
   }
