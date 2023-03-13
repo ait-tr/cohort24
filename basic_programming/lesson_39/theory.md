@@ -26,10 +26,10 @@
 При проектировании возможна разная иерархия базовых классов (или суперклассов) и классов-наследников.
 
 Три типа можно реализовать в Java:
-![Single, Multilevel, Hierarchical](https://github.com/ait-tr/cohort24/blob/main/basic_programming/lesson_39/img/inheritance_1.png)
+![Single, Multilevel, Hierarchical](https://github.com/ait-tr/cohort24/raw/main/basic_programming/lesson_39/img/inheritance_1.png)
 
 Ещё два типа иерархии предполагают множественное наследование, и в Java такое запрещено:
-![Multiple, Hybrid](https://github.com/ait-tr/cohort24/blob/main/basic_programming/lesson_39/img/inheritance_2.png)
+![Multiple, Hybrid](https://github.com/ait-tr/cohort24/raw/main/basic_programming/lesson_39/img/inheritance_2.png)
 
 ## Наследование в коде
 
