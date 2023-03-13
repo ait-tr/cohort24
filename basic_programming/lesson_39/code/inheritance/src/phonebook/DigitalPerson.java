@@ -16,7 +16,6 @@ public class DigitalPerson extends Person {
     this.eMail = eMail;
   }
 
-
   public String getEMail() {
     return eMail;
   }
