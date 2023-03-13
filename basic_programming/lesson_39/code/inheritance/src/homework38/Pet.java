@@ -1,3 +1,5 @@
+package homework38;
+
 public class Pet {
 
   // Создать класс `Pet` (домашнее животное). В классе должны быть:
@@ -8,12 +10,6 @@ public class Pet {
   //   - "дата рождения" (тип `String`),
   //   - вес (тип `double`);
   // - конструктор, сеттеры, геттеры;
-  //
-  // Создать класс `Main`, в котором данные будут считываться с консоли и красиво выводиться на
-  // экран.
-  //
-  // Формат входных данных: количество строк с записями о домашних животных, затем сами записи
-  // в описанном формате.
   enum Kind {
     DOG,
     CAT,
@@ -87,5 +83,16 @@ public class Pet {
     } catch (IllegalArgumentException e) {
       return Kind.OTHER;
     }
+  }
+
+  public String getPetString() {
+    String result = String.format("Имя: %s (%s)", name, kind.toString().toLowerCase());
+    if (dateOfBirth != null && !dateOfBirth.isEmpty()) {
+      result += String.format(", дата рождения: %s", dateOfBirth);
+    }
+    if (weight != 0) {
+      result += String.format(", вес: %.2f", weight);
+    }
+    return result;
   }
 }
