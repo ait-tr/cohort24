@@ -31,11 +31,24 @@ public class Main {
     turtle.makeSomeNoise();
     System.out.println();
 
+    List<Cat> cats = new ArrayList<>();
+    List<Dog> dogs = new ArrayList<>();
     // перебираем список как "каких-то" домашних животных
     for (Pet pet : pets) {
       pet.makeSomeNoise();
-//      pet.makePurr(); // только с переменной класса Cat, а у нас List<Pet>
-//      pet.bringShoes(); // только с переменной класса Dog, а у нас List<Pet>
+      if (pet instanceof Cat) { // если pet - разновидность класса Cat (Cat или его потомок)
+        System.out.println(pet.getName() + " - кошка!");
+        Cat tempCat = (Cat) pet;
+        tempCat.makePurr(); // только с переменной класса Cat, а у нас List<Pet>
+        cats.add(tempCat);
+      } else if (pet instanceof Dog tempDog) {
+        System.out.println(pet.getName() + " - собака!");
+        tempDog.bringShoes(); // только с переменной класса Dog, а у нас List<Pet>
+        dogs.add(tempDog);
+      } else {
+        System.out.println(pet.getName() + " - неведома зверушка!");
+      }
+      System.out.println();
     }
   }
 }
