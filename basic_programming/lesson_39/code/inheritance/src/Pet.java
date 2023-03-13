@@ -22,10 +22,10 @@ public class Pet {
     OTHER,
   }
 
-  Kind kind;
-  String name;
-  String dateOfBirth;
-  double weight;
+  final private Kind kind; // тип точно не будет меняться
+  private String name;
+  private String dateOfBirth;
+  private double weight;
 
   public Pet(Kind kind, String name, String dateOfBirth, double weight) {
     this.kind = kind;
