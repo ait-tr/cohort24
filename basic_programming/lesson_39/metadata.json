@@ -1,0 +1,17 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/inheritance/src/homework38/Pet.java",
+    "code/inheritance/src/homework38/PetMain.java",
+    "code/inheritance/src/pets/Cat.java",
+    "code/inheritance/src/pets/Dog.java",
+    "code/inheritance/src/pets/Pet.java",
+    "code/inheritance/src/PetsMain.java",
+    "code/inheritance/src/phonebook/DigitalPerson.java",
+    "code/inheritance/src/phonebook/Person.java",
+    "code/inheritance/src/PhoneBookMain.java"
+  ],
+  "video": ""
+}
