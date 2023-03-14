@@ -39,5 +39,10 @@ public class PetsMain {
     for (Pet pet : pets) {
       pet.makeSomeNoise(); // использование полиморфизма классов Cat, Dog и Pet
     }
+
+    System.out.println("В списке pets лежат:");
+    for (Pet pet : pets) {
+      System.out.println("- " + pet); // здесь автоматически вызовется toString()
+    }
   }
 }
