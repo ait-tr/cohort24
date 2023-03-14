@@ -1,3 +1,4 @@
+import phones.MobilePhone;
 import phones.OldPhone;
 import phones.Phone;
 
@@ -10,5 +11,8 @@ public class PhonesMain {
     Phone staryjTelephon = new OldPhone();
     staryjTelephon.call("+2345678");
     staryjTelephon.call("2345678");
+
+    Phone mobile = new MobilePhone();
+    mobile.call("+3456789");
   }
 }
