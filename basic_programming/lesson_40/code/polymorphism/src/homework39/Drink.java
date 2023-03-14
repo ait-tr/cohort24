@@ -33,10 +33,6 @@ public class Drink extends Food {
       }
     }
 
-    if (sparkling) {
-      System.out.println("пшш");
-    } else {
-      System.out.println("скр");
-    }
+    System.out.println(sparkling ? "пшш" : "скр");
   }
 }
