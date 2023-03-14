@@ -10,4 +10,9 @@ public class Cat extends pets.Pet {
   public void makeSomeNoise() {
     System.out.println(getName() + ": Мяу!");
   }
+
+  @Override
+  public String toString() {
+    return String.format("Кошка по кличке %s", getName());
+  }
 }
