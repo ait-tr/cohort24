@@ -1,6 +1,7 @@
 import phones.MobilePhone;
 import phones.OldPhone;
 import phones.Phone;
+import phones.smartphones.Iphone;
 
 public class PhonesMain {
 
@@ -14,5 +15,8 @@ public class PhonesMain {
 
     Phone mobile = new MobilePhone();
     mobile.call("+3456789");
+
+    Phone novyjTelephon = new Iphone();
+    novyjTelephon.call("+4567890");
   }
 }
