@@ -9,4 +9,9 @@ public class Cat extends pets.Pet {
   public void makePurr() {
     System.out.println(getName() + ": Мррр...");
   }
+
+  @Override // Перезаписать
+  public void makeSomeNoise() {
+    System.out.println(getName() + ": Мяу!");
+  }
 }
