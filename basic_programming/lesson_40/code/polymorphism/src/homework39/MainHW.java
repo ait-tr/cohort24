@@ -16,6 +16,7 @@ public class MainHW {
   //   - для негазированного - "скр",
   //   - а для алкогольного сначала спрашивает возраст и издаёт звук, только если возраст больше 18.
   public static void main(String[] args) {
-    System.out.println("Hello world!");
+    Food sandwich = new Food("Бутерброд", 350);
+    sandwich.eat();
   }
 }
