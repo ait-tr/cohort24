@@ -1,5 +1,7 @@
 package homework39;
 
+import java.io.IOException;
+
 public class MainHW {
 
   // Создать класс `Food` (еда). В классе должны быть:
@@ -15,8 +17,11 @@ public class MainHW {
   //   - для газированного напитка печатает "пшш",
   //   - для негазированного - "скр",
   //   - а для алкогольного сначала спрашивает возраст и издаёт звук, только если возраст больше 18.
-  public static void main(String[] args) {
+  public static void main(String[] args) throws IOException {
     Food sandwich = new Food("Бутерброд", 350);
     sandwich.eat();
+
+    Drink beer = new Drink("Pilsner", 250, /*sparkling*/ true, /*alcohol*/ true);
+    beer.open();
   }
 }
