@@ -4,7 +4,7 @@ import pets.Cat;
 import pets.Dog;
 import pets.Pet;
 
-public class Main {
+public class PetsMain {
 
   // Полиморфизм (polymorphism): Один интерфейс — много реализаций
   // Например: замена ArrayList на LinkedList
