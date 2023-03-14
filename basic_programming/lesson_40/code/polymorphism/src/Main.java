@@ -23,17 +23,17 @@ public class Main {
 
     List<Pet> pets = new ArrayList<>();
 //    for (String name : names) {
-//      Pet tempPet = new Pet(name, "", 0);
+//      Pet tempPet = new Pet(name);
 //      pets.add(tempPet);
 //    }
 
-    Cat cat = new Cat( "Пушок", "", 0);
+    Pet cat = new Cat( "Пушок");
     pets.add(cat);
 
-    Dog dog = new Dog( "Клык", "", 0);
+    Pet dog = new Dog( "Клык");
     pets.add(dog);
 
-    Pet turtle = new Pet( "Тортилла", "", 0);
+    Pet turtle = new Pet( "Тортилла");
     pets.add(turtle);
 
     for (Pet pet : pets) {
