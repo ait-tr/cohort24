@@ -4,6 +4,7 @@ public class OldPhone extends Phone {
 
   @Override
   public void call(String phoneNumber) {
+    System.out.println("== Пытаемся позвонить по 'старому' аппарату ==");
     if (phoneNumber.contains("+")) {
       System.out.println("На нашем аппарате нет '+'");
       return;
