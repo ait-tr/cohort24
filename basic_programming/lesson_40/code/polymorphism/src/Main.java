@@ -37,7 +37,7 @@ public class Main {
     pets.add(turtle);
 
     for (Pet pet : pets) {
-      pet.makeSomeNoise();
+      pet.makeSomeNoise(); // использование полиморфизма классов Cat, Dog и Pet
     }
   }
 }
