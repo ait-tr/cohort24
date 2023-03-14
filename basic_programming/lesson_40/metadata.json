@@ -3,6 +3,18 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
+    "code/polymorphism/src/homework39/Food.java",
+    "code/polymorphism/src/homework39/Drink.java",
+    "code/polymorphism/src/homework39/MainHW.java",
+    "code/polymorphism/src/pets/Pet.java",
+    "code/polymorphism/src/pets/Cat.java",
+    "code/polymorphism/src/pets/Dog.java",
+    "code/polymorphism/src/PetsMain.java",
+    "code/polymorphism/src/phones/Phone.java",
+    "code/polymorphism/src/phones/OldPhone.java",
+    "code/polymorphism/src/phones/MobilePhone.java",
+    "code/polymorphism/src/phones/smartphones/Iphone.java",
+    "code/polymorphism/src/PhonesMain.java"
   ],
   "video": ""
 }
