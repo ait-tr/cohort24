@@ -18,25 +18,15 @@ public class Alcohol {
   }
 
   public static void parseArguments(String[] args) {
-    if (args.length > 0) {
-      System.out.println("У нас есть аргументы!");
-
-      for (String argument : args) {
-        if (argument.startsWith("--age=")) {
-          System.out.println("У нас есть параметр 'age'!");
-          String value = argument.substring("--age=".length()); // отрежем в начале "--age="
-          legalAge = Integer.parseInt(value);
-        }
-
-        if (argument.equals("--help")) {
-          System.out.println("У нас есть параметр 'help'!");
-          printUsage();
-        }
+    for (String argument : args) { // если аргументов нет, то метод тут же завершится
+      if (argument.startsWith("--age=")) {
+        String value = argument.substring("--age=".length()); // отрежем в начале "--age="
+        legalAge = Integer.parseInt(value);
       }
 
-      System.out.println("legalAge = " + legalAge);
-    } else {
-      System.out.println("Нет дополнительных аргументов, legalAge = " + legalAge);
+      if (argument.equals("--help")) {
+        printUsage();
+      }
     }
   }
 
