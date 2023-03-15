@@ -16,6 +16,14 @@ public class Alcohol {
           String value = argument.substring("--age=".length()); // отрежем в начале "--age="
           legalAge = Integer.parseInt(value);
         }
+
+        if (argument.equals("--help")) {
+          System.out.println("У нас есть параметр 'help'!");
+          System.out.println("При запуске программе можно указать опциональный ключ --age");
+          System.out.println("Указанное значение - целое число - будет использовано как legal age");
+          return; // попросили помощи - вывели помощь и завершили программу
+          // в следующий раз её запустят "правильно"
+        }
       }
 
       System.out.println("legalAge = " + legalAge);
