@@ -2,13 +2,13 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Alcohol {
+public class Alcohol2 {
 
-  private static int legalAge = 18;
+  private static int legalAge;
 
   public static void printUsage() {
-    System.out.println("При запуске программе можно указать опциональный ключ 'age'");
-    System.out.println("Использование: Alcohol [--age=n]");
+    System.out.println("При запуске программе нужно указать возраст");
+    System.out.println("Использование: Alcohol n");
     System.out.println("Указанное значение (целое число n) будет использовано как legal age");
     // в квадратных скобках в примерах использования указываются опциональные ключи
     // при запуске квадратные скобки не пишут
@@ -18,16 +18,15 @@ public class Alcohol {
   }
 
   public static void parseArguments(String[] args) {
-    for (String argument : args) { // если аргументов нет, то метод тут же завершится
-      if (argument.startsWith("--age=")) {
-        String value = argument.substring("--age=".length()); // отрежем в начале "--age="
-        legalAge = Integer.parseInt(value);
-      } else if (argument.equals("--help")) {
-        printUsage(); // после этого программа завершится
-      } else {
-        System.err.println("Некорректный аргумент: " + argument);
-        printUsage(); // после этого программа завершится
-      }
+    if (args.length != 1) {
+      System.err.println("Некорректное использование!");
+      printUsage(); // после этого программа завершится
+    }
+    try {
+      legalAge = Integer.parseInt(args[0]);
+    } catch (NumberFormatException e) {
+      System.err.println("Некорректное использование: " + e.getMessage());
+      printUsage(); // после этого программа завершится
     }
   }
 
