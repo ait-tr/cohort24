@@ -32,7 +32,7 @@ public class Alcohol2 {
 
   public static void drink(int age) throws IllegalAge {
     if (age < legalAge) {
-      throw new IllegalAge("Вы слишком молоды: " + age + " меньше " + legalAge);
+      throw new IllegalAge(age);
     }
   }
 

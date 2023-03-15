@@ -10,6 +10,10 @@
 // Такое исключение сразу можно "выбрасывать" - throw
 public class IllegalAge extends Exception {
 
+  public IllegalAge(int age) {
+    super("Вы слишком молоды: " + age + " меньше " + Alcohol2.legalAge);
+  }
+
   public IllegalAge(String message) {
     super(message);
   }
