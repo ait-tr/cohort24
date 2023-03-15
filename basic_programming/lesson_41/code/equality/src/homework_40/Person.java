@@ -18,7 +18,7 @@ public class Person {
 
   // При попытке вывести объект этого класса на экран должна выводиться строка
   // "Человек по имени ...".
-  @Override
+  @Override // перезаписываем Object.toString()
   public String toString() {
     return "Человек по имени " + name;
   }
