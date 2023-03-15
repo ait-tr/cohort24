@@ -31,5 +31,13 @@ public class MainHomework {
     // выводиться на экран в консоль могут ТОЛЬКО строки
 
     human.greet();
+
+    Person human2 = new Man("Иван");
+    System.out.println(human2);
+    // при вызове метода Java идёт "от потомка к родителю" в поисках этого метода
+    // вплоть до класса Object.
+    // Если вдруг метода нет и там -- будет ошибка и программа даже не запустится.
+    human2.setName("Олег"); // setName будет найден в классе Person
+    System.out.println(human2); // А toString() - в классе Man
   }
 }
