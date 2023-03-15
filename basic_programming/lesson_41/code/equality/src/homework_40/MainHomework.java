@@ -18,6 +18,7 @@ public class MainHomework {
   public static void main(String[] args) {
     Person human = new Person("Вы-знаете-кто");
     // попытка вывести объект класса Person на экран:
-    System.out.println(human);
+    System.out.println(human); // метод print*() для своего аргумента сам вызывает toString()
+    // и выводит полученную строку: то же самое, что System.out.println(human.toString())
   }
 }
