@@ -22,10 +22,11 @@ public class Alcohol {
       if (argument.startsWith("--age=")) {
         String value = argument.substring("--age=".length()); // отрежем в начале "--age="
         legalAge = Integer.parseInt(value);
-      }
-
-      if (argument.equals("--help")) {
-        printUsage();
+      } else if (argument.equals("--help")) {
+        printUsage(); // после этого программа завершится
+      } else {
+        System.err.println("Некорректный аргумент: " + argument);
+        printUsage(); // после этого программа завершится
       }
     }
   }
