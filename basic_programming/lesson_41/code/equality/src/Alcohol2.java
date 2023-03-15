@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 
 public class Alcohol2 {
 
-  private static int legalAge;
+  static int legalAge;
 
   public static void printUsage() {
     System.out.println("При запуске программе нужно указать возраст");
@@ -32,7 +32,7 @@ public class Alcohol2 {
 
   public static void drink(int age) throws IllegalAge {
     if (age < legalAge) {
-      throw new IllegalAge();
+      throw new IllegalAge("Вы слишком молоды: " + age + " меньше " + legalAge);
     }
   }
 
@@ -46,7 +46,7 @@ public class Alcohol2 {
     try {
       drink(age);
     } catch (IllegalAge e) {
-      System.err.println("Вам ничего нельзя!");
+      System.err.println("Вам ничего нельзя: " + e.getMessage());
       return;
     }
 
