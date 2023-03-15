@@ -22,4 +22,9 @@ public class Person {
   public String toString() {
     return "Человек по имени " + name;
   }
+
+  // метод "поприветствовать", который выводит строку: "Я родился!"
+  public void greet() {
+    System.out.println("Я родился!");
+  }
 }
