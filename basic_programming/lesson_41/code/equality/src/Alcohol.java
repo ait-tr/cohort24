@@ -6,6 +6,17 @@ public class Alcohol {
 
   static int legalAge = 18;
 
+  public static void printUsage() {
+    System.out.println("При запуске программе можно указать опциональный ключ 'age'");
+    System.out.println("Использование: Alcohol [--age=n]");
+    System.out.println("Указанное значение (целое число n) будет использовано как legal age");
+    // в квадратных скобках в примерах использования указываются опциональные ключи
+    // при запуске квадратные скобки не пишут
+    System.exit(0); // завершение ВСЕЙ программы
+    // попросили помощи - вывели помощь и завершили программу
+    // в следующий раз её запустят "правильно"
+  }
+
   public static void parseArguments(String[] args) {
     if (args.length > 0) {
       System.out.println("У нас есть аргументы!");
@@ -19,14 +30,7 @@ public class Alcohol {
 
         if (argument.equals("--help")) {
           System.out.println("У нас есть параметр 'help'!");
-          System.out.println("При запуске программе можно указать опциональный ключ 'age'");
-          System.out.println("Использование: Alcohol [--age=n]");
-          System.out.println("Указанное значение (целое число n) будет использовано как legal age");
-          // в квадратных скобках в примерах использования указываются опциональные ключи
-          // при запуске квадратные скобки не пишут
-
-          return; // попросили помощи - вывели помощь и завершили программу
-          // в следующий раз её запустят "правильно"
+          printUsage();
         }
       }
 
