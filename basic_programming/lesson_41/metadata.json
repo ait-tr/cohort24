@@ -3,6 +3,16 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
+    "code/equality/src/homework_40/Person.java",
+    "code/equality/src/homework_40/Man.java",
+    "code/equality/src/homework_40/Woman.java",
+    "code/equality/src/homework_40/MainHomework.java",
+    "code/equality/src/arguments/MainArguments.java",
+    "code/equality/src/arguments/Alcohol.java",
+    "code/equality/src/exceptions/IllegalAge.java",
+    "code/equality/src/exceptions/Alcohol2.java",
+    "code/equality/src/Pizza.java",
+    "code/equality/src/PizzaRunner.java"
   ],
   "video": ""
 }
