@@ -16,6 +16,8 @@ public class MainHomework {
   //
   // Метод "приветствие" класса "Женщина" должен выводить строку: "Я родилась!"
   public static void main(String[] args) {
-
+    Person human = new Person("Вы-знаете-кто");
+    // попытка вывести объект класса Person на экран:
+    System.out.println(human);
   }
 }

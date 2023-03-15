@@ -15,4 +15,11 @@ public class Person {
   public void setName(String name) {
     this.name = name;
   }
+
+  // При попытке вывести объект этого класса на экран должна выводиться строка
+  // "Человек по имени ...".
+  @Override
+  public String toString() {
+    return "Человек по имени " + name;
+  }
 }
