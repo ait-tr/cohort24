@@ -30,6 +30,12 @@ public class Alcohol2 {
     }
   }
 
+  public static void drink(int age) throws IllegalAge {
+    if (age < legalAge) {
+      throw new IllegalAge();
+    }
+  }
+
   public static void main(String[] args) throws IOException {
     parseArguments(args);
 
@@ -37,10 +43,13 @@ public class Alcohol2 {
     System.out.print("Введите возраст: ");
     int age = Integer.parseInt(br.readLine());
 
-    if (age < legalAge) {
-      System.out.println("Вам ничего нельзя!");
-    } else {
-      System.out.println("Вам всё можно!");
+    try {
+      drink(age);
+    } catch (IllegalAge e) {
+      System.err.println("Вам ничего нельзя!");
+      return;
     }
+
+    System.out.println("Вам всё можно!");
   }
 }
