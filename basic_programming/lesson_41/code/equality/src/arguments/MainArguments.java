@@ -1,4 +1,6 @@
-public class Main {
+package arguments;
+
+public class MainArguments {
 
   // Любая программа может принимать дополнительные аргументы командной строки
   // Пример для программы git:
