@@ -10,4 +10,9 @@ public class Woman extends Person {
   public String toString() {
     return "Женщина по имени " + getName();
   }
+
+  @Override
+  public void greet() {
+    System.out.println("Я родилась!");
+  }
 }

@@ -39,5 +39,10 @@ public class MainHomework {
     // Если вдруг метода нет и там -- будет ошибка и программа даже не запустится.
     human2.setName("Олег"); // setName будет найден в классе Person
     System.out.println(human2); // А toString() - в классе Man
+    human2.greet(); // будет найден в классе Person
+
+    Person human3 = new Woman("Мария");
+    System.out.println(human3);
+    human3.greet(); // будет найден в классе Woman
   }
 }
