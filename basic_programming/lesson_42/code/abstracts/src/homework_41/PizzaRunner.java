@@ -24,7 +24,7 @@ public class PizzaRunner {
         Pizza tempPizza = new Pizza(title, weight); // здесь может быть IncorrectWeightException
         pizzas.add(tempPizza);
       } catch (IncorrectWeightException e) {
-        System.out.println(e.getMessage());
+        System.out.println("Некорректный вес: " + e.getMessage());
         // continue; // переход к следующему шагу, если это ещё не конец
       } catch (NumberFormatException e) {
         System.out.println("Введите целое число: " + e.getMessage());

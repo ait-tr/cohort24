@@ -17,6 +17,8 @@ public class Pizza {
   public void setWeight(int weight) {
     if (weight < 0) {
       throw new IncorrectWeightException(weight); // сигнал об ошибке
+      // throw - издать сигнал об аварии
+      // после throw мы создаём конкретный сигнал - new IncorrectWeightException(weight)
       // Выбрасывание исключения работает как аварийный сигнал - всё очень плохо, дальше
       // продолжать бессмысленно.
       // Конкретно в этом случае пиица даже не будет создана.
