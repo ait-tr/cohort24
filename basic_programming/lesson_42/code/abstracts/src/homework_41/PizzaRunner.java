@@ -20,9 +20,13 @@ public class PizzaRunner {
       String title = br.readLine();
       System.out.print("  Введите вес в граммах (целое число): ");
       int weight = Integer.parseInt(br.readLine());
-
-      Pizza tempPizza = new Pizza(title, weight); // теперь эта команда может привести к ошибке
-      pizzas.add(tempPizza);
+      try {
+        Pizza tempPizza = new Pizza(title, weight); // теперь эта команда может привести к ошибке
+        pizzas.add(tempPizza);
+      } catch (IncorrectWeightException e) {
+        System.out.println(e.getMessage());
+        // continue; // переход к следующему шагу, если это ещё не конец
+      }
     }
 
     System.out.println("У нас есть данные про " + pizzas.size() + " уникальных пицц:");
