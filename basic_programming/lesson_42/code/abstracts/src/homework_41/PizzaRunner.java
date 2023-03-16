@@ -8,9 +8,6 @@ import java.util.Set;
 
 public class PizzaRunner {
 
-  // Дополните файл **Pizza.java** из классной работы, выбросив в конструкторе исключение
-  // `IncorrectWeightException` при попытке создать пиццу с отрицательной массой.
-
   public static void main(String[] args) throws IOException {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
