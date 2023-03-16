@@ -13,13 +13,19 @@ public class MainAccounts {
 
     // В нашей программе нужно прочитать два списка пользователей.
     List<Account> list1 = readAccountList(br);
+    for (Account account : list1) {
+      account.increaseReputation(10);
+    }
     List<Account> list2 = readAccountList(br);
+    for (Account account : list2) {
+      account.decreaseReputation(10);
+    }
 
     // Мы должны объединить эти два списка в множество
     Set<Account> accounts = new HashSet<>();
     // Первый список при этом в приоритете - именно из него мы берём баланс в случае разницы.
     accounts.addAll(list1); // добавить в множество accounts все элементы из списка list1
-    // если элемент повторится, то он не будет добавлен
+    // если элемент повторится (без учёта репутации, см. equals()), то он не будет добавлен
     accounts.addAll(list2); // добавить в множество accounts все элементы из списка list2
 
     // и вывести общее количество уникальных пользователей в этих двух списках
