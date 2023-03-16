@@ -8,8 +8,8 @@
 // На баланс мы при сравнении не обращаем внимание
 public class Account {
 
-  private String name;
-  private String email;
+  private final String name;
+  private final String email;
 
   public Account(String name, String email) {
     this.name = name;
