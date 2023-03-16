@@ -18,12 +18,16 @@ public class Account {
 
   // сеттеров не будет (или будут приватными) - поля нельзя менять по условию
 
-
   public String getName() {
     return name;
   }
 
   public String getEmail() {
     return email;
+  }
+
+  @Override
+  public String toString() {
+    return String.format("name: %s, e-mail: %s", name, email);
   }
 }

@@ -11,6 +11,7 @@ public class MainAccounts {
   // Первый список при этом в приоритете - именно из него мы берём баланс
   // в случае разницы.
   public static void main(String[] args) {
-
+    Account testAccount = new Account("Kirill", "kirill@example.com");
+    System.out.println(testAccount);
   }
 }
