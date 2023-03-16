@@ -16,4 +16,9 @@ public class IncorrectWeightException extends IllegalArgumentException {
     // создание объекта этого класса равносильно нажатию на "тревожную кнопку" -
     // ошибка уже появилась, мы создали сигнал об этой ошибке
   }
+
+  // универсальный конструктор для любого собственного исключения
+  public IncorrectWeightException(String message) {
+    super(message);
+  }
 }

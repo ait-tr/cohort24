@@ -19,13 +19,15 @@ public class PizzaRunner {
       System.out.print("  Введите название: ");
       String title = br.readLine();
       System.out.print("  Введите вес в граммах (целое число): ");
-      int weight = Integer.parseInt(br.readLine());
       try {
-        Pizza tempPizza = new Pizza(title, weight); // теперь эта команда может привести к ошибке
+        int weight = Integer.parseInt(br.readLine()); // здесь может быть NumberFormatException
+        Pizza tempPizza = new Pizza(title, weight); // здесь может быть IncorrectWeightException
         pizzas.add(tempPizza);
       } catch (IncorrectWeightException e) {
         System.out.println(e.getMessage());
         // continue; // переход к следующему шагу, если это ещё не конец
+      } catch (NumberFormatException e) {
+        System.out.println("Введите целое число: " + e.getMessage());
       }
     }
 
