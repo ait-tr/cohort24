@@ -1,17 +1,53 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 public class MainAccounts {
 
-  // В нашей программе нужно прочитать два списка пользователей.
-  // Оба списка будут выглядеть одинаково:
-  // сначала количество записей
-  // потом в каждой строке по одной записи - имя (может быть с пробелами), пробел и
-  // электронная почта (без пробелов)
+  public static void main(String[] args) throws IOException {
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-  // Мы должны объединить эти два списка в множество и вывести общее количество
-  // уникальных пользователей в этих двух списках, а затем и самих людей.
-  // Первый список при этом в приоритете - именно из него мы берём баланс
-  // в случае разницы.
-  public static void main(String[] args) {
-    Account testAccount = new Account("Kirill", "kirill@example.com");
-    System.out.println(testAccount);
+    // В нашей программе нужно прочитать два списка пользователей.
+    List<Account> list1 = readAccountList(br);
+    List<Account> list2 = readAccountList(br);
+
+    // Мы должны объединить эти два списка в множество
+    Set<Account> accounts = new HashSet<>();
+    // Первый список при этом в приоритете - именно из него мы берём баланс в случае разницы.
+    accounts.addAll(list1); // добавить в множество accounts все элементы из списка list1
+    // если элемент повторится, то он не будет добавлен
+    accounts.addAll(list2); // добавить в множество accounts все элементы из списка list2
+
+    // и вывести общее количество уникальных пользователей в этих двух списках
+    System.out.println("Найдено всего " + accounts.size() + " уникальных записей:");
+    for (Account account : accounts) {
+      // а затем и самих людей
+      System.out.println("- " + account); // account выводится через toString()
+    }
+  }
+
+  // прочитать список учётных записей
+  public static List<Account> readAccountList(BufferedReader br) throws IOException {
+    System.out.print("Введите количество учётных записей в списке: ");
+    int n = Integer.parseInt(br.readLine());
+    List<Account> result = new ArrayList<>(n);
+    for (int k = 1; k <= n; ++k) {
+      System.out.println("Введите данные учётной записи №" + k + ":");
+      result.add(readAccount(br));
+    }
+    return result;
+  }
+
+  // прочитать учётную запись
+  public static Account readAccount(BufferedReader br) throws IOException {
+    System.out.print("Введите имя: ");
+    String name = br.readLine();
+    System.out.print("Введите e-mail: ");
+    String email = br.readLine();
+    return new Account(name, email);
   }
 }

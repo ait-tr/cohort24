@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 // Нам нужен класс "Учётная запись"
 public class Account {
 
@@ -54,7 +57,7 @@ public class Account {
 
   @Override
   public String toString() {
-    return String.format("name: %s, e-mail: %s", name, email);
+    return String.format("name: %s, e-mail: %s, reputation: %s", name, email, reputation);
   }
 
   // метод equals() сравнивает объекты: true, если равны, и false, если не равны
@@ -62,7 +65,7 @@ public class Account {
   // правила:
   // 1. Объект должен быть равен самому себе
   // 2. При переопределении equals() надо переопределить hashCode()
-  @Override
+  @Override // перезаписываем public boolean Object.equals(Object obj)
   public boolean equals(Object obj) {
     if (this == obj) { // ссылки this и obj ведут на один и тот же объект
       return true; // см. правило 1
@@ -78,6 +81,22 @@ public class Account {
     // true = совпадает имя И совпадает e-mail (на репутацию внимания не обращаем)
     return this.name.equalsIgnoreCase(other.name) && this.email.equalsIgnoreCase(other.email);
   }
+  // метод equals() сравнивает объекты внутри системных методов Java:
+  // например:
+  // - ищет объект в списке (List.indexOf())
+  // - проверяет совпадение ключей словаря или элементов множества
+  // - ...
+  // Следовательно, если мы хотим научить Java сравнивать наши объекты, мы обязаны перезаписать
+  // `public boolean Object.equals(Object obj)`, а следовательно, и `public int Object.hashCode()`
+  // если метод не переписать, то Object.equals(Object obj) сравнивает ссылки
 
   // При переопределении equals() надо переопределить hashCode()
+  // Правила:
+  // 1. Для одинаковых объектов НУЖНО возвращать одинаковое число
+  // 2. Хорошо бы возвращать разные числа для РАЗНЫХ объектов
+  // Что такое одинаковые - см. equals()
+  @Override
+  public int hashCode() {
+    return 1; // так делать нехорошо, но правилам соответствует
+  }
 }
