@@ -21,7 +21,7 @@ public class PizzaRunner {
       System.out.print("  Введите вес в граммах (целое число): ");
       int weight = Integer.parseInt(br.readLine());
 
-      Pizza tempPizza = new Pizza(title, weight);
+      Pizza tempPizza = new Pizza(title, weight); // теперь эта команда может привести к ошибке
       pizzas.add(tempPizza);
     }
 

@@ -11,6 +11,10 @@ public class Pizza {
     this.title = title;
     // Дополните файл Pizza.java из классной работы, выбросив в конструкторе исключение
     // `IncorrectWeightException` при попытке создать пиццу с отрицательной массой.
+    setWeight(weight); // вместо `this.weight = weight` используем сеттер
+  }
+
+  public void setWeight(int weight) {
     if (weight < 0) {
       throw new IncorrectWeightException(weight); // сигнал об ошибке
       // Выбрасывание исключения работает как аварийный сигнал - всё очень плохо, дальше
