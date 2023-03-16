@@ -3,6 +3,11 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
+    "code/practice/src/homework_41/IncorrectWeightException.java",
+    "code/practice/src/homework_41/Pizza.java",
+    "code/practice/src/homework_41/PizzaRunner.java",
+    "code/practice/src/Account.java",
+    "code/practice/src/MainAccounts.java"
   ],
   "video": ""
 }
