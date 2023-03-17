@@ -21,7 +21,7 @@ public class Game {
     rooms.add(new Room("Коридор"));
 
     commands.put("вперёд", Command.FORWARD);
-//    commands.put("вперед", Command.FORWARD); // так можно, но тогда её два раза выведет help()
+    commands.put("вперед", Command.FORWARD); // так можно, но тогда её два раза выведет help()
     commands.put("назад", Command.BACK);
     commands.put("влево", Command.LEFT);
     commands.put("вправо", Command.RIGHT);
