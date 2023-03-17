@@ -39,9 +39,10 @@ public abstract class Human {
 
   @Override
   public String toString() {
-    String result = name + " (" + age + ")";
+    String result = name + " (" + age + ")"; // "Иван" + " (" + 90 + ")" == "Иван (90)"
     if (retired) {
-      result += " (на пенсии)";
+      result += " (на пенсии)"; // result += " (на пенсии)" --> result = result + " (на пенсии)"
+      // --> result = "Иван (90)" + " (на пенсии)" = "Иван (90) (на пенсии)"
     }
     return result;
   }
