@@ -3,11 +3,13 @@ package people;
 public class Human {
 
   private String name;
-  private boolean retired;
+  protected boolean retired;
+  private int age;
 
   public Human(String name) {
     this.name = name;
     this.retired = false;
+    this.age = 0;
   }
 
   public String getName() {
@@ -22,10 +24,12 @@ public class Human {
     return retired;
   }
 
-  // сеттера для retired нет, но есть метод
-  // выйти на пенсию
-  public void retire() {
-    this.retired = true;
+  public int getAge() {
+    return age;
+  }
+
+  public void setAge(int age) {
+    this.age = age;
   }
 
   @Override

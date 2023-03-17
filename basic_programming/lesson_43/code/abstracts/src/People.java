@@ -1,4 +1,6 @@
-package people;
+import people.Human;
+import people.Man;
+import people.Woman;
 
 public class People {
 
