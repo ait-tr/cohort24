@@ -45,7 +45,11 @@ public class MainAccounts {
     List<Account> result = new ArrayList<>(n);
     for (int k = 1; k <= n; ++k) {
       System.out.println("Введите данные учётной записи №" + k + ":");
-      result.add(readAccount(br));
+      try {
+        result.add(readAccount(br));
+      } catch (InvalidEmail e) {
+        System.out.println("Не получилось добавить учётную запись: " + e.getMessage());
+      }
     }
     return result;
   }
