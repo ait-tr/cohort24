@@ -6,8 +6,13 @@ public class Account {
   private final String email;
   private int reputation;
 
+  // При попытке создать Account нужно выбрасывать собственное исключение,
+  // если в переданном адресе электронной почты нет символа `'@'`.
   public Account(String name, String email) {
     this.name = name;
+    if (!email.contains("@")) {
+      throw new InvalidEmail();
+    }
     this.email = email;
     reputation = 0;
   }
