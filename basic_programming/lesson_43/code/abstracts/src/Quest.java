@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import quest.Hero;
+import quest.Room;
 
 public class Quest {
 
@@ -12,5 +13,7 @@ public class Quest {
     System.out.print("Введите имя: ");
     String name = br.readLine();
     Hero mainHero = new Hero(name); // mainHero - главный персонаж игры
+
+    Room mainRoom = new Room("Главный зал");
   }
 }
