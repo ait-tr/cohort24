@@ -2,14 +2,17 @@ package quest;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Game {
 
   private Hero mainHero; // mainHero - главный персонаж игры
-  private List<Room> rooms;
+  private List<Room> rooms = new ArrayList<>();
   private Room current;
-  private List<String> commands;
+  private Map<String, Command> commands = new HashMap<>();
 
   public Game() {
     rooms.add(new Room("Зал"));
@@ -17,11 +20,11 @@ public class Game {
     rooms.add(new Room("Туалет"));
     rooms.add(new Room("Коридор"));
 
-    commands.add("Вперёд");
-    commands.add("Назад");
-    commands.add("Влево");
-    commands.add("Вправо");
-    commands.add("Выход");
+    commands.put("Вперёд", Command.FORWARD);
+    commands.put("Назад", Command.BACK);
+    commands.put("Влево", Command.LEFT);
+    commands.put("Вправо", Command.RIGHT);
+    commands.put("Выход", Command.EXIT);
   }
 
   public void start(BufferedReader br) throws IOException {
@@ -37,13 +40,14 @@ public class Game {
     boolean playing = true;
     while (playing) {
       help();
+      playing = false;
     }
   }
 
   public void help() {
     System.out.println("Возможные команды:");
-    for (int i = 0; i < commands.size(); ++i) {
-      System.out.println((i + 1) + ". " + commands.get(i));
+    for (String command : commands.keySet()) {
+      System.out.println("- " + command);
     }
   }
 }
