@@ -11,7 +11,7 @@ public class Account {
   public Account(String name, String email) {
     this.name = name;
     if (!email.contains("@")) {
-      throw new InvalidEmail();
+      throw new InvalidEmail(email);
     }
     this.email = email;
     reputation = 0;
