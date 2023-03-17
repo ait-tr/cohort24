@@ -6,4 +6,5 @@ public enum Command {
   LEFT,
   RIGHT,
   EXIT,
+  HELP,
 }
