@@ -8,7 +8,12 @@ public class People {
     Human husband = new Man("Иван");
     Human wife = new Woman("Мария");
     System.out.println(husband + " + " + wife);
-    husband.retire(); // муж уходит на пенсию
+    husband.retire(); // муж не уходит на пенсию - возраст 0
+    System.out.println("Муж не уходит на пенсию: " + husband);
+    husband.setAge(90);
+    System.out.println("Муж повзрослел: " + husband);
+    husband.retire(); // муж не уходит на пенсию - возраст 0
+    System.out.println("Муж уходит на пенсию: " + husband);
     System.out.println(husband + " + " + wife);
   }
 }

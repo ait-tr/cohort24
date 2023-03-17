@@ -39,10 +39,14 @@ public class Human {
 
   @Override
   public String toString() {
-    String result = name;
+    String result = name + " (" + age + ")";
     if (retired) {
       result += " (на пенсии)";
     }
     return result;
+  }
+
+  public void retire() {
+    // как бы "общий" выход на пенсию
   }
 }
