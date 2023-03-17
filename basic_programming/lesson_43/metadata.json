@@ -3,6 +3,19 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
+    "code/abstracts/src/homework_42/InvalidEmail.java",
+    "code/abstracts/src/homework_42/Account.java",
+    "code/abstracts/src/homework_42/MainAccounts.java",
+    "code/abstracts/src/people/Human.java",
+    "code/abstracts/src/people/Man.java",
+    "code/abstracts/src/people/Woman.java",
+    "code/abstracts/src/people/Child.java",
+    "code/abstracts/src/People.java",
+    "code/abstracts/src/quest/Hero.java",
+    "code/abstracts/src/quest/Room.java",
+    "code/abstracts/src/quest/Command.java",
+    "code/abstracts/src/quest/Game.java",
+    "code/abstracts/src/Quest.java"
   ],
   "video": ""
 }
