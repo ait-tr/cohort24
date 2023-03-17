@@ -18,12 +18,11 @@ public class Human {
     this.name = name;
   }
 
-  // геттер
   public boolean getRetired() {
     return retired;
   }
 
-  // сеттера нет, но есть метод
+  // сеттера для retired нет, но есть метод
   // выйти на пенсию
   public void retire() {
     this.retired = true;
