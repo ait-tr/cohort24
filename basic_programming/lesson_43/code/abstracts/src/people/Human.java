@@ -6,6 +6,11 @@ public class Human {
   protected boolean retired;
   private int age;
 
+  // члены класса нельзя перезаписать, как методы
+
+  // если сделать статический член класса и перезаписать ЕГО
+  // в потомке, то перезапишется член базового класса!
+
   public Human(String name) {
     this.name = name;
     this.retired = false;
