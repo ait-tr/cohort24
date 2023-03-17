@@ -28,4 +28,13 @@ public class Human {
   public void retire() {
     this.retired = true;
   }
+
+  @Override
+  public String toString() {
+    String result = name;
+    if (retired) {
+      result += " (на пенсии)";
+    }
+    return result;
+  }
 }
