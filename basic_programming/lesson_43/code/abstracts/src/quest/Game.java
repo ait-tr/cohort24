@@ -9,12 +9,19 @@ public class Game {
   private Hero mainHero; // mainHero - главный персонаж игры
   private List<Room> rooms;
   private Room current;
+  private List<String> commands;
 
   public Game() {
     rooms.add(new Room("Зал"));
     rooms.add(new Room("Кухня"));
     rooms.add(new Room("Туалет"));
     rooms.add(new Room("Коридор"));
+
+    commands.add("Вперёд");
+    commands.add("Назад");
+    commands.add("Влево");
+    commands.add("Вправо");
+    commands.add("Выход");
   }
 
   public void start(BufferedReader br) throws IOException {
@@ -27,6 +34,16 @@ public class Game {
   }
 
   public void mainCycle() {
-    // основной игровой цикл
+    boolean playing = true;
+    while (playing) {
+      help();
+    }
+  }
+
+  public void help() {
+    System.out.println("Возможные команды:");
+    for (int i = 0; i < commands.size(); ++i) {
+      System.out.println((i + 1) + ". " + commands.get(i));
+    }
   }
 }
