@@ -10,5 +10,7 @@ public interface Alive {
 
   void increaseHealth(int difference); // увеличить здоровье на difference
 
-  void levelUp(); // поднять уровень персонажа
+  default void levelUp() { // поднять уровень персонажа
+    System.out.println("поднять уровень персонажа");
+  }
 }

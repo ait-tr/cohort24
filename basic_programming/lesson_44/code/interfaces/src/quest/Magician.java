@@ -15,6 +15,14 @@ public class Magician implements Alive, Wizard {
 
   }
 
+  // В случае конфликтующих default описаний методов в интерфейсе, мы ОБЯЗАНЫ
+  // перезаписать этот метод в дочернем классе и ЯВНО сказать, что именно мы хотим сделать
+  @Override
+  public void levelUp() {
+    Alive.super.levelUp(); // метод levelUp из интерфейса Alive
+    Wizard.super.levelUp(); // метод levelUp из интерфейса Wizard
+  }
+
   @Override
   public void decreaseHealth(int difference) {
 
@@ -22,16 +30,11 @@ public class Magician implements Alive, Wizard {
 
   @Override
   public int getMana() {
-    return 0;
+    return Wizard.super.getMana();
   }
 
   @Override
   public void tryCharm(String charmName) {
-
-  }
-
-  @Override
-  public void levelUp() {
 
   }
 }
