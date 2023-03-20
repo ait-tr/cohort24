@@ -22,6 +22,9 @@ public class Pager implements Messenger {
 
   @Override
   public void sendMessage(String message, String address) {
-    System.out.println("Пейджер: вы отправили сообщение '" + message + "' адресату " + address);
+    // аргумент метода address "закрыл" (hides) собой атрибут this.address
+    System.out.println(
+        "Пейджер: вы отправили сообщение '" + message + "' c адреса " + this.address + " по адресу "
+            + address);
   }
 }
