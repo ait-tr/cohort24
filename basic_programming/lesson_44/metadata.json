@@ -1,0 +1,23 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/interfaces/src/homework_43/House.java",
+    "code/interfaces/src/homework_43/Mansion.java",
+    "code/interfaces/src/homework_43/Apartment.java",
+    "code/interfaces/src/homework_43/MainHomework.java",
+    "code/interfaces/src/quest/Alive.java",
+    "code/interfaces/src/quest/Wizard.java",
+    "code/interfaces/src/quest/Magician.java",
+    "code/interfaces/src/quest/UndeadMagician.java",
+    "code/interfaces/src/quest/QuestMain.java",
+    "code/interfaces/src/communications/Messenger.java",
+    "code/interfaces/src/communications/Phone.java",
+    "code/interfaces/src/communications/Pager.java",
+    "code/interfaces/src/communications/RotaryPhone.java",
+    "code/interfaces/src/communications/Smartphone.java",
+    "code/interfaces/src/communications/CommunicationsRunner.java"
+  ],
+  "video": ""
+}
