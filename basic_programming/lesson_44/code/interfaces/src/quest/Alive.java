@@ -1,10 +1,14 @@
 package quest;
 
-// абстрактный класс "Живое существо" - что-то, у чего есть здоровье
-public abstract class Alive {
+// интерфейс "Живое существо" - что-то, у чего есть здоровье
+// интерфейс - абстрактный набор (абстрактных) публичных методов
+public interface Alive {
 
-  public abstract int getHealth(); // получить здоровье персонажа
-  public abstract void decreaseHealth(int difference);  // уменьшить здоровье на difference
-  public abstract void increaseHealth(int difference); // увеличить здоровье на difference
-  public abstract void levelUp(); // поднять уровень персонажа
+  int getHealth(); // получить здоровье персонажа
+
+  void decreaseHealth(int difference);  // уменьшить здоровье на difference
+
+  void increaseHealth(int difference); // увеличить здоровье на difference
+
+  void levelUp(); // поднять уровень персонажа
 }

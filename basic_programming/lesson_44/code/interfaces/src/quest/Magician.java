@@ -1,6 +1,9 @@
 package quest;
 
-public class Magician extends Alive, Wizard {
+// extends (расширяет) - для класса
+// implements (реализует) - для интерфейса
+// Один класс может реализовывать несколько интерфейсов одновременно
+public class Magician implements Alive, Wizard {
 
   @Override
   public int getHealth() {
@@ -24,6 +27,11 @@ public class Magician extends Alive, Wizard {
 
   @Override
   public void tryCharm(String charmName) {
+
+  }
+
+  @Override
+  public void levelUp() {
 
   }
 }
