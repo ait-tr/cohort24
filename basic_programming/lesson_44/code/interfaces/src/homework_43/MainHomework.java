@@ -26,5 +26,9 @@ public class MainHomework {
     houses.add(new Mansion("ул. Строителей, д. 1"));
     houses.add(new Mansion("ул. Читателей, д. 2"));
     houses.add(new Apartment("ул. Программистов, д. 101", 2));
+
+    for (House house : houses) {
+      System.out.println(house);
+    }
   }
 }
