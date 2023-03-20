@@ -20,4 +20,9 @@ public class Apartment extends House {
   public String toString() {
     return "Многоквартирный дом по адресу " + getAddress() + ", " + entrances + " подъездов";
   }
+
+  @Override
+  public void destroy() {
+    System.out.println("Вы снесли многоквартирный дом. " + entrances + " подъездов!");
+  }
 }

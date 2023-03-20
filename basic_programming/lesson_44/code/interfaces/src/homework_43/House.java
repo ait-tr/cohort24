@@ -24,4 +24,7 @@ public abstract class House {
   public String toString() {
     return "Дом по адресу " + address;
   }
+
+  // Добавьте классу "Дом" виртуальный метод "снести".
+  public abstract void destroy();
 }
