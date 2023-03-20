@@ -7,5 +7,8 @@ public class CommunicationsRunner {
     // new Messenger() написать нельзя; Messenger - это интерфейс
     Pager testPager = new Pager("Тестовый исходный адрес");
     testPager.sendMessage("Тестовое сообщение", "кому-то");
+
+    RotaryPhone testPhone = new RotaryPhone();
+    testPhone.call("112");
   }
 }
