@@ -1,5 +1,8 @@
 package homework_43;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainHomework {
 
   // Создайте абстрактный класс "Дом". В качестве аргумента конструктора принимайте адрес.
@@ -19,5 +22,9 @@ public class MainHomework {
   // Выведите информацию о домах в списке с использованием цикла `for-each`.
   public static void main(String[] args) {
 
+    List<House> houses = new ArrayList<>();
+    houses.add(new Mansion("ул. Строителей, д. 1"));
+    houses.add(new Mansion("ул. Читателей, д. 2"));
+    houses.add(new Apartment("ул. Программистов, д. 101", 2));
   }
 }
