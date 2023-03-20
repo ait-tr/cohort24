@@ -15,4 +15,9 @@ public class Apartment extends House {
   public int getEntrances() {
     return entrances;
   }
+
+  @Override
+  public String toString() {
+    return "Многоквартирный дом по адресу " + getAddress() + ", " + entrances + " подъездов";
+  }
 }

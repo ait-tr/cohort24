@@ -7,5 +7,8 @@ public class Mansion extends House {
     super(address);
   }
 
-
+  @Override
+  public String toString() {
+    return "Частный дом по адресу " + getAddress();
+  }
 }

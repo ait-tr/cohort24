@@ -3,7 +3,7 @@ package homework_43;
 // Создайте абстрактный класс "Дом".
 public abstract class House {
 
-  String address;
+  private String address;
 
   // В качестве аргумента конструктора принимайте адрес.
   public House(String address) {
@@ -18,5 +18,10 @@ public abstract class House {
 
   public String getAddress() {
     return address;
+  }
+
+  @Override
+  public String toString() {
+    return "Дом по адресу " + address;
   }
 }
