@@ -41,5 +41,13 @@ public class MainHomework {
     for (int i = 0; i < houses.size(); ++i) {
       houses.get(i).destroy();
     }
+
+    for (int i = 0; i < houses.size(); ++i) {
+      houses.get(i).destroy();
+    }
+
+    for (House house : houses) {
+      System.out.println(house);
+    }
   }
 }
