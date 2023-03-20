@@ -8,7 +8,11 @@ public class CommunicationsRunner {
     Pager testPager = new Pager("Тестовый исходный адрес");
     testPager.sendMessage("Тестовое сообщение", "кому-то");
 
-    RotaryPhone testPhone = new RotaryPhone();
+    // При объявлении типа переменных можно использовать интерфейсы, как и абстрактные классы.
+    // Как всегда, Java будет про эту переменную знать только то, что описано в её типе:
+    // в случае с интерфейсом - только про методы из этого интерфейса
+    Phone testPhone = new RotaryPhone();
     testPhone.call("112");
+    // testPhone.endCall(); // так нельзя - интерфейс Phone ничего не знает про метод `endCall()`
   }
 }
