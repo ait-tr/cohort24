@@ -8,4 +8,8 @@ public interface Messenger {
   // геттер не нужен (public), сеттера быть не может
 
   void sendMessage(String message, String address);
+
+  default void sendMessage(String address) {
+    sendMessage(DEFAULT_MESSAGE, address);
+  }
 }
