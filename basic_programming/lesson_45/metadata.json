@@ -1,0 +1,20 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/comparable/src/homework_44/CanFly.java",
+    "code/comparable/src/homework_44/CanRun.java",
+    "code/comparable/src/homework_44/CanSwim.java",
+    "code/comparable/src/homework_44/Superman.java",
+    "code/comparable/src/homework_44/Human.java",
+    "code/comparable/src/homework_44/Duck.java",
+    "code/comparable/src/homework_44/Penguin.java",
+    "code/comparable/src/homework_44/Plane.java",
+    "code/comparable/src/homework_44/HomeworkMain.java",
+    "code/comparable/src/collections/Main.java",
+    "code/comparable/src/collections/StudentDatabase.java",
+    "code/comparable/src/collections/Student.java"
+  ],
+  "video": ""
+}
