@@ -32,6 +32,7 @@ public class Student implements Comparable<Student> {
     return name + ": " + score;
   }
 
+  // вариант 1 - сортировка по именам
   @Override
   public int compareTo(Student other) {
     // returns a negative integer, zero, or a positive integer as this object is less than,
@@ -43,6 +44,18 @@ public class Student implements Comparable<Student> {
     // если this < other - возвращаем любое отрицательное число (например, -1)
     // если this == other - возвращаем 0
     // если this > other - возвращаем любое положительное число (например, +1)
-
+    // условие "x < y" равносильно условию "x.compareTo(y) < 0"
+    if (/*this.*/name.compareTo(other.name) < 0) {
+      // если имя this меньше (раньше по алфавиту), чем имя other, то и студент "меньше" -
+      // должен быть раньше в списке
+      return -1;
+    }
+    if (/*this.*/name.compareTo(other.name) > 0) {
+      // если имя this больше (позже по алфавиту), чем имя other, то и студент "больше" -
+      // должен быть позже в списке
+      return 1;
+    }
+    // Если мы сюда попали, то имена совпадают. Можно вернуть 0
+    return 0;
   }
 }
