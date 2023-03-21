@@ -11,6 +11,8 @@ package collections;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
 
 // вывести на экран:
 // вариант 1: информацию о студентах в алфавитном порядке
@@ -48,5 +50,13 @@ public class StudentDatabase {
 
     // хотелось бы:
     // List<Student> - не понятно, как сортировать
+    List<Student> students = new ArrayList<>();
+    for (int i = 0; i < n; ++i) {
+      students.add(Student.readStudent());
+    }
+
+    for (Student student : students) {
+      System.out.println(student);
+    }
   }
 }
