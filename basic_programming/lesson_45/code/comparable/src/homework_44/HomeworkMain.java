@@ -16,9 +16,24 @@ public class HomeworkMain {
 
   public static void main(String[] args) {
     Superman clarkKent = new Superman();
-
     clarkKent.fly();
     clarkKent.run();
     clarkKent.swim("бассейне");
+
+    Human kirill = new Human();
+    kirill.run();
+    kirill.swim("море");
+
+    Duck donald = new Duck();
+    donald.fly();
+    donald.run();
+    donald.swim("озере");
+
+    Penguin skipper = new Penguin();
+    skipper.run();
+    skipper.swim("океане");
+
+    Plane plane = new Plane();
+    plane.fly();
   }
 }
