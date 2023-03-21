@@ -4,7 +4,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Student {
+// интерфейс Comparable<Класс> позволяет сравнивать экземпляры Класса
+// реализация этого интерфейса в классе позволяет сортировать, искать минимум и максимум в коллекции
+public class Student implements Comparable<Student> {
 
   private String name; // имя
   private int score; // рейтинговый балл
@@ -28,5 +30,19 @@ public class Student {
   @Override
   public String toString() {
     return name + ": " + score;
+  }
+
+  @Override
+  public int compareTo(Student other) {
+    // returns a negative integer, zero, or a positive integer as this object is less than,
+    // equal to, or greater than the specified object.
+
+    // возвращает отрицательное целое число, ноль или положительное целое число,
+    // поскольку этот объект меньше, равен или больше указанного объекта.
+
+    // если this < other - возвращаем любое отрицательное число (например, -1)
+    // если this == other - возвращаем 0
+    // если this > other - возвращаем любое положительное число (например, +1)
+
   }
 }
