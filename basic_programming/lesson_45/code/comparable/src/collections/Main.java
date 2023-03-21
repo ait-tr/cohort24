@@ -23,11 +23,13 @@ public class Main {
     for (int i = 0; i < n; ++i) {
       numbers.add(Integer.parseInt(br.readLine()));
     }
+    System.out.println("numbers = " + numbers);
 
     // Collections.max(); // находит максимум - для всех Collection
-    System.out.println("numbers = " + numbers);
+    // выбросит NoSuchElementException, если коллекция пустая
     System.out.println("Collections.max(numbers) = " + Collections.max(numbers));
     // Collections.min(); // находит минимум - для всех Collection
+    // выбросит NoSuchElementException, если коллекция пустая
     System.out.println("Collections.min(numbers) = " + Collections.min(numbers));
 
     Collections.reverse(numbers); // разворачивает "в обратном порядке" - для всех List
@@ -41,5 +43,19 @@ public class Main {
     // в том числе Map.keySet() и Map.values()
 
     Map<String, String> phonebook = new HashMap<>();
+    phonebook.put("Андрей", "+123");
+    phonebook.put("eгор", "+234");
+    phonebook.put("Борис", "+345");
+
+    List<String> sortedNames = new ArrayList<>(phonebook.keySet()); // почти любую коллекцию можно
+    // создать из другой почти любой коллекции
+    Collections.sort(sortedNames);
+    for (String name : sortedNames) {
+      System.out.println(name + ": " + phonebook.get(name));
+    }
+
+    String word1 = "мама";
+    String word2 = "мыла";
+    System.out.println(word1.compareTo(word2));
   }
 }
