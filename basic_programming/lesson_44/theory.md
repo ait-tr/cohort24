@@ -59,7 +59,7 @@ Duck is not abstract and does not override abstract method swim() in Swimmable
 
 # `default` методы интерфейса
 
-Методы в интерфейсах j,sxyj «пустые», то есть они не имеют реализации.
+Методы в интерфейсах обычно «пустые», то есть они не имеют реализации.
 
 Причина этого проста: интерфейс **описывает** поведение, а не **реализует** его.
 
@@ -73,13 +73,13 @@ Duck is not abstract and does not override abstract method swim() in Swimmable
 ```java
 public interface Swimmable {
 
-  public default void swim() {
+  /*public*/ default void swim() {
     System.out.println("Плыви!");
   }
 
-  public void eat();
+  /*public*/ void eat();
 
-  public void run();
+  /*public*/ void run();
 }
 ```
 
