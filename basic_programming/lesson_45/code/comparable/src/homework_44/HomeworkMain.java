@@ -13,4 +13,12 @@ public class HomeworkMain {
   //
   // Реализуйте **соответствующие** интерфейсы из предыдущей задачи
   // в классах "Человек", "Утка", "Пингвин" и "Самолёт".
+
+  public static void main(String[] args) {
+    Superman clarkKent = new Superman();
+
+    clarkKent.fly();
+    clarkKent.run();
+    clarkKent.swim();
+  }
 }
