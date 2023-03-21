@@ -19,6 +19,6 @@ public class HomeworkMain {
 
     clarkKent.fly();
     clarkKent.run();
-    clarkKent.swim();
+    clarkKent.swim("бассейне");
   }
 }
