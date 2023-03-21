@@ -61,9 +61,13 @@ public class HomeworkMain {
     }
     System.out.println();
 
+    swim(swimmable, "чём-то глубоком");
+  }
+
+  public static void swim(List<CanSwim> swimmable, String place) {
     System.out.println("Все поплыли и я поплыл...");
     for (CanSwim swimmingObject : swimmable) {
-      swimmingObject.swim("чём-то жидком");
+      swimmingObject.swim(place);
     }
   }
 }
