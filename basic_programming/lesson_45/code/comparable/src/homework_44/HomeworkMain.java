@@ -44,13 +44,26 @@ public class HomeworkMain {
     Plane plane = new Plane();
     flyable.add(plane);
 
+    System.out.println("Все полетели и я полетел!");
     for (CanFly flyingObject : flyable) {
       flyingObject.fly();
       // flyingObject.run(); // ошибка, мы ничего не знаем про run, у нас List<CanFly>
       if (flyingObject instanceof Superman superman) {
-        System.out.println("ЭТО БЫЛ СУПЕРМЕН! Он умеет бегать");
+        System.out.print("ЭТО БЫЛ СУПЕРМЕН! Он умеет бегать: ");
         superman.run();
       }
+    }
+    System.out.println();
+
+    System.out.println("Все побежали и я побежал!");
+    for (CanRun runningObject : runnable) {
+      runningObject.run();
+    }
+    System.out.println();
+
+    System.out.println("Все поплыли и я поплыл...");
+    for (CanSwim swimmingObject : swimmable) {
+      swimmingObject.swim("чём-то жидком");
     }
   }
 }
