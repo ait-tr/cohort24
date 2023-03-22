@@ -1,3 +1,5 @@
+package students;
+
 import java.util.Comparator;
 
 // Сравниватель студентов по убыванию рейтинга
