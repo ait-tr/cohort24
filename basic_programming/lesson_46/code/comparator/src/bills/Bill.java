@@ -3,18 +3,23 @@ package bills;
 public class Bill {
 
   private final String service; // услуга
-  private final double amount; // сумма оплаты
+  private final double cost; // сумма оплаты
 
-  public Bill(String service, double amount) {
+  public Bill(String service, double cost) {
     this.service = service;
-    this.amount = amount;
+    this.cost = cost;
   }
 
   public String getService() {
     return service;
   }
 
-  public double getAmount() {
-    return amount;
+  public double getCost() {
+    return cost;
+  }
+
+  @Override
+  public String toString() {
+    return String.format("Счёт за услугу \"%s\": %.2f", service, cost);
   }
 }
