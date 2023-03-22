@@ -1,6 +1,6 @@
 package homework_45;
 
-public class Book {
+public class Book implements Comparable<Book> {
 
   private final String author;
   private final String title;
@@ -26,5 +26,16 @@ public class Book {
 
   public int getPages() {
     return pages;
+  }
+
+  // они должны сортироваться по авторам, а если авторы совпадают
+  // - по названиям (и там, и там - по алфавиту, "в словарном порядке").
+  @Override
+  public int compareTo(Book other) {
+    if (!author.equals(other.author)) { // если авторы не совпадают, то
+      return author.compareTo(other.author); // сравнение книг - то же самое, что сравнение авторов
+    }
+    // сюда мы попадаем, только если авторы совпали
+    return title.compareTo(other.title); // сравнение книг - то же самое, что сравнение названий
   }
 }
