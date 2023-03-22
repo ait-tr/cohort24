@@ -14,6 +14,16 @@ public class BillServiceComparator implements Comparator<Bill> {
     if (!service1.equals(service2)) {
       return service1.compareTo(service2);
     }
-    return (int) Math.signum(o1.getCost() - o2.getCost());
+    // getCost() - дробное число.
+    // Разница дробных чисел - дробное и, возможно, маленькое (до 1 цента - 0.01);
+    // если я эту разницу просто превращу в int, она может округлиться до нуля,
+    // а минус или плюс превращать в ноль никак нельзя - числа разные, а не одинаковые.
+    // Math.signum() - возвращает +1.0, 0.0 или -1.0 в зависимости от знака числа
+    // signum - лат. "знак" (а sign - англ. "знак")
+    // и его результат уже можно безопасно превращать в int
+//    return (int) Math.signum(o1.getCost() - o2.getCost());
+    Double cost1 = o1.getCost();
+    Double cost2 = o2.getCost();
+    return cost1.compareTo(cost2);
   }
 }
