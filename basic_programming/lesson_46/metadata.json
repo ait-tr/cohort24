@@ -3,6 +3,15 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
+    "code/comparator/src/homework_45/Book.java",
+    "code/comparator/src/homework_45/HomeworkMain.java",
+    "code/comparator/src/students/Student.java",
+    "code/comparator/src/students/StudentsByScoreDescending.java",
+    "code/comparator/src/students/StudentsRunner.java",
+    "code/comparator/src/bills/Bill.java",
+    "code/comparator/src/bills/BillServiceComparator.java",
+    "code/comparator/src/bills/BillCostComparator.java",
+    "code/comparator/src/bills/BillsRunner.java"
   ],
   "video": ""
 }
