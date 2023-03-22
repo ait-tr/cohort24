@@ -33,6 +33,8 @@ public class BillsRunner {
       bills.add(bill);
     }
 
+    System.out.println("Счета по алфавиту (по названию услуги):");
+    bills.sort(new BillServiceComparator(true));
     for (Bill b : bills) {
       System.out.println(b);
     }

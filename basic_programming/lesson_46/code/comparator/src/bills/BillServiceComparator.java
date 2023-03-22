@@ -4,6 +4,12 @@ import java.util.Comparator;
 
 public class BillServiceComparator implements Comparator<Bill> {
 
+  private boolean ignoreCase;
+
+  public BillServiceComparator(boolean ignoreCase) {
+    this.ignoreCase = ignoreCase;
+  }
+
   @Override
   public int compare(Bill o1, Bill o2) {
 //    if (!o1.getService().equals(o2.getService())) {
@@ -11,6 +17,10 @@ public class BillServiceComparator implements Comparator<Bill> {
 //    }
     String service1 = o1.getService();
     String service2 = o2.getService();
+    if (ignoreCase) {
+      service1 = service1.toLowerCase();
+      service2 = service2.toLowerCase();
+    }
     if (!service1.equals(service2)) {
       return service1.compareTo(service2);
     }
