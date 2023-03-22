@@ -4,7 +4,7 @@ import java.util.Comparator;
 
 public class BillServiceComparator implements Comparator<Bill> {
 
-  private boolean ignoreCase;
+  private final boolean ignoreCase;
 
   public BillServiceComparator(boolean ignoreCase) {
     this.ignoreCase = ignoreCase;
