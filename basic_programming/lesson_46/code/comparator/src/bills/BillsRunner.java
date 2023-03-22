@@ -38,5 +38,11 @@ public class BillsRunner {
     for (Bill b : bills) {
       System.out.println(b);
     }
+
+    System.out.println("Счета по стоимости (по возрастанию):");
+    bills.sort(new BillCostComparator());
+    for (Bill b : bills) {
+      System.out.println(b);
+    }
   }
 }
