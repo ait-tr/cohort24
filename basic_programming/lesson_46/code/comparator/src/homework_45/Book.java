@@ -38,4 +38,13 @@ public class Book implements Comparable<Book> {
     // сюда мы попадаем, только если авторы совпали
     return title.compareTo(other.title); // сравнение книг - то же самое, что сравнение названий
   }
+
+  @Override
+  public String toString() {
+    return "Book{" +
+        "author='" + author + '\'' +
+        ", title='" + title + '\'' +
+        ", pages=" + pages +
+        '}';
+  }
 }
