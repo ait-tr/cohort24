@@ -67,8 +67,9 @@ public class Student implements Comparable<Student> {
     // если рейтинг меньше, то студент "больше" - в списке должен быть позже
     // если рейтинг больше, то студент "меньше" - в списке должен быть раньше
     // если рейтинг одинаковый, то студенты равны
-    return other.score - score; // return -(score - other.score);
+    return other.score - /*this.*/score; // return -(score - other.score);
     // для убывания по алфавиту:
 //    return -name.compareTo(other.name);
   }
+  // ИЛИ сортировка по возрастанию + reverse
 }
