@@ -38,9 +38,9 @@ public class StudentsRunner {
     // Collections.sort(list) - сортировка при помощи compareTo() - "натуральная сортировка"
     // Collections.sort(list, comparator) - сортировка при помощи компаратора
     // list.sort(comparator) - сортировка списка при помощи компаратора
-//    Comparator<Student> comparator = new StudentsByScoreDescending();
-//    Collections.sort(students, comparator);
-    students.sort(new StudentsByScoreDescending());
+    Comparator<Student> comparator = new StudentsByScoreDescending();
+    Collections.sort(students, comparator);
+//    students.sort(new StudentsByScoreDescending());
     // после sort список всегда "по возрастанию"
     System.out.println("По убыванию рейтинга:");
     for (Student s : students) {
@@ -48,11 +48,11 @@ public class StudentsRunner {
     }
 
     System.out.println("Худший ученик:");
-    System.out.println(Collections.max(students, new StudentsByScoreDescending()));
+    System.out.println(Collections.max(students, comparator));
     // max - самый большой - самый конец списка
 
     System.out.println("Лучший ученик:");
-    System.out.println(Collections.min(students, new StudentsByScoreDescending()));
+    System.out.println(Collections.min(students, comparator));
     // min - самый маленький - самое начало списка
   }
 }
