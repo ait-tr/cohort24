@@ -51,8 +51,24 @@ public class Student implements Comparable<Student> {
   // если this < other, то отрицательное
   // если this = other, то 0
   // если this > other, то положительное
+//  @Override
+//  public int compareTo(Student other) {
+//    return score - other.score;
+//  }
+
+  // по убыванию рейтинга
+  // для сортировки по убыванию вместо сортировки по возрастанию достаточно изменить знак
+  // результата compareTo():
+  // - больше превратится в меньше (5 превратится в -5)
+  // - равно останется равно (0 останется 0)
+  // - меньше превратится в больше (-7 превратится в 7)
   @Override
   public int compareTo(Student other) {
-    return score - other.score;
+    // если рейтинг меньше, то студент "больше" - в списке должен быть позже
+    // если рейтинг больше, то студент "меньше" - в списке должен быть раньше
+    // если рейтинг одинаковый, то студенты равны
+    return other.score - score; // return -(score - other.score);
+    // для убывания по алфавиту:
+//    return -name.compareTo(other.name);
   }
 }

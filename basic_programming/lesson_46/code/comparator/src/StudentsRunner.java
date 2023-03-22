@@ -10,7 +10,7 @@ public class StudentsRunner {
     students.add(new Student("Bob", 45));
     students.add(new Student("Nick", 40));
 
-//    Collections.sort(students);
+    Collections.sort(students);
     for (Student s : students) {
       System.out.println(s);
     }
