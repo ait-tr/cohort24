@@ -29,11 +29,6 @@ public class Student implements Comparable<Student> {
     return name + ": " + score;
   }
 
-  // по возрастанию рейтинга
-  // если this < other, то отрицательное
-  // если this = other, то 0
-  // если this > other, то положительное
-
   // Немного математики:
   // a < b  | +3
   // a + 3 < b + 3  -- одинаковая операция +/- к каждой части неравенства сохраняет неравенство
@@ -51,14 +46,13 @@ public class Student implements Comparable<Student> {
 
   // именно такое значение `x - y` (а точнее, `this - other`) и должно быть результатом
   // метода `compareTo()`
+
+  // по возрастанию рейтинга
+  // если this < other, то отрицательное
+  // если this = other, то 0
+  // если this > other, то положительное
   @Override
   public int compareTo(Student other) {
-    if (score < other.score) {
-      return -1;
-    }
-    if (score > other.score) {
-      return 1;
-    }
-    return 0;
+    return score - other.score;
   }
 }
