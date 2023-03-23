@@ -32,4 +32,18 @@ public class Book implements Comparable<Book> {
     }
     return title.compareTo(o.title);
   }
+
+  // если определили compareTo, значит, определили и "что такое равенство"
+  // значит, надо переопределить equals()
+  @Override
+  public boolean equals(Object obj) {
+    if (this == obj) {
+      return true;
+    }
+    if (!(obj instanceof Book other)) {
+      return false;
+    }
+    // дальше мы сравниваем Book this и Book other
+    return /*this.*/compareTo(other) == 0; // если compareTo вернул 0, то книги равны
+  }
 }
