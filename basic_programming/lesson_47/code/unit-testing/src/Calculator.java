@@ -1,6 +1,6 @@
 public class Calculator {
 
-  public static int add(int left, int right) {
+  public int add(int left, int right) {
     return left + right;
   }
 }
