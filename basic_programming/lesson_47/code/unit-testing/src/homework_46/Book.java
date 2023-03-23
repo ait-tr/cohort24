@@ -1,5 +1,7 @@
 package homework_46;
 
+import java.util.Objects;
+
 public class Book implements Comparable<Book> {
 
   private final String title;
@@ -55,5 +57,12 @@ public class Book implements Comparable<Book> {
     }
     // дальше мы сравниваем Book this и Book other
     return /*this.*/compareTo(other) == 0; // если compareTo вернул 0, то книги равны
+  }
+
+  // В идеальном мире все поля одновременно учитываются и в hashCode, и в equals, и в compareTo
+  // НИ ОДИН из этих трёх методов никак не связан с компаратором
+  @Override
+  public int hashCode() {
+    return Objects.hash(author, title, pages);
   }
 }
