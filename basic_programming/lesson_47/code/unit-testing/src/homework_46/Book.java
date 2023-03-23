@@ -30,7 +30,17 @@ public class Book implements Comparable<Book> {
     if (!author.equals(o.author)) {
       return author.compareTo(o.author);
     }
-    return title.compareTo(o.title);
+    if (!title.equals(o.title)) {
+      return title.compareTo(o.title);
+    }
+    return pages - o.pages; // добавили сравнение страниц для совпадения с equals и hashCode
+    // обычно hashCode использует все поля.
+    // в генераторе hashCode и equals можно выбрать, какие поля использовать
+    // ВАЖНО:
+    // - используемые в equals и hashCode поля должны учитываться в compareTo
+    // - compareTo() == 0 и equals() == true должны быть совпадающими условиями
+    // если эти пункты не выполняются, в программе возможны неожиданные баги -
+    // ошибки, которые очень сложно будет найти
   }
 
   // если определили compareTo, значит, определили и "что такое равенство"
