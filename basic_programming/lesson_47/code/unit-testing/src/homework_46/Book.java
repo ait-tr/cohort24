@@ -65,4 +65,9 @@ public class Book implements Comparable<Book> {
   public int hashCode() {
     return Objects.hash(author, title, pages);
   }
+
+  @Override
+  public String toString() {
+    return "Book{title='" + title + "', author='" + author + "', pages=" + pages + "}";
+  }
 }
