@@ -11,10 +11,12 @@
 - Вы делаете проект для выставки. Срок – от двух недель до месяца, ваша система – комбинация железа и софта, в начале проекта не до конца известно, что именно должно получиться в конце. Софт будет работать 1-2 дня на выставке
 - Вы всегда пишете код без ошибок, обладаете идеальной памятью и даром предвидения. Ваш код настолько крут, что изменяет себя сам, вслед за требованиями клиента. Иногда код объясняет клиенту, что его требования не нужно реализовывать
 
+**Тесты очень нужно писать в тестовых заданиях.**
+
 В первых трех случаях по объективным причинам (сжатые сроки, бюджеты, размытые цели или очень простые требования) вы не получите выигрыша от написания тестов.
 
 Последний случай рассмотрим отдельно. Я знаю только одного такого человека, и если вы не узнали себя на фото ниже, то у меня для вас плохие новости.
-![](img/63568c35676c4d929422ec8e42dd3563.jpg)
+![](https://github.com/ait-tr/cohort24/raw/8aeebe8206e129e6e4c2db178ca265283bbec1ed/basic_programming/lesson_47/img/63568c35676c4d929422ec8e42dd3563.jpg)
 
 **Любой долгосрочный проект без надлежащего покрытия тестами обречен рано или поздно быть переписанным с нуля.**
 
@@ -46,12 +48,17 @@
 
 Один из возможных способов именования методов такой: `[Тестируемый метод]_[Сценарий]_[Ожидаемое поведение]`.
 
-Предположим, что у нас есть класс `Calculator`, а у него есть метод `Sum`, который должен складывать два числа.
+Предположим, что у нас есть класс `Calculator`, а у него есть метод `sum`, который должен складывать два числа.
 В этом случае наш тестирующий класс будет выглядеть так:
 ```java
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
 public сlass CalculatorTests {
 
-  public void Sum_2Plus5_7Returned() {
+	@Test
+  public void sum_2Plus5_7Returned() {
     // …
   }
 }
@@ -63,10 +70,14 @@ public сlass CalculatorTests {
 
 Вернемся к примеру с калькулятором:
 ```java
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
 public class CalculatorTests {
 
   @Test
-	public void Sum_2Plus5_7Returned() {
+	public void sum_2Plus5_7Returned() {
 		// arrange
 		Calculator calc = new Calculator();
 	
@@ -80,10 +91,14 @@ public class CalculatorTests {
 ```
 Такая форма записи гораздо легче читается, чем
 ```java
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
 public class CalculatorTests {
 
   @Test
-	public void Sum_2Plus5_7Returned() {
+	public void sum_2Plus5_7Returned() {
 		assertEquals(7, new Calculator().sum(2, 5));
 	}
 }
@@ -107,3 +122,12 @@ public class CalculatorTests {
 [Текстовая инструкция по настройке IntelliJ Idea (на английском)](https://www.jetbrains.com/help/idea/junit.html)
 
 [Видеоинструкция по настройке IntelliJ Idea (на английском)](https://www.youtube.com/watch?v=we3zJE3hlWE)
+
+## Волшебные импорты
+
+Эти два импорта заставят IntelliJ Idea предложить вам установить JUnit:
+```java
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+```

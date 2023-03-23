@@ -3,6 +3,13 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
+    "code/unit-testing/src/homework_46/Book.java",
+    "code/unit-testing/src/homework_46/BooksRunner.java",
+    "code/unit-testing/src/homework_46/BookTitleAuthorComparator.java",
+    "code/unit-testing/src/Calculator.java",
+    "code/unit-testing/src/CalculatorTests.java",
+    "code/unit-testing/src/BookAuthorPagesComparator.java",
+    "code/unit-testing/src/BookTests.java"
   ],
   "video": ""
 }
