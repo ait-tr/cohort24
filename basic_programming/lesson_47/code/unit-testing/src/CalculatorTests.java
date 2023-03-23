@@ -17,5 +17,8 @@ public class CalculatorTests {
     // assertEquals(expected, actual)
     // предположитьРавенство(ожидание, реальность)
     assertEquals(7, result);
+
+    // все три этапа в одной строке:
+    assertEquals(4, new Calculator().add(2, 2));
   }
 }
