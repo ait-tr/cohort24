@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 // Проверьте краевые случаи, предусмотрите разные варианты.
 public class BookTitleAuthorComparatorTests {
 
-  private Comparator<Book> comparator = new BookTitleAuthorComparator();
+  private final Comparator<Book> comparator = new BookTitleAuthorComparator();
 
   @Test
   public void differentTitleComparison() {
@@ -75,5 +75,23 @@ public class BookTitleAuthorComparatorTests {
     // assert
     assertEquals(0, result);
     assertEquals(0, result2);
+  }
+
+  @Test
+  public void differentFieldsComparison() {
+    // сравниваем две книги с разными полями
+    // проверяем, что приоритет остаётся за авторами
+
+    // arrange
+    Book book1 = new Book("A", "D", 26);
+    Book book2 = new Book("B", "C", 25);
+
+    // act
+    int result = comparator.compare(book1, book2);
+    int result2 = comparator.compare(book2, book1);
+
+    // assert
+    assertTrue(result < 0);
+    assertTrue(result2 > 0);
   }
 }
