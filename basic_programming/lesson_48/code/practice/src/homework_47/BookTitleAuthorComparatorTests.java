@@ -1,6 +1,7 @@
 package homework_47;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrowsExactly;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.ArrayList;
@@ -178,6 +179,26 @@ public class BookTitleAuthorComparatorTests {
   }
 
   // можно запретить null в конструкторе или проверить сравнение null здесь
+  @Test
+  public void nullTitle() {
+    // arrange
+    Book book1 = new Book("A", null, 1);
+    Book book2 = new Book("B", "B", 2);
+
+    // act-assert - проверяем исключение
+    assertThrowsExactly(NullPointerException.class, () -> comparator.compare(book1, book2));
+  }
+
+  @Test
+  public void sameAuthorNullTitle() {
+    // arrange
+    Book book1 = new Book(null, "A", 1);
+    Book book2 = new Book(null, "A", 2);
+
+    // act-assert - проверяем исключение
+    assertThrowsExactly(NullPointerException.class, () -> comparator.compare(book1, book2));
+  }
+
   // вообще проверять сортировку не нужно, если вы предусмотрели все варианты простых сравнений
 
   @Test
