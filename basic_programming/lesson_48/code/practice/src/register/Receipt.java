@@ -8,7 +8,7 @@ public class Receipt {
   private final List<ReceiptLine> lines = new ArrayList<>();
 
   public void addLine() {
-    System.out.println("Добавляем товар в чек");
+    System.out.println("Добавляем товар в чек"); // TODO
   }
 
   public boolean isEmpty() {
