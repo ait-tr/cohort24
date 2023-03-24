@@ -94,4 +94,53 @@ public class BookTitleAuthorComparatorTests {
     assertTrue(result < 0);
     assertTrue(result2 > 0);
   }
+
+  // проверяем краевые случаи
+  @Test
+  public void emptyTitleComparison() {
+    // arrange
+    Book book1 = new Book("A", "", 25);
+    Book book2 = new Book("B", "", 25);
+
+    // act
+    int result = comparator.compare(book1, book2);
+    int result2 = comparator.compare(book2, book1);
+
+    // assert
+    assertTrue(result < 0);
+    assertTrue(result2 > 0);
+  }
+
+  @Test
+  public void emptyTitleAuthorComparison() {
+    // arrange
+    Book book1 = new Book("", "", 25);
+    Book book2 = new Book("", "", 25);
+
+    // act
+    int result = comparator.compare(book1, book2);
+    int result2 = comparator.compare(book2, book1);
+
+    // assert
+    assertEquals(0, result);
+    assertEquals(0, result2);
+  }
+
+  @Test
+  public void emptyFieldsComparison() {
+    // arrange
+    Book book1 = new Book("", "", 0);
+    Book book2 = new Book("", "", 0);
+
+    // act
+    int result = comparator.compare(book1, book2);
+    int result2 = comparator.compare(book2, book1);
+
+    // assert
+    assertEquals(0, result);
+    assertEquals(0, result2);
+  }
+
+  // можно запретить null в конструкторе или проверить сравнение null здесь
+
 }
