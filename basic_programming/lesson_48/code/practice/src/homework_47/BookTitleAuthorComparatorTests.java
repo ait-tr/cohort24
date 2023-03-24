@@ -3,7 +3,9 @@ package homework_47;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
 import org.junit.jupiter.api.Test;
 
 // Напишите автотесты с использованием JUnit для BookTitleAuthorComparator.
@@ -176,5 +178,32 @@ public class BookTitleAuthorComparatorTests {
   }
 
   // можно запретить null в конструкторе или проверить сравнение null здесь
+  // вообще проверять сортировку не нужно, если вы предусмотрели все варианты простых сравнений
 
+  @Test
+  public void sort() {
+    // arrange
+    Book book1 = new Book("A", "A", 1);
+    Book book2 = new Book("A", "B", 1);
+    Book book3 = new Book("B", "A", 1);
+    Book book4 = new Book("B", "B", 1);
+
+    List<Book> actual = new ArrayList<>();
+    actual.add(book1);
+    actual.add(book2);
+    actual.add(book3);
+    actual.add(book4);
+
+    List<Book> expected = new ArrayList<>();
+    expected.add(book1);
+    expected.add(book3);
+    expected.add(book2);
+    expected.add(book4);
+
+    // act
+    actual.sort(comparator);
+
+    // assert
+    assertEquals(expected, actual);
+  }
 }
