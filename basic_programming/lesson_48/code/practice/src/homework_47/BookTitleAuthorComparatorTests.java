@@ -60,5 +60,20 @@ public class BookTitleAuthorComparatorTests {
     assertTrue(result2 > 0);
   }
 
+  @Test
+  public void sameTitleAuthorDifferentPagesComparison() {
+    // сравниваем две книги с одинаковыми названиями и авторами, но разным количеством страниц
 
+    // arrange
+    Book book1 = new Book("Author", "Title", 25);
+    Book book2 = new Book("Author", "Title", 26);
+
+    // act
+    int result = comparator.compare(book1, book2);
+    int result2 = comparator.compare(book2, book1);
+
+    // assert
+    assertEquals(0, result);
+    assertEquals(0, result2);
+  }
 }
