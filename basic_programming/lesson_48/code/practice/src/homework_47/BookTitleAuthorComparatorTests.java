@@ -45,7 +45,7 @@ public class BookTitleAuthorComparatorTests {
 
   @Test
   public void sameTitleDifferentAuthorComparison() {
-    // сравниваем две книги с разными названиями
+    // сравниваем две книги с одинаковыми названиями и разными авторами
 
     // arrange
     Book book1 = new Book("A", "Title", 25);
@@ -59,4 +59,6 @@ public class BookTitleAuthorComparatorTests {
     assertTrue(result < 0);
     assertTrue(result2 > 0);
   }
+
+
 }
