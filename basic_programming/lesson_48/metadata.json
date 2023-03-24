@@ -3,6 +3,17 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
+    "code/practice/src/homework_47/Book.java",
+    "code/practice/src/homework_47/BookTitleAuthorComparator.java",
+    "code/practice/src/homework_47/BooksRunner.java",
+    "code/practice/src/homework_47/BookTitleAuthorComparatorTests.java",
+    "code/practice/src/Main.java",
+    "code/practice/src/register/Register.java",
+    "code/practice/src/register/RegisterTests.java",
+    "code/practice/src/register/Receipt.java",
+    "code/practice/src/register/ReceiptTests.java",
+    "code/practice/src/register/ReceiptLine.java",
+    "code/practice/src/register/ReceiptLineTests.java"
   ],
   "video": ""
 }
