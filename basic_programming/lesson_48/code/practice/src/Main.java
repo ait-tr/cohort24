@@ -1,3 +1,6 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -29,7 +32,35 @@ public class Main {
   // - выводить общий отчёт по чекам (с общей суммой):
   //   - сортировать чеки по количеству товаров
   //   - сортировать чеки по сумме чека
-  public static void main(String[] args) {
+  public static void main(String[] args) throws IOException {
+    Command firstCommand = readCommand();
+    System.out.println(firstCommand);
+  }
 
+  public static void printMenu() {
+    for (Command command : commands.keySet()) {
+      System.out.println(command + ": " + commands.get(command));
+    }
+  }
+
+  public static Command readCommand() throws IOException {
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+    printMenu();
+    System.out.print("Введите команду: ");
+    String command = br.readLine().toUpperCase();
+
+    Command result = null;
+    while (result == null) { // пока команда не установлена
+      try {
+        result = Command.valueOf(command); // пытаемся установить команду
+      } catch (IllegalArgumentException e) {
+        System.out.println("Некорректная команда: " + command);
+        System.out.print("Введите корректную команду: ");
+        command = br.readLine().toUpperCase();
+      }
+    }
+
+    return result;
   }
 }
