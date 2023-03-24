@@ -42,4 +42,21 @@ public class BookTitleAuthorComparatorTests {
 //
 //    assertTrue(result1 * result2 < 0); // результаты должны получиться с разными знаками
 //  }
+
+  @Test
+  public void sameTitleDifferentAuthorComparison() {
+    // сравниваем две книги с разными названиями
+
+    // arrange
+    Book book1 = new Book("A", "Title", 25);
+    Book book2 = new Book("B", "Title", 25);
+
+    // act
+    int result = comparator.compare(book1, book2);
+    int result2 = comparator.compare(book2, book1);
+
+    // assert
+    assertTrue(result < 0);
+    assertTrue(result2 > 0);
+  }
 }
