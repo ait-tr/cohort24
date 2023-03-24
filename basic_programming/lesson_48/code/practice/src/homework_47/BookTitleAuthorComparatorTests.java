@@ -27,4 +27,15 @@ public class BookTitleAuthorComparatorTests {
     // assert
     assertTrue(result < 0);
   }
+
+  @Test
+  public void consistency() {
+    Book book1 = new Book("Author 1", "Title 1", 1);
+    Book book2 = new Book("Author 2", "Title 2", 2);
+
+    int result1 = comparator.compare(book1, book2);
+    int result2 = comparator.compare(book2, book1);
+
+    assertEquals(result1, -result2); // результаты должны получиться с разными знаками
+  }
 }
