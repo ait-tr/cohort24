@@ -7,16 +7,18 @@ import java.util.Map;
 public class Main {
 
   enum Command {
-    CLOSE, // закрытие чека должно открыть следующий
+    NEW, // закрытие чека должно открыть следующий
     ADD, // добавить товар (строку) в чек
     REPORT, // вывести отчёт
+    EXIT, // выход из программы
   }
 
   private static final Map<Command, String> commands = new HashMap<>();
   static { // так можно задать статический константный словарь (Map)
-    commands.put(Command.CLOSE, "Начать новый чек");
+    commands.put(Command.NEW, "Начать новый чек");
     commands.put(Command.ADD, "Добавить позицию в чек");
     commands.put(Command.REPORT, "Вывести отчёт");
+    commands.put(Command.EXIT, "Выход");
   }
 
   // Тесты с подстановкой ввода и проверкой вывода:
@@ -33,13 +35,23 @@ public class Main {
   //   - сортировать чеки по количеству товаров
   //   - сортировать чеки по сумме чека
   public static void main(String[] args) throws IOException {
-    Command firstCommand = readCommand();
-    System.out.println(firstCommand);
+    Command command = readCommand();
+    while (command != Command.EXIT) {
+      switch (command) {
+        case ADD -> System.out.println("Добавляем товар в чек");
+        case NEW -> System.out.println("Начинаем новый чек");
+        case REPORT -> System.out.println("Выводим отчёт");
+      }
+      command = readCommand(); // команда EXIT просто завершит цикл
+    }
+    System.out.println("До свидания!");
   }
 
   public static void printMenu() {
+    System.out.println(); // пустая строка для красоты
+    System.out.println("Список команд:");
     for (Command command : commands.keySet()) {
-      System.out.println(command + ": " + commands.get(command));
+      System.out.println("- " + command + ": " + commands.get(command));
     }
   }
 
@@ -47,6 +59,7 @@ public class Main {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     printMenu();
+    System.out.println(); // пустая строка для красоты
     System.out.print("Введите команду: ");
     String command = br.readLine().toUpperCase();
 
@@ -61,6 +74,7 @@ public class Main {
       }
     }
 
+    System.out.println(); // пустая строка для красоты
     return result;
   }
 }
