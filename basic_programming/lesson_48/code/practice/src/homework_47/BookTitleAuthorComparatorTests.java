@@ -141,6 +141,40 @@ public class BookTitleAuthorComparatorTests {
     assertEquals(0, result2);
   }
 
+  @Test
+  public void titleAndEmptyTitleComparison() {
+    // сравниваем две книги с разными названиями
+
+    // arrange
+    Book book1 = new Book("Author", "", 25);
+    Book book2 = new Book("Author", "B", 25);
+
+    // act
+    int result = comparator.compare(book1, book2);
+    int result2 = comparator.compare(book2, book1);
+
+    // assert
+    assertTrue(result < 0);
+    assertTrue(result2 > 0);
+  }
+
+  @Test
+  public void sameTitleAuthorAndEmptyAuthorComparison() {
+    // сравниваем две книги с одинаковыми названиями и разными авторами
+
+    // arrange
+    Book book1 = new Book("", "Title", 25);
+    Book book2 = new Book("B", "Title", 25);
+
+    // act
+    int result = comparator.compare(book1, book2);
+    int result2 = comparator.compare(book2, book1);
+
+    // assert
+    assertTrue(result < 0);
+    assertTrue(result2 > 0);
+  }
+
   // можно запретить null в конструкторе или проверить сравнение null здесь
 
 }
