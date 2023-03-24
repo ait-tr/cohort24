@@ -179,6 +179,7 @@ public class BookTitleAuthorComparatorTests {
   }
 
   // можно запретить null в конструкторе или проверить сравнение null здесь
+  // запретить null в конструкторе: @NotNull или условие-стражник
   @Test
   public void nullTitle() {
     // arrange
