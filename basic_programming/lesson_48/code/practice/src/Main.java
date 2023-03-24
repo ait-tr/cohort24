@@ -35,12 +35,14 @@ public class Main {
   //   - сортировать чеки по количеству товаров
   //   - сортировать чеки по сумме чека
   public static void main(String[] args) throws IOException {
+    Register cashRegister = new Register();
+
     Command command = readCommand();
-    while (command != Command.EXIT) {
+    while (command != Command.EXIT) { // основной рабочий цикл программы, обрабатывающий команды
       switch (command) {
-        case ADD -> System.out.println("Добавляем товар в чек");
-        case NEW -> System.out.println("Начинаем новый чек");
-        case REPORT -> System.out.println("Выводим отчёт");
+        case ADD -> cashRegister.addLine();
+        case NEW -> cashRegister.newReceipt();
+        case REPORT -> cashRegister.printReport();
       }
       command = readCommand(); // команда EXIT просто завершит цикл
     }
