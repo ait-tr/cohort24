@@ -80,11 +80,11 @@ public class BookTitleAuthorComparatorTests {
   @Test
   public void differentFieldsComparison() {
     // сравниваем две книги с разными полями
-    // проверяем, что приоритет остаётся за авторами
+    // проверяем, что приоритет остаётся за названиями
 
     // arrange
-    Book book1 = new Book("A", "D", 26);
-    Book book2 = new Book("B", "C", 25);
+    Book book1 = new Book("D", "A", 26);
+    Book book2 = new Book("C", "B", 25);
 
     // act
     int result = comparator.compare(book1, book2);
