@@ -8,12 +8,14 @@ public class Register {
   private final List<Receipt> receipts = new ArrayList<>(); // уже закрытые, "готовые" чеки
   private Receipt current = new Receipt(); // текущий (открытый) чек
 
-  public void addLine() {
-    current.addLine();
+  public void addLine(ReceiptLine line) {
+    current.addLine(line);
   }
 
   private void closeCurrentReceipt() {
     if (current != null && !current.isEmpty()) {
+      System.out.println("=== Итог ===");
+      System.out.println(current);
       receipts.add(current); // добавляем "старый" текущий чек в список закрытых
       // текущий стал закрытым, поэтому указатель на текущий чек теперь показывает в никуда
       current = null;

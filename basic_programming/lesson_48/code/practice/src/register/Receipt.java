@@ -7,11 +7,23 @@ public class Receipt {
 
   private final List<ReceiptLine> lines = new ArrayList<>();
 
-  public void addLine() {
-    System.out.println("Добавляем товар в чек"); // TODO
+  public void addLine(ReceiptLine line) {
+    if (line == null) {
+      throw new IllegalArgumentException("Строка чека не может быть null");
+    }
+    lines.add(line);
   }
 
   public boolean isEmpty() {
     return lines.isEmpty();
+  }
+
+  @Override
+  public String toString() {
+    String result = "";
+    for (ReceiptLine line : lines) {
+      result += line + "\n";
+    }
+    return result;
   }
 }

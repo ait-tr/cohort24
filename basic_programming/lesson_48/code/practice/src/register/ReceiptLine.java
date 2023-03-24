@@ -1,5 +1,9 @@
 package register;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class ReceiptLine {
 
   private final String title;
@@ -14,7 +18,7 @@ public class ReceiptLine {
     }
     this.title = title;
     if (price <= 0) {
-      throw new IllegalArgumentException("Цена должна быть положительной: " + price);
+      throw new IllegalArgumentException("Стоимость должна быть положительной: " + price);
     }
     this.price = price;
   }
@@ -25,5 +29,21 @@ public class ReceiptLine {
 
   public int getPrice() {
     return price;
+  }
+
+  public static ReceiptLine readReceiptLine() throws IOException {
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+    System.out.print("Введите название позиции: ");
+    String title = br.readLine();
+    System.out.print("Введите стоимость: ");
+    int price = Integer.parseInt(br.readLine());
+
+    return new ReceiptLine(title, price);
+  }
+
+  @Override
+  public String toString() {
+    return title + ": " + price;
   }
 }

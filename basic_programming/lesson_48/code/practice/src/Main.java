@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
+import register.ReceiptLine;
 import register.Register;
 
 public class Main {
@@ -41,7 +42,10 @@ public class Main {
     Command command = readCommand();
     while (command != Command.EXIT) { // основной рабочий цикл программы, обрабатывающий команды
       switch (command) {
-        case ADD -> cashRegister.addLine();
+        case ADD -> {
+          ReceiptLine line = ReceiptLine.readReceiptLine();
+          cashRegister.addLine(line);
+        }
         case NEW -> cashRegister.newReceipt();
         case REPORT -> cashRegister.printReport();
       }
