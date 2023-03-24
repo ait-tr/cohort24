@@ -36,6 +36,6 @@ public class BookTitleAuthorComparatorTests {
     int result1 = comparator.compare(book1, book2);
     int result2 = comparator.compare(book2, book1);
 
-    assertEquals(result1, -result2); // результаты должны получиться с разными знаками
+    assertTrue(result1 * result2 < 0); // результаты должны получиться с разными знаками
   }
 }
