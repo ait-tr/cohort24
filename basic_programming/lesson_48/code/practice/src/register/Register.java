@@ -9,14 +9,15 @@ public class Register {
   private Receipt current = new Receipt(); // текущий (открытый) чек
 
   public void addLine() {
-    System.out.println("Добавляем товар в чек");
+    current.addLine();
   }
 
   public void newReceipt() {
-    // TODO проверка, что "старый" чек не пустой
-    receipts.add(current); // добавляем "старый" текущий чек в список закрытых
-    current = new Receipt(); // открываем ещё один (новый) чек
-    System.out.println("Начинаем новый чек");
+    if (!current.isEmpty()) {
+      receipts.add(current); // добавляем "старый" текущий чек в список закрытых
+      current = new Receipt(); // открываем ещё один (новый) чек
+    }
+    // если чек был пустым, ничего не произойдёт
   }
 
   public void printReport() {
