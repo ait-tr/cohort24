@@ -14,7 +14,7 @@ public class ReceiptLine {
     }
     this.title = title;
     if (price <= 0) {
-      throw new IllegalArgumentException("Цена должна быть положительной");
+      throw new IllegalArgumentException("Цена должна быть положительной: " + price);
     }
     this.price = price;
   }
