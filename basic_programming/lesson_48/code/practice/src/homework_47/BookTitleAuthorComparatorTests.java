@@ -1,6 +1,7 @@
 package homework_47;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.Comparator;
 import org.junit.jupiter.api.Test;
@@ -24,6 +25,6 @@ public class BookTitleAuthorComparatorTests {
     int result = comparator.compare(book1, book2);
 
     // assert
-    assertEquals(true, result < 0);
+    assertTrue(result < 0);
   }
 }
