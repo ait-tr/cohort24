@@ -69,4 +69,19 @@ public class RectangleAreaComparatorTests {
     assertEquals(0, res1); // rect1 == rect2
     assertEquals(0, res2); // rect2 == rect1
   }
+
+  @Test
+  public void sameRectangles() {
+    // arrange
+    Rectangle rect1 = new Rectangle(2, 3);
+    Rectangle rect2 = new Rectangle(2, 3);
+
+    // act
+    int res1 = comparator.compare(rect1, rect2);
+    int res2 = comparator.compare(rect2, rect1);
+
+    // assert
+    assertEquals(0, res1); // rect1 == rect2
+    assertEquals(0, res2); // rect2 == rect1
+  }
 }
