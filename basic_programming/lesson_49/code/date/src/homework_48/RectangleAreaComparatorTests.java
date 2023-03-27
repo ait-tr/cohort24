@@ -1,6 +1,7 @@
 package homework_48;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrowsExactly;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.Comparator;
@@ -83,5 +84,16 @@ public class RectangleAreaComparatorTests {
     // assert
     assertEquals(0, res1); // rect1 == rect2
     assertEquals(0, res2); // rect2 == rect1
+  }
+
+  @Test
+  public void nullRectangles() {
+    // arrange
+    Rectangle rect = new Rectangle(2, 3);
+
+    // act & assert
+    assertThrowsExactly(NullPointerException.class, () -> comparator.compare(null, rect));
+    assertThrowsExactly(NullPointerException.class, () -> comparator.compare(rect, null));
+    assertThrowsExactly(NullPointerException.class, () -> comparator.compare(null, null));
   }
 }
