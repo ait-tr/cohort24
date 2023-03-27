@@ -24,6 +24,7 @@ public class Rectangle {
 
   @Override
   public String toString() {
-    return "Rectangle {длина: " + length +  ", ширина: " + width + "}";
+    return "Rectangle {длина: " + length + ", ширина: " + width + "} (площадь: " + width * length
+        + ")";
   }
 }
