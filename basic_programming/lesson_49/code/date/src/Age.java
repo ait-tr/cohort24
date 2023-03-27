@@ -2,10 +2,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.GregorianCalendar;
 
-public class Main {
+public class Age {
 
   public static void main(String[] args) throws IOException {
     // Date - количество миллисекунд с момента 00:00:00 UTC 01.01.1970
