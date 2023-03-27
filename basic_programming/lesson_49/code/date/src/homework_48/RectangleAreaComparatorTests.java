@@ -23,4 +23,34 @@ public class RectangleAreaComparatorTests {
     assertTrue(res1 < 0); // rect1 < rect2
     assertTrue(res2 > 0); // rect2 > rect1
   }
+
+  @Test
+  public void lessFirstMoreSecondArea() {
+    // arrange
+    Rectangle rect1 = new Rectangle(2, 3);
+    Rectangle rect2 = new Rectangle(1, 7);
+
+    // act
+    int res1 = comparator.compare(rect1, rect2);
+    int res2 = comparator.compare(rect2, rect1);
+
+    // assert
+    assertTrue(res1 < 0); // rect1 < rect2
+    assertTrue(res2 > 0); // rect2 > rect1
+  }
+
+  @Test
+  public void lessSecondMoreFirstArea() {
+    // arrange
+    Rectangle rect1 = new Rectangle(3, 2);
+    Rectangle rect2 = new Rectangle(7, 1);
+
+    // act
+    int res1 = comparator.compare(rect1, rect2);
+    int res2 = comparator.compare(rect2, rect1);
+
+    // assert
+    assertTrue(res1 < 0); // rect1 < rect2
+    assertTrue(res2 > 0); // rect2 > rect1
+  }
 }
