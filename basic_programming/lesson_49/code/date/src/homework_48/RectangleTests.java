@@ -3,51 +3,57 @@ package homework_48;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrowsExactly;
 
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 public class RectangleTests {
 
-  @Test
-  public void width() {
+  @ParameterizedTest // тест с параметрами (аргументами метода)
+  // в качестве одного (обычно последнего) аргумента можно добавить expected - ожидаемое значение
+  // arrange
+  @CsvSource({
+      "3, 5", // строка с аргументами через запятую в порядке аргументов метода
+      "5, 3",
+      "3, 3",
+  })
+  public void width(int sideA, int sideB) {
     // arrange
-    int sideA = 3;
-    int sideB = 5;
     int width = Math.min(sideA, sideB);
 
     // arrange & act
-    Rectangle rect1 = new Rectangle(sideA, sideB);
-    Rectangle rect2 = new Rectangle(sideB, sideA);
-    Rectangle rect3 = new Rectangle(sideA, sideA);
+    Rectangle rect = new Rectangle(sideA, sideB);
 
     // assert
-    assertEquals(width, rect1.getWidth());
-    assertEquals(width, rect2.getWidth());
-    assertEquals(sideA, rect3.getWidth());
+    assertEquals(width, rect.getWidth());
   }
 
-  @Test
-  public void length() {
+  @ParameterizedTest
+  // arrange
+  @CsvSource({
+      "3, 5",
+      "5, 3",
+      "3, 3",
+  })
+  public void length(int sideA, int sideB) {
     // arrange
-    int sideA = 3;
-    int sideB = 5;
     int length = Math.max(sideA, sideB);
 
     // arrange & act
-    Rectangle rect1 = new Rectangle(sideA, sideB);
-    Rectangle rect2 = new Rectangle(sideB, sideA);
-    Rectangle rect3 = new Rectangle(sideA, sideA);
+    Rectangle rect = new Rectangle(sideA, sideB);
 
     // assert
-    assertEquals(length, rect1.getLength());
-    assertEquals(length, rect2.getLength());
-    assertEquals(sideA, rect3.getLength());
+    assertEquals(length, rect.getLength());
   }
 
-  @Test
-  public void area() {
+  @ParameterizedTest
+  // arrange
+  @CsvSource({
+      "3, 5",
+      "5, 3",
+      "3, 3",
+  })
+  public void area(int sideA, int sideB) {
     // arrange
-    int sideA = 3;
-    int sideB = 5;
     int area = sideA * sideB;
 
     // arrange & act
@@ -57,17 +63,25 @@ public class RectangleTests {
     assertEquals(area, rect.getArea());
   }
 
-  @Test
-  public void zeroSides() {
-    assertThrowsExactly(IllegalArgumentException.class, () -> new Rectangle(0, 3));
-    assertThrowsExactly(IllegalArgumentException.class, () -> new Rectangle(3, 0));
-    assertThrowsExactly(IllegalArgumentException.class, () -> new Rectangle(0, 0));
+  @ParameterizedTest
+  @CsvSource({
+      "0, 3",
+      "3, 0",
+      "0, 0",
+  })
+  public void zeroSides(int sideA, int sideB) {
+    assertThrowsExactly(IllegalArgumentException.class, () -> new Rectangle(sideA, sideB));
   }
 
-  @Test
-  public void negativeSides() {
-    assertThrowsExactly(IllegalArgumentException.class, () -> new Rectangle(-1, 3));
-    assertThrowsExactly(IllegalArgumentException.class, () -> new Rectangle(3, -1));
-    assertThrowsExactly(IllegalArgumentException.class, () -> new Rectangle(-2, -3));
+  @ParameterizedTest
+  @CsvSource({
+      "-1, 3",
+      "3, -1",
+      "-1, -1",
+      "-2, -3",
+      "-3, -2",
+  })
+  public void negativeSides(int sideA, int sideB) {
+    assertThrowsExactly(IllegalArgumentException.class, () -> new Rectangle(sideA, sideB));
   }
 }
