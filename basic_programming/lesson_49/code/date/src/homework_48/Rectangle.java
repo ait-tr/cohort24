@@ -21,4 +21,9 @@ public class Rectangle {
   public int getWidth() {
     return width;
   }
+
+  @Override
+  public String toString() {
+    return "Rectangle {длина: " + length +  ", ширина: " + width + "}";
+  }
 }
