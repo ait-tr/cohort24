@@ -26,6 +26,7 @@ public class Rectangle {
   }
 
   public int getArea() {
+//    return length * width; // можно считать именно здесь, каждый раз заново
     return area;
   }
 
