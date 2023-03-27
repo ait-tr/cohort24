@@ -1,6 +1,7 @@
 package homework_48;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrowsExactly;
 
 import org.junit.jupiter.api.Test;
 
@@ -46,5 +47,19 @@ public class RectangleTests {
 
     // assert
     assertEquals(area, rect.getArea());
+  }
+
+  @Test
+  public void zeroSides() {
+    assertThrowsExactly(IllegalArgumentException.class, () -> new Rectangle(0, 3));
+    assertThrowsExactly(IllegalArgumentException.class, () -> new Rectangle(3, 0));
+    assertThrowsExactly(IllegalArgumentException.class, () -> new Rectangle(0, 0));
+  }
+
+  @Test
+  public void negativeSides() {
+    assertThrowsExactly(IllegalArgumentException.class, () -> new Rectangle(-1, 3));
+    assertThrowsExactly(IllegalArgumentException.class, () -> new Rectangle(3, -1));
+    assertThrowsExactly(IllegalArgumentException.class, () -> new Rectangle(-2, -3));
   }
 }
