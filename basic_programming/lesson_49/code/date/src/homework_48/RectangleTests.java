@@ -15,10 +15,14 @@ public class RectangleTests {
     int width = Math.min(sideA, sideB);
 
     // arrange & act
-    Rectangle rect = new Rectangle(sideA, sideB);
+    Rectangle rect1 = new Rectangle(sideA, sideB);
+    Rectangle rect2 = new Rectangle(sideB, sideA);
+    Rectangle rect3 = new Rectangle(sideA, sideA);
 
     // assert
-    assertEquals(width, rect.getWidth());
+    assertEquals(width, rect1.getWidth());
+    assertEquals(width, rect2.getWidth());
+    assertEquals(sideA, rect3.getWidth());
   }
 
   @Test
@@ -29,10 +33,14 @@ public class RectangleTests {
     int length = Math.max(sideA, sideB);
 
     // arrange & act
-    Rectangle rect = new Rectangle(sideA, sideB);
+    Rectangle rect1 = new Rectangle(sideA, sideB);
+    Rectangle rect2 = new Rectangle(sideB, sideA);
+    Rectangle rect3 = new Rectangle(sideA, sideA);
 
     // assert
-    assertEquals(length, rect.getLength());
+    assertEquals(length, rect1.getLength());
+    assertEquals(length, rect2.getLength());
+    assertEquals(sideA, rect3.getLength());
   }
 
   @Test
