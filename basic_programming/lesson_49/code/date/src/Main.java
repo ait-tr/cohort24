@@ -14,6 +14,6 @@ public class Main {
     int year = Integer.parseInt(br.readLine());
 
     int age = 2023 - year;
-    System.out.println("Похоже, тебе " + age + " лет.");
+    System.out.println("Похоже, тебе " + age + " лет. Или " + (age - 1) + "!");
   }
 }
