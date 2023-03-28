@@ -59,7 +59,7 @@ public class Person implements Comparable<Person> {
     // сравнение противоположно сравнению дат
     long unixTime1 = birthday.getTime();
     long unixTime2 = o.birthday.getTime();
-//    return -(int) (unixTime1 - unixTime2);
+//    return -(int) Math.signum(unixTime1 - unixTime2);
     return -Long.compare(unixTime1, unixTime2);
   }
 }
