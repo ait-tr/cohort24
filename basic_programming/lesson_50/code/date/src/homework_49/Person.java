@@ -46,10 +46,20 @@ public class Person implements Comparable<Person> {
 //    return 0; // не меньше и не больше, значит, равно
 //  }
 
+//  @Override
+//  public int compareTo(Person o) {
+//    // дата должна быть "больше" (позже), тогда человек "меньше" (младше)
+//    // сравнение противоположно сравнению дат
+//    return -birthday.compareTo(o.birthday);
+//  }
+
   @Override
-  public int compareTo(Person o) {
+  public int compareTo(Person o) { // сравнение любых объектов можно превратить в сравнение чисел
     // дата должна быть "больше" (позже), тогда человек "меньше" (младше)
     // сравнение противоположно сравнению дат
-    return -birthday.compareTo(o.birthday);
+    long unixTime1 = birthday.getTime();
+    long unixTime2 = o.birthday.getTime();
+//    return -(int) (unixTime1 - unixTime2);
+    return -Long.compare(unixTime1, unixTime2);
   }
 }
