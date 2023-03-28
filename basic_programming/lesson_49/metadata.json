@@ -1,0 +1,15 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/date/src/homework_48/Main.java",
+    "code/date/src/homework_48/Rectangle.java",
+    "code/date/src/homework_48/RectangleTests.java",
+    "code/date/src/homework_48/RectangleAreaComparator.java",
+    "code/date/src/homework_48/RectangleAreaComparatorTests.java",
+    "code/date/src/Age.java",
+    "code/date/src/AgePrecise.java"
+  ],
+  "video": ""
+}
