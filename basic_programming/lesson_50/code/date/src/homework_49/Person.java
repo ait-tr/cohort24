@@ -35,14 +35,21 @@ public class Person implements Comparable<Person> {
   }
 
   // если дата рождения БОЛЬШЕ, то человек МОЛОЖЕ - и должен быть "меньше"
+//  @Override
+//  public int compareTo(Person o) {
+//    if (birthday.after(o.birthday)) { // "наш" человек (this) родился ПОЗЖЕ
+//      return -1; // this < o
+//    }
+//    if (birthday.before(o.birthday)) { // this родился РАНЬШЕ
+//      return 1; // this > o
+//    }
+//    return 0; // не меньше и не больше, значит, равно
+//  }
+
   @Override
   public int compareTo(Person o) {
-    if (birthday.after(o.birthday)) { // "наш" человек (this) родился ПОЗЖЕ
-      return -1; // this < o
-    }
-    if (birthday.before(o.birthday)) { // this родился РАНЬШЕ
-      return 1; // this > o
-    }
-    return 0; // не меньше и не больше, значит, равно
+    // дата должна быть "больше" (позже), тогда человек "меньше" (младше)
+    // сравнение противоположно сравнению дат
+    return -birthday.compareTo(o.birthday);
   }
 }
