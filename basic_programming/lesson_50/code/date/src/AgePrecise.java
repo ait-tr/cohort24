@@ -4,8 +4,9 @@ import java.io.InputStreamReader;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.Duration;
+import java.time.LocalDate;
 import java.time.Period;
+import java.time.ZoneId;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -29,7 +30,13 @@ public class AgePrecise {
       DateFormat ruDateFormatter = new SimpleDateFormat("d MMMM yyyy",
           Locale.forLanguageTag("ru-RU"));
       System.out.println("Я правильно поняла? " + ruDateFormatter.format(birthday) + "?");
-      // TODO посчитать возраст
+
+      // третий способ работы с датами: использование пакета java.time
+      // превращение java.util.Date в java.time.LocalDate - через класс java.time.Instant
+      LocalDate newBirthday = birthday.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+//      LocalDate newBirthday = LocalDate.from(Instant.ofEpochMilli(birthday.getTime()));
+      int age = Period.between(newBirthday, LocalDate.now()).getYears();
+      System.out.println("Тебе " + age + " лет");
     } catch (ParseException e) {
       System.out.println("Некорректный формат даты: " + dateStr);
     }
