@@ -34,6 +34,7 @@ public class AgePrecise {
       // третий способ работы с датами: использование пакета java.time
       // превращение java.util.Date в java.time.LocalDate - через класс java.time.Instant
       LocalDate newBirthday = birthday.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+//      LocalDate newBirthday = birthday.toInstant().atZone(ZoneId.of("America/New_York")).toLocalDate();
 //      LocalDate newBirthday = LocalDate.from(Instant.ofEpochMilli(birthday.getTime()));
       int age = Period.between(newBirthday, LocalDate.now()).getYears();
       System.out.println("Тебе " + age + " лет");
