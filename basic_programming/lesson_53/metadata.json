@@ -3,6 +3,9 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
+    "code/practice/src/Main.java",
+    "code/practice/src/TicTacToe.java",
+    "code/practice/src/Point.java"
   ],
   "video": ""
 }
