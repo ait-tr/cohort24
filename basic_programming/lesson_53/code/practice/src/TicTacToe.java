@@ -37,8 +37,12 @@ public class TicTacToe { // Крестики-нолики
   }
 
   private Point readCoordinates() {
-    Point result = new Point();
-    // TODO
+    Point result = Point.read();
+    checkCoordinates(result); // проверка, попадают ли координаты на поле
     return result;
+  }
+
+  private void checkCoordinates(Point result) {
+    // TODO
   }
 }
