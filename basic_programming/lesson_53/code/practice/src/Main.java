@@ -11,7 +11,7 @@ public class Main {
     System.out.println("=== Крестики-нолики ===");
     TicTacToe game = new TicTacToe();
     do {
-      String result = game.run();
+      String result = game.run(br);
       // когда метод завершится, игра закончится
       System.out.println(result);
       System.out.println("Хотите повторить? [y/n]");

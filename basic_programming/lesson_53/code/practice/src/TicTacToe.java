@@ -1,3 +1,6 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+
 public class TicTacToe { // Крестики-нолики
 
   private static final int SIZE = 3; // размер игрового поля
@@ -13,10 +16,10 @@ public class TicTacToe { // Крестики-нолики
   // завершена ли игра? (проверяем состояние поля)
   //   - если да, то выводим результат
   //   - если нет, то продолжаем
-  public String run() {
+  public String run(BufferedReader bufferedReader) throws IOException {
     boolean finished = false;
     while (!finished) {
-      Point newPoint = readCoordinates();
+      Point newPoint = readCoordinates(bufferedReader);
       // Point - координаты символа, readCoordinates - метод для их получения
       makeStep(newPoint); // makeStep - метод для того, чтобы сделать ход
       finished = checkField(); // checkField - метод для проверки того, завершена ли игра
@@ -38,8 +41,8 @@ public class TicTacToe { // Крестики-нолики
     // TODO
   }
 
-  private Point readCoordinates() {
-    Point result = Point.read();
+  private Point readCoordinates(BufferedReader bufferedReader) throws IOException {
+    Point result = Point.read(bufferedReader);
     checkCoordinates(result); // проверка, попадают ли координаты на поле
     return result;
   }
