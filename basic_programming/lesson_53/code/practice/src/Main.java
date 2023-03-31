@@ -1,3 +1,7 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class Main {
 
   // Игра в крестики-нолики
@@ -12,9 +16,21 @@ public class Main {
   //   - если да, то выводим результат
   //   - если нет, то продолжаем
   // если игра завершена, можем спросить, начать ли новую игру
-  public static void main(String[] args) {
+  public static void main(String[] args) throws IOException {
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     System.out.println("=== Крестики-нолики ===");
-    // TODO
+    TicTacToe game = new TicTacToe();
+    do {
+      String result = game.run();
+      // когда метод завершится, игра закончится
+      System.out.println(result);
+      System.out.println("Хотите повторить?");
+    } while (readYesOrNo(br.readLine())); // падение при некорректном вводе - ожидаемое поведение
     System.out.println("До свидания!");
+  }
+
+  private static boolean readYesOrNo(String answer) {
+    // TODO
+    return false;
   }
 }
