@@ -24,13 +24,17 @@ public class Main {
       String result = game.run();
       // когда метод завершится, игра закончится
       System.out.println(result);
-      System.out.println("Хотите повторить?");
+      System.out.println("Хотите повторить? [y/n]");
     } while (readYesOrNo(br.readLine())); // падение при некорректном вводе - ожидаемое поведение
     System.out.println("До свидания!");
   }
 
   private static boolean readYesOrNo(String answer) {
-    // TODO
-    return false;
+    return switch (answer.toLowerCase()) {
+      case "y", "yes", "да", "true", "1" -> true;
+      case "n", "no", "нет", "false", "0" -> false;
+      default -> // все остальные случаи
+          throw new IllegalArgumentException("Некорректный ответ, введите да или нет: " + answer);
+    };
   }
 }
