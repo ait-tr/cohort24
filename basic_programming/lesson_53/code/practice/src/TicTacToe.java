@@ -12,7 +12,33 @@ public class TicTacToe { // Крестики-нолики
   //   - если да, то выводим результат
   //   - если нет, то продолжаем
   public String run() {
+    boolean finished = false;
+    while (!finished) {
+      Point newPoint = readCoordinates();
+      // Point - координаты символа, readCoordinates - метод для их получения
+      makeStep(newPoint); // makeStep - метод для того, чтобы сделать ход
+      finished = checkField(); // checkField - метод для проверки того, завершена ли игра
+    }
+    return getResult(); // getResult() - метод для получения строки с результатом
+  }
+
+  private String getResult() {
     // TODO
-    return "Результат игры";
+    return "Здесь будет результат";
+  }
+
+  private boolean checkField() {
+    // TODO
+    return true;
+  }
+
+  private void makeStep(Point newPoint) {
+    // TODO
+  }
+
+  private Point readCoordinates() {
+    Point result = new Point();
+    // TODO
+    return result;
   }
 }
