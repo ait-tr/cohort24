@@ -1,5 +1,7 @@
 public class TicTacToe { // Крестики-нолики
 
+  private static final int SIZE = 3; // размер игрового поля
+
   // Запуск и в конце получение результата
   // игра начинается:
   // - выводится пустое поле
@@ -43,6 +45,13 @@ public class TicTacToe { // Крестики-нолики
   }
 
   private void checkCoordinates(Point result) {
-    // TODO
+    int x = result.getX();
+    int y = result.getY();
+    if (x < 1 || x > SIZE) {
+      throw new IllegalArgumentException("Некорректная координата x: " + x);
+    }
+    if (y < 1 || y > SIZE) {
+      throw new IllegalArgumentException("Некорректная координата y: " + y);
+    }
   }
 }
