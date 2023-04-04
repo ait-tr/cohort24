@@ -21,9 +21,14 @@ public class Main {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     List<Integer> numbers = Utils.readList();
 
+    System.out.print("Введите число для поиска: ");
     int x = Integer.parseInt(br.readLine());
     int i = find(numbers, x);
-    System.out.println("numbers[" + i + "] = " + numbers.get(i));
+    if (i != -1) {
+      System.out.println("numbers[" + i + "] = " + numbers.get(i));
+    } else {
+      System.out.println("Число не найдено");
+    }
   }
 
   /*

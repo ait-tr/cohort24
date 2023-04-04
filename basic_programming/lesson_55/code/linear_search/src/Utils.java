@@ -11,7 +11,9 @@ public class Utils {
 
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
+    System.out.print("Введите количество чисел: ");
     int n = Integer.parseInt(br.readLine());
+    System.out.println("Введите " + n + " чисел, каждое с новой строки:");
     for (int i = 0; i < n; ++i) {
       int x = Integer.parseInt(br.readLine());
       result.add(x);
