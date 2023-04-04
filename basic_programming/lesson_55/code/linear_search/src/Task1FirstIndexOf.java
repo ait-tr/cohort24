@@ -16,15 +16,15 @@ public class Task1FirstIndexOf {
   // вывести его индекс в последовательности, если число найдено
   // если число встретилось несколько раз, ищем самое первое (левое) вхождение
   // вывести -1, если число не найдено
-  public static void main(String[] args) throws IOException {
+  public static void main(String[] args) throws IOException { // O(n)
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    List<Integer> numbers = Utils.readList();
+    List<Integer> numbers = Utils.readList(); // O(n)
 
     System.out.print("Введите число для поиска: ");
     int x = Integer.parseInt(br.readLine());
-    int i = find(numbers, x);
+    int i = find(numbers, x); // O(n)
     if (i != -1) {
-      System.out.println("numbers[" + i + "] = " + numbers.get(i));
+      System.out.println("numbers[" + i + "] = " + numbers.get(i)); // O(1)
     } else {
       System.out.println("Число не найдено");
     }
@@ -37,11 +37,11 @@ public class Task1FirstIndexOf {
    * @param target  число, которое надо найти
    * @return индекс или -1, если число не найдено
    */
-  public static int find(List<Integer> numbers, int target) {
-    for (int i = 0; i < numbers.size(); ++i) {
-      if (numbers.get(i) == target) {
+  public static int find(List<Integer> numbers, int target) { // O(n)
+    for (int i = 0; i < numbers.size(); ++i) { // O(n)
+      if (numbers.get(i) == target) { // O(1)
         // i - наш ответ
-        return i;
+        return i; // O(1)
       }
     }
     // если мы дошли до этого места, то мы не нашли число target
