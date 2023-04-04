@@ -31,10 +31,12 @@ public class Main {
     }
   }
 
-  /*
-   * Поиск числа target в списке numbers
+  /**
+   * Поиск первого (левого) вхождения числа в список
    *
-   * Вернёт первый возможный индекс или -1, если числа нет
+   * @param numbers список чисел
+   * @param target  число, которое надо найти
+   * @return индекс или -1, если число не найдено
    */
   public static int find(List<Integer> numbers, int target) {
     for (int i = 0; i < numbers.size(); ++i) {
