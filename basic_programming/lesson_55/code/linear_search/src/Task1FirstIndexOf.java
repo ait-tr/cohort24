@@ -1,10 +1,9 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+public class Task1FirstIndexOf {
 
   // линейный поиск - поиск с перебором всех элементов
   // сложность перебора не может быть меньше O(N)
