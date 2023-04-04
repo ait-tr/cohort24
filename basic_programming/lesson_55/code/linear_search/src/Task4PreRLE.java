@@ -11,18 +11,20 @@ public class Task4PreRLE {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     System.out.println("Введите строку для сжатия:");
     String input = br.readLine();
-    String result = "";
+    StringBuilder result = new StringBuilder(); // класс для "изменяемых строк", почти коллекция
 
     Character prev = null; // предыдущий символ, в начале он null - его нет
     for (int i = 0; i < input.length(); ++i) {
       Character c = input.charAt(i); // текущий символ
       if (/*prev == null || */!c.equals(prev)) { // если текущий не совпадает с предыдущим
-        result += c; // записываем текущий (не совпадающий) в результат
+        result.append(c); // записываем текущий (не совпадающий) в результат
         prev = c;
+        // String += String / char -- O(n) для ОДНОГО сложения
+        // StringBuilder.append - O(1)
       }
     }
 
     System.out.println("Промежуточный результат сжатия:");
-    System.out.println(result);
+    System.out.println(result/*.toString()*/);
   }
 }
