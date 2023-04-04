@@ -12,12 +12,33 @@ public class Main {
   // значит, сложность не должна быть выше O(N)
   // такая сложность тоже называется линейной - на графике такие функции выглядят как прямые линии
 
-  // Дана последовательность целых чисел
+  // Дана последовательность целых чисел.
   // Хотим найти число x
   // вывести его индекс в последовательности, если число найдено
+  // если число встретилось несколько раз, ищем самое первое (левое) вхождение
   // вывести -1, если число не найдено
   public static void main(String[] args) throws IOException {
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     List<Integer> numbers = Utils.readList();
-    System.out.println(numbers);
+
+    int x = Integer.parseInt(br.readLine());
+    int i = find(numbers, x);
+    System.out.println("numbers[" + i + "] = " + numbers.get(i));
+  }
+
+  /*
+   * Поиск числа target в списке numbers
+   *
+   * Вернёт первый возможный индекс или -1, если числа нет
+   */
+  public static int find(List<Integer> numbers, int target) {
+    for (int i = 0; i < numbers.size(); ++i) {
+      if (numbers.get(i) == target) {
+        // i - наш ответ
+        return i;
+      }
+    }
+    // если мы дошли до этого места, то мы не нашли число target
+    return -1;
   }
 }
