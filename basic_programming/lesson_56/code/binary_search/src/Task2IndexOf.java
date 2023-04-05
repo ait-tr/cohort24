@@ -28,8 +28,8 @@ public class Task2IndexOf {
         right = mid; // потому что right - не включая
       }
     }
-    // после окончания цикла left + 1 = right, и проверяем мы numbers[left]
-    if (numbers.get(left) == target) {
+    // после окончания цикла right - left = 0 или 1, и проверяем мы numbers[left]
+    if (left < numbers.size() && numbers.get(left) == target) {
       return left;
     }
     return -1; // сужение области поиска не дало нам target - его нет в списке
