@@ -10,6 +10,12 @@ public class MinEven2 {
   // вывести -1, если такого числа не существует.
   //
   // Оценить временную и пространственную сложность алгоритма.
+
+  // Нет коллекций (массивов, списков, строк, множеств, словарей) и других методов
+  // - значит, space - O(1)
+
+  // Есть цикл - time - O(n)
+  // Нет вложенных циклов, операций с коллекциями и других методов - значит, time - O(n)
   public static void main(String[] args) throws IOException {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     int result = -1; // мы не нашли ни одного чётного числа
