@@ -17,11 +17,12 @@ public class Task1GuessNumber {
   }
 
   private static int guessNumber(BufferedReader br) throws IOException {
+    int step = 1;
     int left = 1;
     int right = 1000;
     while (left < right) {
       int mid = (left + right) / 2;
-      System.out.println("Ваше число - " + mid + "?");
+      System.out.println(step + ". Ваше число - " + mid + "?");
       String answer = br.readLine();
       switch (answer) {
         // искомое число больше mid, то есть в диапазоне от (mid + 1) до right
@@ -32,8 +33,12 @@ public class Task1GuessNumber {
           System.out.println("Ура!");
           return mid;
         }
-        default -> System.out.println("Вы ввели некорректный ответ, введите '>', '<' или '='");
+        default -> {
+          System.out.println("Вы ввели некорректный ответ, введите '>', '<' или '='");
+          --step; // поправка на "пустой" шаг
+        }
       }
+      ++step;
     }
     // сюда мы попадём, если left совпал с right - это и есть ответ
 
