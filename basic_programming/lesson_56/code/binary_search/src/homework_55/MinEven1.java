@@ -1,8 +1,10 @@
+package homework_55;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Homework55MinEven {
+public class MinEven1 {
 
   // Найти минимальное чётное число в последовательности положительных чисел или
   // вывести -1, если такого числа не существует.
