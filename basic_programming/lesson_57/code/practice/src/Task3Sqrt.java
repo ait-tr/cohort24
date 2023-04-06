@@ -1,7 +1,7 @@
 public class Task3Sqrt {
 
   // Бинарный поиск квадратного корня числа
-  public static double sqrt(int x) {
+  public static double sqrt(int x, double accuracy) {
     if (x < 0) {
       throw new IllegalArgumentException(
           "Квадратный корень не определён для отрицательного числа: " + x);
@@ -12,7 +12,7 @@ public class Task3Sqrt {
     // x = 2 и больше
     double left = 0; // 0 точно меньше нашего ответа
     double right = x; // x точно больше нашего ответа
-    while (left != right) {
+    while (right - left > accuracy) {
       double mid = (left + right) / 2; // double / 2 = double
       if (mid * mid == x) { // если mid и есть наш квадратный корень - так почти никогда не бывает
         return mid;
@@ -30,7 +30,7 @@ public class Task3Sqrt {
 
   public static void main(String[] args) {
     int x = 5;
-    System.out.println("sqrt(" + x + ") = " + sqrt(x));
+    System.out.printf("sqrt(%d) = %.6f%n", x, sqrt(x, 0.000001));
   }
 }
 
