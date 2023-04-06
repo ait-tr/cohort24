@@ -2,6 +2,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.stream.Stream;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -70,4 +71,21 @@ public class Task1MaxOddTests {
 
     assertEquals(expected, index);
   }
+//
+//  @ParameterizedTest
+//  @MethodSource("foundNegativeParametrizedData")
+//  public void foundNegativeParametrized(List<Integer> numbers, int expected) {
+//    // act
+//    int index = Task1MaxOdd.firstIndexOfMaxOdd(numbers); // не работает c Arrays$ArrayList
+//
+//    // assert
+//    assertEquals(expected, index);
+//  }
+//
+//  static Stream<Arguments> foundNegativeParametrizedData() {
+//    return Stream.of(
+//        Arguments.of(Arrays.asList(-3, -1, -5), 1), // отправляет в аргументы Arrays$ArrayList
+//        Arguments.of(Arrays.asList(-2, -3, -4), 1)
+//    );
+//  }
 }
