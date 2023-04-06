@@ -11,6 +11,7 @@ public class Task1MaxOdd {
 
   /**
    * Поиск первого появления максимального нечётного числа
+   *
    * @param numbers список чисел
    * @return индекс максимального нечётного числа или -1, если нечётных чисел нет
    */
@@ -31,6 +32,7 @@ public class Task1MaxOdd {
 
   /**
    * Поиск первого появления максимального нечётного числа
+   *
    * @param numbers список чисел
    * @return индекс максимального нечётного числа или -1, если нечётных чисел нет
    */
@@ -48,6 +50,20 @@ public class Task1MaxOdd {
       ++i;
     }
     return result;
+  }
+
+  public static int firstIndexOfMaxOdd(List<Integer> numbers) {
+    if (numbers instanceof LinkedList<Integer>) {
+      LinkedList<Integer> linkedNumbers = (LinkedList<Integer>) numbers;
+      return firstIndexOfMaxOdd(linkedNumbers);
+    } else if (numbers instanceof ArrayList<Integer> arrayNumbers) {
+      // объединение, аналогичное строчкам 56 и 57
+      return firstIndexOfMaxOdd(arrayNumbers);
+    } else {
+      throw new IllegalArgumentException(
+          "Незнакомая разновидность списка: " + numbers.getClass().getName());
+      // в остальных разновидностях List мы искать не умеем
+    }
   }
 
   public static void main(String[] args) {
