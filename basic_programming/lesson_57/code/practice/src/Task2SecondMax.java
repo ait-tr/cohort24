@@ -9,14 +9,14 @@ public class Task2SecondMax {
    * @param numbers список чисел
    * @return индекс второго по величине числа или -1, если такого нет
    */
-  public static int firstIndexOfSecondMax(List<Integer> numbers) {
+  public static int firstIndexOfSecondMax(List<Integer> numbers) { // O(n) time, O(1) space
     int firstMax = Integer.MIN_VALUE; // первый максимум
     int firstMaxIndex = -1;
     int secondMax = Integer.MIN_VALUE; // второй максимум
     int secondMaxIndex = -1;
 
     int i = 0;
-    for (int x : numbers) {
+    for (int x : numbers) { // O(n) time, O(1) space
       if (firstMaxIndex == -1) { // если даже в первом максимуме ничего не было
         firstMax = x;
         firstMaxIndex = i;
