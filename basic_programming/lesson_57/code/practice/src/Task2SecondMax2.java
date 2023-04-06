@@ -20,7 +20,7 @@ public class Task2SecondMax2 {
     }
 
     int i = 0;
-    for (int x : numbers) { // из-за второго перебора эту задачу не свести к O(1) по памяти
+    for (int x : numbers) { // из-за второго перебора эту задачу не свести к O(1) по общей памяти
       if (x < firstMax && (secondMaxIndex == -1 || x > secondMax)) {
         // [1, Integer.MIN_VALUE] - не то же самое, что [1, 1]
         secondMax = x;
