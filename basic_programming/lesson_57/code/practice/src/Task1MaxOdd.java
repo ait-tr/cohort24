@@ -2,6 +2,8 @@ import java.util.ArrayList;
 
 public class Task1MaxOdd {
 
+  public static int DUMMY = 72353425;
+
   // поиск индекса максимального нечётного числа в последовательности
   // если нечётных чисел в последовательности нет, вернуть -1
 
@@ -11,7 +13,7 @@ public class Task1MaxOdd {
    * @return индекс максимального нечётного числа или -1, если нечётных чисел нет
    */
   public static int firstIndexOfMaxOdd(ArrayList<Integer> numbers) {
-    int maxOdd = Integer.MIN_VALUE; // максимальный нечётный элемент
+    int maxOdd = DUMMY; // максимальный нечётный элемент
     int result = -1; // индекс максимального нечётного элемента
 
     for (int i = 0; i < numbers.size(); ++i) {
