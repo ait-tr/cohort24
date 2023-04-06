@@ -3,6 +3,13 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
+    "code/practice/src/Homework56IndexOfDescending.java",
+    "code/practice/src/Task1MaxOdd.java",
+    "code/practice/src/Task1MaxOddTests.java",
+    "code/practice/src/Task2SecondMax.java",
+    "code/practice/src/Task2SecondMax2.java",
+    "code/practice/src/Task3Sqrt.java",
+    "code/practice/src/Task4Peak.java"
   ],
   "video": ""
 }
