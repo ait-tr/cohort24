@@ -16,7 +16,8 @@ public class Task1MaxOdd {
 
     for (int i = 0; i < numbers.size(); ++i) {
       int x = numbers.get(i);
-      if (x % 2 != 0 && x > maxOdd) {
+      // если элемент чётный И (результат не менялся ИЛИ элемент больше рамочки)
+      if (x % 2 != 0 && (result == -1 || x > maxOdd)) {
         maxOdd = x;
         result = i;
       }
