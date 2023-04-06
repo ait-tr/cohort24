@@ -11,12 +11,13 @@ public class Task1MaxOdd {
    * @return индекс максимального нечётного числа или -1, если нечётных чисел нет
    */
   public static int firstIndexOfMaxOdd(ArrayList<Integer> numbers) {
-    int maxOdd = -1; // максимальный нечётный элемент
+    int maxOdd = Integer.MIN_VALUE; // максимальный нечётный элемент
     int result = -1; // индекс максимального нечётного элемента
 
     for (int i = 0; i < numbers.size(); ++i) {
-      if (numbers.get(i) % 2 != 0 && numbers.get(i) > maxOdd) {
-        maxOdd = numbers.get(i);
+      int x = numbers.get(i);
+      if (x % 2 != 0 && x > maxOdd) {
+        maxOdd = x;
         result = i;
       }
     }
@@ -25,10 +26,10 @@ public class Task1MaxOdd {
 
   public static void main(String[] args) {
     ArrayList<Integer> numbers = new ArrayList<>();
-    numbers.add(3);
-    numbers.add(7);
-    numbers.add(5);
-    numbers.add(1);
+    numbers.add(-3);
+    numbers.add(-7);
+    numbers.add(-5);
+    numbers.add(-22);
 
     System.out.println(numbers);
     int index = firstIndexOfMaxOdd(numbers);
