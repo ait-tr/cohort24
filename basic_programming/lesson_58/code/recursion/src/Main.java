@@ -4,7 +4,8 @@ public class Main {
 //    printBin(19);
 //    System.out.println("sumDig(1234) = " + sumDig(1234));
 //    System.out.println(gcd(13, 17));
-    System.out.println(fact(3));
+//    System.out.println(fact(3));
+    System.out.println(optimizedGcdLinear(10, 105));
   }
 
   // алг printBin(цел n):
@@ -72,6 +73,19 @@ public class Main {
       }
     }
     return a; // можно вернуть любое - числа равны
+  }
+
+  // оптимизированный (ускоренный) алгоритм Евклида - заменять большее на остаток от деления
+  // большего на меньшее
+  public static int optimizedGcdLinear(int a, int b) {
+    while (a != 0 && b != 0) {
+      if (a > b) {
+        a = a % b;
+      } else {
+        b = b % a; // вычесть всё, что вычитается - найти остаток от деления
+      }
+    }
+    return a + b; // "одно" из них 0, поэтому в сумме получится "другое"
   }
 
   // алг цел Fact(цел N)
