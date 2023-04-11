@@ -2,7 +2,8 @@ public class Main {
 
   public static void main(String[] args) {
 //    printBin(19);
-    System.out.println("sumDig(1234) = " + sumDig(1234));
+//    System.out.println("sumDig(1234) = " + sumDig(1234));
+    System.out.println(gcd(10, 15));
   }
 
   // алг printBin(цел n):
@@ -31,5 +32,29 @@ public class Main {
       result += sumDig(n / 10); // рекурсивный вызов
     }
     return result;
+  }
+
+  // алг цел NOD(цел a, цел b)
+  // нач
+  //   если a=0 или b=0 то
+  //     знач := a+b
+  //     // возврат знач
+  //     выход
+  //   все
+  //   если a > b то
+  //     знач:= NOD(a - b, b)
+  //   иначе
+  //     знач:= NOD(a, b - a)
+  //   все
+  //   // возврат знач
+  // кон
+  public static int gcd(int a, int b) {
+    if (a == 0 || b == 0) {
+      return a + b; // "одно" из них 0, в сумме получится "второе"
+    }
+    if (a > b) {
+      return gcd(a - b, b); // вместо бОльшего - a - подставили (a - b)
+    }
+    return gcd(a, b - a); // вместо бОльшего - b - подставили (b - a)
   }
 }
