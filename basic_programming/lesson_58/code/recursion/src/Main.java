@@ -3,7 +3,8 @@ public class Main {
   public static void main(String[] args) {
 //    printBin(19);
 //    System.out.println("sumDig(1234) = " + sumDig(1234));
-    System.out.println(gcd(10, 15));
+//    System.out.println(gcd(10, 15));
+    System.out.println(fact(3));
   }
 
   // алг printBin(цел n):
@@ -56,5 +57,28 @@ public class Main {
       return gcd(a - b, b); // вместо бОльшего - a - подставили (a - b)
     }
     return gcd(a, b - a); // вместо бОльшего - b - подставили (b - a)
+  }
+
+  // алг цел Fact(цел N)
+  // нач
+  //   вывод '-> N=', N, нс
+  //   если N <= 1 то
+  //     знач:= 1
+  //   иначе
+  //     знач:= N * Fact(N-1)
+  //   все
+  //   вывод '<- N=', N, нс
+  //   // возврат знач
+  // кон
+  public static int fact(int n) {
+    int result;
+    System.out.println("-> N = " + n);
+    if (n <= 1) {
+      result = 1;
+    } else {
+      result = n * fact(n - 1);
+    }
+    System.out.println("<- N = " + n);
+    return result;
   }
 }
