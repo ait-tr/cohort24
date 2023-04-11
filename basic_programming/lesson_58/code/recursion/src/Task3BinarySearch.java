@@ -13,7 +13,7 @@ public class Task3BinarySearch {
   }
 
   public static int guess(BufferedReader bufferedReader, int left, int right) throws IOException {
-    if (left >= right) { // > никогда не должно быть, но я подстраховываюсь
+    if (left >= right) { // ">" никогда не должно быть, но я подстраховываюсь
       return left; // настоящий выход из рекурсии
     }
 
