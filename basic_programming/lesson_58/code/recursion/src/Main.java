@@ -85,10 +85,20 @@ public class Main {
 //    System.out.println("<- N = " + n);
 //    return result;
 //  }
+  // time: O(n), space: O(n)
   public static int fact(int n) {
     if (n <= 1) {
       return 1;
     }
     return n * fact(n - 1);
+  }
+
+  // time: O(n), space: O(1)
+  public static int factLinear(int n) {
+    int result = 1;
+    for (int k = 2; k <= n; ++k) {
+      result *= k; // домножаем на все числа от 2 до n
+    }
+    return result;
   }
 }
