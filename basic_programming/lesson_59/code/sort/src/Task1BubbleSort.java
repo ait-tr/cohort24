@@ -20,7 +20,7 @@ public class Task1BubbleSort {
   // O(1) - additional space
   public static void sort(ArrayList<Integer> numbers) {
     for (int right = numbers.size(); right > 1; --right) { // O(n - 1)
-      // right - правая граница области поиска (не включая)
+      // right - правая граница области сортировки (не включая)
       // перебираем все индексы от 0 (включая) до right (не включая)
 //      System.out.println("indices: from " + 0 + " to " + right);
       // от 1 до (n - 1) раз, в среднем (n / 2) раз
@@ -38,6 +38,26 @@ public class Task1BubbleSort {
       }
 //      System.out.println();
     }
+  }
+
+  public static void recursiveSort(ArrayList<Integer> numbers) {
+    recursiveSort(numbers, numbers.size());
+  }
+
+  private static void recursiveSort(ArrayList<Integer> numbers, int right) {
+    if (right <= 1) { // пар больше нет - условие выхода из рекурсии
+      return;
+    }
+    for (int i = 0; i < right - 1; ++i) { // "левыми" индексами могут быть все, кроме последнего
+      // так можно поменять элементы списка местами, но лучше писать, как выше
+      // get для разных списков имеет разную сложность
+      if (numbers.get(i) > numbers.get(i + 1)) {
+        int temp = numbers.get(i);
+        numbers.set(i, numbers.get(i + 1));
+        numbers.set(i + 1, temp);
+      }
+    }
+    recursiveSort(numbers, right - 1); // сдвигаем правую границу - ещё один пузырёк встал правильно
   }
 
   public static void sort(int[] numbers) {
