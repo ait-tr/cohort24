@@ -12,14 +12,16 @@ public class Task1BubbleSort {
 
     System.out.println(numbers);
     sort(numbers);
-    System.out.println(numbers);
+    System.out.println("result: " + numbers);
   }
 
   public static void sort(ArrayList<Integer> numbers) {
-    for (int right = numbers.size(); right > 0; --right) {
+    for (int right = numbers.size(); right > 1; --right) {
       // right - правая граница области поиска (не включая)
       // перебираем все индексы от 0 (включая) до right (не включая)
+//      System.out.println("indices: from " + 0 + " to " + right);
       for (int i = 0; i < right - 1; ++i) { // "левыми" индексами могут быть все, кроме последнего
+//        System.out.println("firstI = " + i + ", secondI = " + (i + 1));
         int first = numbers.get(i);
         int second = numbers.get(i + 1);
         if (first > second) {
@@ -27,7 +29,9 @@ public class Task1BubbleSort {
           numbers.set(i, second);
           numbers.set(i + 1, first);
         }
+//        System.out.println(numbers);
       }
+//      System.out.println();
     }
   }
 }
