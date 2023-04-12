@@ -10,11 +10,13 @@ public class Homework58Task1IndexOf {
    * @param target число, которое необходимо найти
    * @return индекс числа target в списке numbers или -1, если число не найдено
    */
-  public static int indexOf(ArrayList<Integer> numbers, int target) { // O(1) по памяти
-    // считаем сложность по времени
+  public static int indexOf(ArrayList<Integer> numbers, int target) {
     // индексы left и right сделаем "как везде" - left включая, right - не включая
-    int left = 0;
-    int right = numbers.size(); // опасность! но для библиотечных коллекций это O(1)
+    return indexOf(numbers, target, 0, numbers.size());
+  }
+
+  private static int indexOf(ArrayList<Integer> numbers, int target, int left, int right) {
+    // считаем сложность по времени
     // пока размер области поиска больше одного элемента
     while (left < right - 1) { // right - left > 1 // O(log N)
       int mid = (left + right) / 2;
