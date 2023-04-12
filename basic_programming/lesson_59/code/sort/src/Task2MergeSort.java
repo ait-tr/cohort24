@@ -13,6 +13,12 @@ public class Task2MergeSort {
   // которой заменяется оригинал.
 
   // наша сортировка - не in-place, она возвращает отсортированный список
+
+  // на каждом уровне - (делении на половинки) - совершаем O(n) операций для возврата
+  // на предыдущий уровень
+  // таких уровней столько, сколько раз можно делить на половинки, пока размер не станет 1 - log n
+  // итого O(n log n) по времени - быстрее (даже теоретически) не получится !в общем виде!
+  // O(n) по памяти (и, возможно, O(1) для связных списков при другой реализации)
   public static List<Integer> sort(List<Integer> numbers) {
     if (numbers.size() < 2) { // пустой список или список из одного элемента уже отсортирован
       return numbers; // возвращаем его, как есть
@@ -22,6 +28,8 @@ public class Task2MergeSort {
     int mid = numbers.size() / 2;
     List<Integer> left = numbers.subList(0, mid);
     List<Integer> right = numbers.subList(mid, numbers.size());
+    // O(n) дополнительной памяти, O(n) по времени (копирование массива)
+    // O(1) дополнительной памяти, O(1) по времени (для связных списков при другой реализации)
 
     System.out.println("=== sort(" + numbers + ") ===");
     System.out.println("left = " + left);
@@ -43,6 +51,8 @@ public class Task2MergeSort {
    * @return отсортированный по возрастанию итоговый список чисел после слияния
    */
   private static List<Integer> merge(List<Integer> list1, List<Integer> list2) {
+    // O(n) дополнительной памяти (или O(1) для связных списков при другой реализации)
+    // O(n) по времени
     System.out.println("=== merge(" + list1 + ", " + list2 + ") ===");
     List<Integer> result = new ArrayList<>();
     int i1 = 0;
