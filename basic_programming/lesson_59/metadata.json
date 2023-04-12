@@ -3,6 +3,10 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
+    "code/sort/src/Homework58Task1IndexOf.java",
+    "code/sort/src/Task1BubbleSort.java",
+    "code/sort/src/Task2MergeSort.java",
+    "code/sort/src/Efficiency.java"
   ],
   "video": ""
 }
