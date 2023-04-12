@@ -41,13 +41,16 @@ public class Task1BubbleSort {
   }
 
   public static void recursiveSort(ArrayList<Integer> numbers) {
-    recursiveSort(numbers, numbers.size());
+    recursiveSort(numbers, numbers.size()); // O(n * n / 2) = O(0.5 * n^2) = O(n^2)
   }
 
+  // вызовы от n до 1 с шагом -1
+  // всего n повторов
   private static void recursiveSort(ArrayList<Integer> numbers, int right) {
     if (right <= 1) { // пар больше нет - условие выхода из рекурсии
       return;
     }
+    // O(right - 1) = от (n - 1) до 1 с шагом -1, в среднем O(n / 2)
     for (int i = 0; i < right - 1; ++i) { // "левыми" индексами могут быть все, кроме последнего
       // так можно поменять элементы списка местами, но лучше писать, как выше
       // get для разных списков имеет разную сложность
