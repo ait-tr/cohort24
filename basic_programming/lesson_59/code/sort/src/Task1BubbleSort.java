@@ -39,4 +39,16 @@ public class Task1BubbleSort {
 //      System.out.println();
     }
   }
+
+  public static void sort(int[] numbers) {
+    for (int right = numbers.length; right > 1; --right) {
+      for (int i = 0; i < right - 1; ++i) {
+        if (numbers[i] > numbers[i + 1]) {
+          int temp = numbers[i];
+          numbers[i] = numbers[i + 1];
+          numbers[i + 1] = temp;
+        }
+      }
+    }
+  }
 }
