@@ -68,7 +68,7 @@ public class Main {
     List<Car> cars = new ArrayList<>();
     // заполнение списка
 
-    Collections.sort(cars, new Comparator() {
+    Collections.sort(cars, new Comparator<Car>() {
       @Override
       public int compare(Car o1, Car o2) {
         return o1.getMaxSpeed() - o2.getMaxSpeed();
