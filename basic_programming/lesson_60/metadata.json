@@ -3,6 +3,14 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
+    "code/lambdas/src/Homework59MergeSort.java",
+    "code/lambdas/src/Main1Arrays.java",
+    "code/lambdas/src/Main2Lists.java",
+    "code/lambdas/src/Main3Lambdas.java",
+    "code/lambdas/src/StudentScoreComparator.java",
+    "code/lambdas/src/Student.java",
+    "code/lambdas/src/test/Swimmable.java",
+    "code/lambdas/src/test/Main.java"
   ],
   "video": ""
 }
