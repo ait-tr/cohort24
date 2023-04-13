@@ -11,8 +11,7 @@ public class Main3Lambdas {
     students.add(new Student("Valera", 4));
 
     System.out.println(students);
-    Comparator<Student> comparator = new StudentScoreComparator();
-    students.sort(comparator);
+    students.sort(new StudentScoreComparator());
     System.out.println(students);
   }
 }
