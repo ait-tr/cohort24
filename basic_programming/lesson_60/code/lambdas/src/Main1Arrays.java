@@ -8,6 +8,8 @@ public class Main1Arrays {
   public static void main(String[] args) throws IOException {
     BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
     int[] numbers = {1, 7, 3, 9, 5};
+    // в Java массив - это ссылочный тип, поэтому ссылка выделяется на стеке (stack),
+    // а сами данные - в куче (heap)
 
     System.out.println("numbers = " + Arrays.toString(numbers));
     Arrays.sort(numbers); // перед binarySearch надо сделать sort
