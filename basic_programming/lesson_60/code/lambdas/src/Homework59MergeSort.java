@@ -36,7 +36,7 @@ public class Homework59MergeSort {
    */
   private static List<String> merge(List<String> list1, List<String> list2) {
     // O(n) дополнительной памяти (или O(1) для связных списков при другой реализации)
-    // O(n) по времени
+    // O(n * k) по времени
     System.out.println("=== merge(" + list1 + ", " + list2 + ") ===");
     List<String> result = new ArrayList<>();
     int i1 = 0;
@@ -46,6 +46,7 @@ public class Homework59MergeSort {
       // пока оба списка не закончились
       String first = list1.get(i1);
       String second = list2.get(i2);
+      // O(k), где k - максимальная длина строки
       if (first.compareTo(second) < 0) { // first < second
         result.add(first);
         ++i1;
