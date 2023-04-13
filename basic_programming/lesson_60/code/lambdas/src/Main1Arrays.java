@@ -3,11 +3,15 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-public class Main {
+public class Main1Arrays {
 
   public static void main(String[] args) throws IOException {
     BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-    int[] numbers = {1, 3, 5};
+    int[] numbers = {1, 7, 3, 9, 5};
+
+    System.out.println("numbers = " + Arrays.toString(numbers));
+    Arrays.sort(numbers); // перед binarySearch надо сделать sort
+    System.out.println("numbers = " + Arrays.toString(numbers));
 
     System.out.print("Введите число для поиска: ");
     int x = Integer.parseInt(bufferedReader.readLine());
