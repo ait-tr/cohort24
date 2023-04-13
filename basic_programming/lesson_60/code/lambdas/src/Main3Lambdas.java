@@ -28,12 +28,33 @@ public class Main3Lambdas {
 //    students.sort(new StudentScoreComparator());
 
     // 3. Анонимный класс - одноразовый класс, определённый прямо в теле программы
-    students.sort(new Comparator<Student>() {
-      @Override
-      public int compare(Student o1, Student o2) {
-        return o2.getScore() - o1.getScore(); // по убыванию среднего балла
-      }
-    });
+    // Часто это анонимный класс - наследник абстрактного класса
+    // с реализацией "не хватающих" абстрактных методов
+//    students.sort(new Comparator<Student>() {
+//      @Override
+//      public int compare(Student o1, Student o2) {
+//        return o2.getScore() - o1.getScore(); // по убыванию среднего балла
+//      }
+//    });
+
+    // 4. Использовать лямбда-функцию
+    // Лямбда-функции или просто лямбда в Java — это анонимные функции, которые можно сохранять
+    // и передавать как анонимные классы, реализующие абстрактный функциональный интерфейс.
+    // Функциональный интерфейс в Java — интерфейс, в котором объявлен только один
+    // метод и он абстрактный (например, компаратор).
+    // аргумент -> возвращаемоеЗначение
+    // (аргумент1, аргумент2) -> возвращаемоеЗначение
+    // аргумент -> { команда1; return возвращаемоеЗначение; }
+    // (аргумент1, аргумент2) -> { команда1; return возвращаемоеЗначение; }
+    // () -> значение
+
+    // по убыванию среднего балла
+    students.sort((Student o1, Student o2) -> o2.getScore() - o1.getScore());
+//    students.sort((Student o1, Student o2) -> {
+//      int score1 = o1.getScore();
+//      int score2 = o2.getScore();
+//      return score2 - score1;
+//    });
     System.out.println(students);
   }
 }
