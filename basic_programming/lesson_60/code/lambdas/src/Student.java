@@ -1,9 +1,9 @@
 public class Student {
 
   private String name;
-  private double score; // средний балл
+  private int score; // балл
 
-  public Student(String name, double score) {
+  public Student(String name, int score) {
     this.name = name;
     this.score = score;
   }
@@ -12,7 +12,7 @@ public class Student {
     return name;
   }
 
-  public double getScore() {
+  public int getScore() {
     return score;
   }
 
@@ -20,7 +20,7 @@ public class Student {
     this.name = name;
   }
 
-  public void setScore(double score) {
+  public void setScore(int score) {
     this.score = score;
   }
 
