@@ -1,6 +1,6 @@
 import java.util.stream.Stream;
 
-public class Main {
+public class Main1StreamExample {
 
   public static void main(String[] args) {
     // создание
@@ -24,7 +24,7 @@ public class Main {
     System.out.println("Список квадратов чисел из потока:");
     Stream.of(1, 2, 3, 4, 5)    // создание
         .map(x -> x * x)                // изменение
-        .forEach(Main::strangePrint);   // потребление
+        .forEach(Main1StreamExample::strangePrint);   // потребление
     // класс::метод -- ссылка на метод (method reference)
     // именно так можно передавать метод аналогично лямбда-функции - теперь это НЕ анонимная функция
   }
