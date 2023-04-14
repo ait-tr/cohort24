@@ -9,7 +9,7 @@ public class Main3StreamExample {
     List<Integer> numbers = List.of(1, 5, 3, 2, 4);
     System.out.println("Список квадратов чисел из потока:");
     String result = numbers.stream()                  // создание
-        .sorted()                                     // cортировка
+        .sorted((o1, o2) -> -o1.compareTo(o2))        // cортировка по убыванию
         .map(x -> x * x)                              // возведение в квадрат
         .filter(Main3StreamExample::isEven)           // фильтрация "только чётные"
         .map(Object::toString)                        // превращение в строки
@@ -20,9 +20,5 @@ public class Main3StreamExample {
 
   public static boolean isEven(int x) {
     return x % 2 == 0;
-  }
-
-  public static void strangePrint(int x) {
-    System.out.println("-=" + x + "=-");
   }
 }
