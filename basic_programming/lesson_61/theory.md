@@ -93,8 +93,7 @@ Stream<String> streamOfArrayPart = Arrays.stream(arr, 1, 3);
 - `toList()` собирает элементы в `List`
 - `toSet()` cобирает элементы в множество
 - `counting()` подсчитывает количество элементов
-- `joining()`
-собирают элементы в одну строку
+- `joining()` собирает элементы в одну строку
    - `joining(CharSequence delimiter)`
    - `joining(CharSequence delimiter, CharSequence prefix, CharSequence suffix)`
 
