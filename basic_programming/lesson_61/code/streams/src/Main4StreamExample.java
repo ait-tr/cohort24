@@ -11,7 +11,7 @@ public class Main4StreamExample {
         .filter(x -> x % 2 != 0)                      // фильтрация "только нечётные"
         .map(x -> x * x)                              // возведение в квадрат
         .mapToInt(Integer::intValue)                  // Integer -> int
-        .sum();   // потребление - сумма
+        .sum();                                       // потребление - сумма
     System.out.println(numbers);
     System.out.println("Сумма нечётных квадратов: " + result);
   }
