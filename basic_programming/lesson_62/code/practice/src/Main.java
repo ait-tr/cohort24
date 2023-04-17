@@ -1,3 +1,6 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,7 +19,9 @@ public class Main {
   // - в списке не больше 10 учеников (извините, конкурс)
   //
   // Для обработки и вывода результата используйте потоки (`Stream`).
-  public static void main(String[] args) {
+  public static void main(String[] args) throws IOException {
+    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+
     List<Student> students = new ArrayList<>();
     students.add(new Student("Anton", 25));
     students.add(new Student("Boris", 20));
@@ -30,5 +35,7 @@ public class Main {
     students.add(new Student("Leonid", 36));
     students.add(new Student("Maria", 100));
 
+    System.out.print("Введите минимальный проходной балл: ");
+    int minScore = Integer.parseInt(bufferedReader.readLine());
   }
 }
