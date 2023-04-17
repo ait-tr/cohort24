@@ -12,6 +12,11 @@ public class Student {
     return name;
   }
 
+  /**
+   * Получение балла ученика
+   *
+   * @return балл ученика
+   */
   public int getScore() {
     return score;
   }
