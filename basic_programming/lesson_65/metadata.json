@@ -1,0 +1,11 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/practice/src/Example1StaticCommands.java",
+    "code/practice/src/Example2Game.java",
+    "code/practice/src/Example3SortedMap.java"
+  ],
+  "video": ""
+}
