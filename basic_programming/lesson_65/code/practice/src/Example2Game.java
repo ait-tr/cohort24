@@ -20,4 +20,8 @@ public class Example2Game {
     userData.add("Прочитанные данные"); // а вот менять приватные коллекции можно где угодно
     // главное, не менять саму ссылку -- написать userData = new LinkedList(); нельзя!
   }
+
+  public List<String> getUserData() {
+    return userData;
+  }
 }
