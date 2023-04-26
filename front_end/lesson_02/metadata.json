@@ -4,7 +4,7 @@
   "homework": "homework.md",
   "code": [
     "./code/css-intro/index.html",
-    "./code/css-intro/tables.html",
+    "./code/css-intro/style.css",
     "./code/task_fe-html_table_ul/index.html"
   ],
   "video": "",
