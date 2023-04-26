@@ -4,8 +4,8 @@
   "homework": "homework.md",
   "code": [
     "./code/task_fe-html_table_ul/index.html",
-    "./code/css-intro/index.html",
-    "./code/css-intro/style.css"
+    "./code/index.html",
+    "./code/tables.html"
   ],
   "video": "",
   "etc": ""

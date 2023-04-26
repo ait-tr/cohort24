@@ -1,0 +1,34 @@
+/* Селекторый по тегу: */
+h1 {
+  color: green;
+}
+
+span {
+  color:lightpink;
+  font-weight: bold;
+}
+
+div {
+  background-color: lightsteelblue;
+}
+
+/* Селекторы по id  */
+#special {
+  font-style: italic;
+  color: blue;
+}
+
+#red-box{
+  width: 300px;
+  height: 300px;
+  background-color: rgb(255, 0, 0);
+}
+
+/* Селекторы по class */
+.green-text{
+  color: green;
+}
+
+.italic-text{
+  font-style: italic;
+}

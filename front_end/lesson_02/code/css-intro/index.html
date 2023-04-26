@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS-intro</title>
+  <!-- внутри тега стайл мы указываем внутренние css стили -->
+  <style>
+    h1 {
+      color: lightcoral;
+    }
+  </style>
+  <!-- ссылка на подключение внешнего css -->
+  <link rel="stylesheet" href="style.css">
+  <!-- приоритет стилей: самый важный инлайновый -->
+  <!-- приоритет стилей: все остальные - последний подключенный перезапишет собой все предыдущие -->
+</head>
+
+<body>
+  <!-- сверху страницы, в нем может находится навигационная панель -->
+  <header>
+    <!-- nav - тег для объединения нескольких ссылок -->
+    <nav>
+      <a href="https://www.ozon.ru/">Озон</a>
+      <a href="https://flukeout.github.io/">Игра бенто</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Добро пожаловать в CSS</h1>
+    <p style="color:red">СSS можно подключить тремя разными способами:</p>
+    <ul>
+      <li style="background-color: lightblue;"> Первый способ - это inline css,
+        когда мы указываем style="background-color: lightblue;" внутри открывающего тега элемента
+      </li>
+      <li> Второй способ - это внутренний css когда в хеде указываем в теге style</li>
+      <li> Внешний CSS - когда стили распологаются во внешнем файле CSS</li>
+    </ul>
+    <h1 style="color:blue;">Еще один заголовок </h1>
+    <!-- несемантические: div и span -->
+    <p>
+      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+      Numquam repellendus neque vel dignissimos, rem error, expedita ducimus odit asperiores eaque voluptatum illo,
+      magni
+      velit? Qui quam quaerat voluptas veniam maiores.
+    </p>
+    <div>
+      <h3>Подзаголовок внутри div</h3>
+      Это такс дива
+    </div>
+    <div>
+      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+      Это такс дива
+      <span id="special">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+    </div>
+
+    <div id="red-box">Этот див стилизуем по id</div>
+    <p class="green-text">Стилизуем мы по классам</p>
+    <p class="green-text">Еще один параграф с тем же стилем</p>
+    <p class="green-text italic-text">Еще один параграф с тем же стилем</p>
+  </main>
+  <footer>
+    Футер Информация о сайте, ссылки и тд
+  </footer>
+</body>
+
+</html>
