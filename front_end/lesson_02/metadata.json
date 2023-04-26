@@ -3,9 +3,9 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
+    "./code/tables.html",
     "./code/task_fe-html_table_ul/index.html",
-    "./code/index.html",
-    "./code/tables.html"
+    "./code/index.html"
   ],
   "video": "",
   "etc": ""
