@@ -1,0 +1,29 @@
+img {
+  height: 400px;
+
+}
+
+p {
+  font-style: italic;
+}
+
+.main-text{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
+.bald-idea {
+  font-weight: bold;
+}
+
+#endtext{
+  font-size: 40px;
+}
+
+.headline {
+  background-color: lightcoral;
+}
+
+.headline {
+  background-color: rgb(158, 240, 128);
+}
