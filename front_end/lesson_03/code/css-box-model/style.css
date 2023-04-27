@@ -1,0 +1,79 @@
+.red-box {
+  background-color: red;
+  width: 300px;
+  height: 300px;
+  margin: 30px;
+  padding: 50px;
+  text-align: center;
+}
+
+.green-box {
+  background-color: greenyellow;
+  margin: 15px;
+  padding: 40px;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.yellow-box{
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+  margin-left: 50px;
+  background-color: lightyellow;
+  border: 5px solid red;
+}
+
+.blue-circle{
+  background-color: lightblue;
+  margin: 30px;
+  padding: 30px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.black-box{
+  background-color: black;
+  width: 300px;
+  height: 300px;
+  /* когда всего одно значение - то применяется сразу ко всем */
+  margin: 50px;
+  /* когда два значения: верх-низ и лево-право */
+  margin: 50px 30px;
+  /* 50px- верх, 40px - право-лево, 30px - низ */
+  margin: 50px 40px 30px;
+  /* верх право низ лево */
+  margin: 50px 40px 30px 20px;
+
+  border-radius: 20px 0px;
+  border-radius: 50px 10px 0px;
+  /* c левого верхнего угла по часовой стрелке */
+  border-radius: 100px 50px 20px 0px;
+  color: aliceblue;
+  padding: 50px;
+}
+
+.triangle {
+  border: 70px solid transparent;
+  border-top: 100px solid rebeccapurple;
+  width: 0px;
+}
+
+.triangle-upside-down {
+  margin-top: -150px;
+  border: 70px solid transparent;
+  border-right: 70px solid rebeccapurple;
+  width: 0px;
+  transform: rotate(-0.10turn);
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.orange{
+  text-align: center;
+  color: orange;
+}
