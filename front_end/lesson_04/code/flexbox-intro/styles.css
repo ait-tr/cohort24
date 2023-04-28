@@ -1,0 +1,99 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.upperItems {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+    height: 30px;
+    border: 2px solid black;
+}
+
+.item1 {
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+    width: 50px;
+}
+.item2 {
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb(11, 67, 48);
+    width: 80px;
+}
+.item3 {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(186, 237, 171);
+    width: 35px;
+}
+.item4 {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(80, 86, 199);
+    width: 90px;
+}
+
+.lowerItems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px 20px;
+    max-width: 250px;
+}
+
+.h1 {
+ background-color: bisque;
+ padding: 30px;
+}
+
+.h2 {
+    background-color: rgb(97, 65, 26);
+    padding: 20px;
+   }
+   
+.h3 {
+    background-color: rgb(249, 148, 25);
+    padding: 25px;
+ }
+
+ .mixContent {
+    display: flex;
+    margin: 20px;
+    flex-direction: row-reverse;
+    justify-content: center;
+    height: 600px;
+    width: 400px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    align-content: space-between;
+ }
+
+ .first, .second {
+    display: flex;
+ }
+
+ .mix1 {
+    width: 380px;
+    background-color: lightblue;
+ }
+ .mix2 {
+    width: 150px;
+    background-color: lightgray;
+ }
+ .mix3 {
+    width: 190px;
+    background-color: lightyellow;
+ }
+ .mix4 {
+    width: 300px;
+    background-color: lightpink;
+ }
+ .mix5 {
+    width: 130px;
+    background-color: lightgreen;
+ }

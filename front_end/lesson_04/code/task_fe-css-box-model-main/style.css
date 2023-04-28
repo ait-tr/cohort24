@@ -1,0 +1,13 @@
+p {
+    background-color: lightgoldenrodyellow;
+    border: 2px solid red;
+    width: 470px;
+}
+
+span {
+    border: 2px solid blue;
+}
+
+img {
+    width: 75%;
+}

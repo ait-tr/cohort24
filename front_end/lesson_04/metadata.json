@@ -1,0 +1,15 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "./code/flexbox-intro/index.html",
+    "./code/flexbox-intro/styles.css",
+    "./code/task_fe-css-box-model-main/index.html",
+    "./code/task_fe-css-box-model-main/style.css",
+    "./code/task_fe-html-css-btn-hover-main/index.html",
+    "./code/task_fe-html-css-btn-hover-main/style.css"
+  ],
+  "video": "",
+  "etc": ""
+}
