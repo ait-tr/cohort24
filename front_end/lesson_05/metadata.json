@@ -1,0 +1,13 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "./code/forms-inputs/index.html",
+    "./code/forms-inputs/style.css",
+    "./code/html-css-flexbox-header-cinema/index.html",
+    "./code/html-css-flexbox-header-cinema/style.css"
+  ],
+  "video": "",
+  "etc": ""
+}

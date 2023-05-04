@@ -1,0 +1,21 @@
+.btn {
+    margin: 20px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    height: 100px;
+    width: 200px;
+    font-size: 30px;
+}
+
+.usual-button {
+    background-color: rgb(195, 100, 57);
+}
+
+.reset-button {
+    background-color: rgb(136, 54, 16);
+}
+
+.submit-button {
+    background-color: rgb(78, 38, 19);
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>Input</h2>
+    <label for="first-name">Введите имя</label>
+    <input id="first-name" type="text" placeholder="Иван">
+
+    <label for="second-name">Введите фамилию</label>
+    <input id="second-name" type="text" placeholder="Петров">
+
+    <label for="age">Введите возраст</label>
+    <input id="age" type="number" placeholder="18" min="18" max="120">
+
+    <h2>Input radio</h2>
+    <p>Ваш пол</p>
+    <label for="male">Мужчина</label>
+    <input type="radio" name="gender" id="male">
+
+    <label for="female">Женщина</label>
+    <input type="radio" name="gender" id="female">
+    
+    <label for="no-gender">Не определен</label>
+    <input type="radio" name="ere" id="no-gender">
+
+    <h2>Checkbox</h2>
+    <label for="allergy">Аллергия</label>
+    <input type="checkbox" name="" id="allergy">
+
+    <label for="astma">Астма</label>
+    <input type="checkbox" name="" id="astma">
+    <input type="checkbox" name="">
+    <input type="checkbox" name="">
+
+    <input type="color" name="">
+
+    <h2>Form</h2>
+    <form action="https://www.google.com/search?q=wikipedia&rlz=1C5CHFA_enRU982RU990&oq=wiki&aqs=chrome.2.69i60j69i57j0i131i433i512l4j46i131i199i340i433i465i512j69i60.1789j0j7&sourceid=chrome&ie=UTF-8">
+        <label for="name">Введите имя</label>
+        <input id="name" type="text" placeholder="Иван">
+
+        <label for="surname">Введите фамилию</label>
+        <input id="surname" type="text" placeholder="Петров">
+
+        <label for="choose-age">Введите возраст</label>
+        <input id="choose-age" type="number" placeholder="18" min="18" max="120">
+        <button type="reset">Очистить форму</button>
+        <button type="submit">Отправить</button>
+        <button disabled>Неактивна</button>
+
+        <input type="date" name="" id="" min="2023-05-02">
+        <input type="password">
+
+    </form>
+</body>
+</html>
+
+<button class="btn usual-button">Обычная</button>
+<button class="btn reset-button">Reset</button>
+<button class="btn submit-button">Submit</button>
