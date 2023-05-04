@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+}
+
+main {
+  width: 400vh;
+}
+
+header {
+  /* background-image: url(./imagebanner.jpeg); */
+  height: 100px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.banner {
+  z-index: -1;
+  position: absolute;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.nav-line {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.nav-el-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-el {
+  margin: 16px;
+  opacity: 0.5;
+  color: white;
+}
+
+.nav-el:hover {
+  opacity: 1;
+}
+
+.nav-input {
+  border: none;
+  background-color: rgb(255 255 255 /0.5);
+  border-radius: 3px;
+  width: 135px;
+  height: 27px;
+  margin-left: 30px;
+}
+
+.nav-input::placeholder{
+  opacity: 1;
+  color: black;
+}
+
+.icon {
+  margin: 5px;
+}
+
+.our:hover {
+cursor: pointer;
+}
