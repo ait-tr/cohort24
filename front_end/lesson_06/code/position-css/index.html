@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Position</title>
+</head>
+
+<body>
+  <h1>Position</h1>
+  <figure>
+    <caption>Типы position</caption>
+    <ul>
+      <li>static - это значение - по умолчанию</li>
+      <li>relative - это значение -положение относительно нормального положения</li>
+      <li>fixed - это значение - положение относительно viewport</li>
+      <li>sticky - пока во viewport - нормально располагается. Когда скролим - становится как fixed</li>
+      <li>absolute - относительно ближайшего позиционированного родителя. top, right...</li>
+    </ul>
+  </figure>
+  <div class="sticky-box">
+    Sticky box (не забыть про top)
+  </div>
+  <div class="normal-box">
+    Normal box = static
+  </div>
+  <div class="normal-box">
+    Normal box = static
+  </div>
+  <div class="relative-box">
+    Relative box
+    Положение относительно его изначального-естественного положения
+    Другие элементы страницы ведут себя так, как если бы Relative box оставлся на своем месте, то есть они не
+    схлопываются
+  </div>
+
+  <div class="normal-box">
+    Normal box = static
+  </div>
+  <div class="fixed-box">
+    Fixed box
+  </div>
+  <div class="relative-parent">
+    <div class="absolute-box">
+      Absolute box
+      <div class="absolute-circle">
+        Absolute circle
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

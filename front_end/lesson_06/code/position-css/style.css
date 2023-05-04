@@ -1,0 +1,60 @@
+.normal-box {
+  background-color: lightcoral;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+
+.relative-box {
+  position: relative;
+  left: 40px;
+  top: 40px;
+  background-color: lightcyan;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  z-index: 1;
+}
+
+.fixed-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: aquamarine;
+  width: 150px;
+  height: 150px;
+}
+
+.sticky-box {
+  top: 20px;
+  position: sticky;
+  background-color: lightpink;
+  height: 100px;
+  width: 800px;
+  z-index: 2;
+}
+
+.relative-parent {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  background-color: burlywood;
+}
+
+.absolute-box {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  width: 120px;
+  height: 120px;
+  background-color: limegreen;
+}
+
+.absolute-circle{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  border-radius: 50%;
+
+}

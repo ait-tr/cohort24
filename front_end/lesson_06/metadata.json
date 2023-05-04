@@ -1,0 +1,15 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "./code/task_fe-registration-letter-to-santa/index.html",
+    "./code/task_fe-registration-letter-to-santa/greetings.html",
+    "./code/position-css/index.html",
+    "./code/position-css/style.css",
+    "./code/bootstrap/index.html",
+    "./code/bootstrap/style.css"
+  ],
+  "video": "",
+  "etc": ""
+}

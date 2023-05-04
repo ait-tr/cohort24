@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Letter to Santa</title>
+</head>
+
+<body>
+  <h1>Письмо Санте</h1>
+  <p>Дорогой друг, не стесняйся, напиши о том, какой подарок ты хочешь получить на рождество!</p>
+  <form action="greetings.html">
+    <input type="text" placeholder="логин" id="login" style="margin: 10px;" required autocomplete="off" name="login">
+    <br>
+    <input type="password" placeholder="пароль" style="margin: 10px;" required>
+    <br>
+    <input type="email" style="margin: 10px;" name="email">
+    <br>
+    <input type="radio" id="input-male" name="gender" value="male" required>
+    <label for="input-male">Мальчик</label>
+    <input type="radio" id="input-female" name="gender"  value="female"  checked>
+    <label for="input-female">Девочка</label>
+    <br>
+    <label for="date-input">Дата рождения: </label>
+    <br>
+    <input type="date" id="date-input" name="date">
+    <br>
+    <select name="city" id="city">
+      <option value="" selected disabled>Выберите город</option>
+      <option value="berlin">Berlin</option>
+      <option value="hamburg">Hamburg</option>
+    </select>
+    <br>
+    <label for="color-input">Выберите цвет настроения</label>
+    <input type="color" id="color-input" name="color">
+    <button type="submit"> Отправить письмо Санте </button>
+  </form>
+</body>
+
+</html>
