@@ -9,3 +9,8 @@
   4. Элементы Form [ссылка](https://wm-school.ru/html/html_form_elements.html)
   5. Label [ссылка](https://hcdev.ru/html/label/)
   6. Button [ссылка](https://developer.mozilla.org/ru/docs/Web/HTML/Element/button)
+
+  7. Цветовые переходы (градиент) [ссылка](https://html5book.ru/css3-transition/)
+  8. Единицы измерения (%, em, rem и т.д.) [ссылка](https://learn.javascript.ru/css-units)
+  9. Псевдоэлементы [ссылка](https://developer.mozilla.org/ru/docs/Web/CSS/Pseudo-elements)
+  10. @media [ссылка](https://developer.mozilla.org/ru/docs/Web/CSS/@media)
