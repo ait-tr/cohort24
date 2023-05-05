@@ -1,0 +1,35 @@
+/* ваш код */
+.card {
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    margin: 20px;
+}
+
+.poster {
+    height: 300px;
+}
+
+.rating {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    color: white;
+    padding: 5px;
+}
+.green {
+    background-color: rgb(59,179,58);
+}
+
+.red {
+   background-color:  rgb(255,0,0)
+}
+
+.tickets {
+    background-color: rgb(255,86,0);
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    color: white;
+    padding: 5px;
+}
