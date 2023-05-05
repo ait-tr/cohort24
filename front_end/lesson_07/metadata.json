@@ -3,10 +3,10 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "./code/flexbox-intro/index.html",
-    "./code/flexbox-intro/styles.css",
-    "./code/task_fe-css-box-model-main/index.html",
-    "./code/task_fe-css-box-model-main/style.css"
+    "./code/dom-intro/index.html",
+    "./code/dom-intro/styles.css",
+    "./code/task_fe-css-position-movie-card/index.html",
+    "./code/task_fe-css-position-movie-card/style.css"
   ],
   "video": "",
   "etc": ""
