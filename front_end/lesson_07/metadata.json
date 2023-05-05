@@ -4,7 +4,7 @@
   "homework": "homework.md",
   "code": [
     "./code/dom-intro/index.html",
-    "./code/dom-intro/styles.css",
+    "./code/dom-intro/index.js",
     "./code/task_fe-css-position-movie-card/index.html",
     "./code/task_fe-css-position-movie-card/style.css"
   ],
