@@ -13,10 +13,10 @@
 3. Boolean
 
 ## Два способа создания пустого массива
-   let arr = new Array();
+  -  let arr = new Array();
    let arr = [];
-   // В квадратных скобках можно сразу указать начальные значения
-   let fruits = ["Apple", "Orange", "Banana"];
+   - // В квадратных скобках можно сразу указать начальные значения
+   - let fruits = ["Apple", "Orange", "Banana"];
 
 - Можно получить элемент по индексу
 let fruits = ["Apple", "Orange", "Banana"];
