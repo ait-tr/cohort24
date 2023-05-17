@@ -27,5 +27,4 @@ const cars = [
 
 ### Задание 6 
 Создайте новый массив, где все дизельные машины заменены на 
-`{ brand: "Tesla", price: 25000, isDiesel: false }
-`
+`{ brand: "Tesla", price: 25000, isDiesel: false }`
