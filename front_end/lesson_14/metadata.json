@@ -1,0 +1,17 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "./code/ansync_await/index.js",
+    "./code/cat-app/index.html",
+    "./code/cat-app/index.js",
+    "./code/dog-app/index.html",
+    "./code/dog-app/index.js",
+    "./code/homework_solution/task1.js",
+    "./code/homework_solution/task2.js",
+    "./code/object_destructuring/destructuring.js"
+  ],
+  "video": "",
+  "etc": ""
+}
