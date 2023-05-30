@@ -1,0 +1,13 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "./code/ts-typization/index.ts",
+    "./code/simple-project/src/componets/App/App.css",
+    "./code/simple-project/src/componets/App/App.tsx",
+    "./code/simple-project/src/componets/Counter/Counter.tsx",
+    "./code/simple-project/src/index.tsx",
+    "./code/simple-project/package.json"
+  ]
+}
