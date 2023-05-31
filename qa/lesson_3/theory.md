@@ -107,13 +107,6 @@
 
 Книга [SOFTWARE TESTING STANDARDS](https://drive.google.com/file/d/1BQFRcqky7-YQqEkKDcW3zqdDwE1W3-Lo/view?usp=drive_link)
 
-## CRUD
-
-- Create - создать
-- Read - посмотреть
-- Update - изменить
-- Delete - удалить
-
 [Пример анализа](https://docs.google.com/spreadsheets/d/1ubCo1UocBvFPIWon52MVEdowofF9Ie_BhkCc7Qz3ntU/edit?usp=drive_link)
 
 #### Стек автотестирования
