@@ -1,0 +1,15 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "./code/simple-project/src/componets/Car/Car.tsx",
+    "./code/simple-project/src/componets/Counter/Counter.module.css",
+    "./code/simple-project/src/componets/Counter/Counter.tsx",
+    "./code/simple-project/src/componets/Instrument/Instrument.tsx",
+    "./code/simple-project/src/componets/Parent/Parent.tsx",
+    "./code/simple-project/src/componets/PirateCard/PirateCard.tsx",
+    "./code/simple-project/src/componets/Sandwich/Sandwich.tsx",
+    "./code/simple-project/src/types/Pirate.ts"
+  ]
+}
