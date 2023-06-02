@@ -1,0 +1,14 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "./code/simple-project-updated/src/componets/Flower/FlowerCard.tsx",
+    "./code/simple-project-updated/src/componets/Flower/ParentFlower.tsx",
+    "./code/simple-project-updated/src/types/Flower.ts",
+    "./code/simple-project-updated/src/componets/GenderIdentification/GenderIdentification.tsx",
+    "./code/simple-project-updated/src/componets/GenderIdentification/GenderIdentification.module.css",
+    "./code/simple-project-updated/src/componets/UseEffectExample/Buttons.tsx",
+    "./code/simple-project-updated/src/componets/UseEffectExample/Buttons.module.css"
+  ]
+}
