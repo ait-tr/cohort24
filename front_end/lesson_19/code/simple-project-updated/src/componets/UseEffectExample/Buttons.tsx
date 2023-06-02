@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import style from "./Buttons.module.css"
 
-function Buttons() {
+function Buttons(): JSX.Element {
     const [first, changeFirst] = useState<boolean>(false)
     const [second, changeSecond] = useState<boolean>(false)
     const [third, changeThird] = useState<boolean>(false)
