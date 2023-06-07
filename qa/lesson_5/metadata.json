@@ -1,0 +1,12 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/FirstSeleniumProject/build.gradle",
+    "code/FirstSeleniumProject/src/test/java/com/ait/qa24/FirstSeleniumTest.java",
+    "code/FirstSeleniumProject/src/test/java/com/ait/qa24/FindElementTests.java",
+    "code/FirstSeleniumProject/src/test/java/com/ait/qa24/UseLocatorsTests.java"
+  ],
+  "video": ""
+}

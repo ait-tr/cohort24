@@ -18,6 +18,8 @@
 
 [Презентация](https://docs.google.com/presentation/d/1BM4r4NUW4RHuHkiCn27QIFqCbNvb8WoU/edit?usp=drive_link&ouid=100462493827587974016&rtpof=true&sd=true)
 
+[Example](https://docs.google.com/spreadsheets/d/1Rhoo-lQ_n4kxnpJ1L6W3SWE0KV2BPQKV/edit?usp=drive_link&ouid=100462493827587974016&rtpof=true&sd=true)
+
 ## Диаграммы перехода состояний
 
 Тестирование переходов между состояниями определяется как методика тестирования ПО, когда изменения условий ввода вызывают изменения состояния в тестируемом приложении. При этом тестировщик анализирует поведение тестируемого приложения для различных входных условий в последовательности, применяя как положительные, так и отрицательные входные значения теста и записывая поведение системы. Техника полезна, когда вам необходимо протестировать различные системные переходы
@@ -37,3 +39,7 @@
 - Events(События) - внешние события, которые могут произойти и вызывают изменение состояния
 
 [Презентация](https://docs.google.com/presentation/d/1y1J_nyK_aA7Nksv0JMOkqmc8n_5ZSbE7/edit?usp=drive_link&ouid=100462493827587974016&rtpof=true&sd=true)
+
+[Diagram example](https://drive.google.com/file/d/1jzQZiIdOgkKpojtuCNBQMSnJn1P3f3LB/view?usp=drive_link)
+
+[Table example](https://docs.google.com/spreadsheets/d/19vIEfexBMdSGBVcuW9AfV5jedB__t28AW7yh1vrrS_I/edit?usp=drive_link)
