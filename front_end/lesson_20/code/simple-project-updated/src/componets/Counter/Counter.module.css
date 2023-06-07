@@ -1,0 +1,17 @@
+.counterCard {
+  background-color: lightgoldenrodyellow;
+  margin: 40px;
+  padding: 30px;
+}
+
+.plusButton {
+  padding: 10px;
+  background-color: lightgrey;
+  border: none;
+  margin: 30px;
+  border-radius: 4px;
+}
+
+.specialButton {
+  color: coral;
+}
