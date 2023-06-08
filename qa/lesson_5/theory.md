@@ -43,3 +43,29 @@
 [Diagram example](https://drive.google.com/file/d/1jzQZiIdOgkKpojtuCNBQMSnJn1P3f3LB/view?usp=drive_link)
 
 [Table example](https://docs.google.com/spreadsheets/d/19vIEfexBMdSGBVcuW9AfV5jedB__t28AW7yh1vrrS_I/edit?usp=drive_link)
+
+## Локаторы
+
+Локатор - это строка, уникально идентифицирующая UI-элемент
+
+#### Стратегии поиска
+
+- By.id
+
+- By.cssSelector
+
+- By.xpath
+
+- By.className
+
+- By.name
+
+- By.linkText
+
+- By.tagName
+
+- By.partialLinkText
+
+[Презентация](https://docs.google.com/presentation/d/1JfIE4Hl3Z6eD8YusvJ12eRkFxyFOAcNn/edit?usp=sharing&ouid=100462493827587974016&rtpof=true&sd=true)
+
+[Chropath](https://chrome.google.com/webstore/detail/chropath/ljngjbnaijcbncmcnjfhigebomdlkcjo)
