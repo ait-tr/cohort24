@@ -38,6 +38,23 @@ public class FindElementTests {
         System.out.println(elements.size());
     }
 
+    //parent
+    // //h1/parent::*
+    // //h1/parent::div
+    // //h1/..
+
+    // ancestor(предки)
+    // //h1/ancestor::* (all)
+    // //h1/ancestor::div (two options)
+    // //h1/ancestor::div[2] (one option)
+
+    // following-sibling
+    // //h1/following-sibling::a
+
+    //preceding-sibling
+    // //a[@href='/login']/preceding-sibling::h1
+    // //a[@href='/login']/preceding-sibling::a
+
     @AfterMethod
     public void tearDown() {
         driver.quit();
