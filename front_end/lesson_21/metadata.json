@@ -1,0 +1,18 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "./code/simple-project-updated/src/componets/Account/Account.tsx",
+    "./code/simple-project-updated/src/componets/App/App.css",
+    "./code/simple-project-updated/src/componets/App/App.tsx",
+    "./code/simple-project-updated/src/componets/Navbar/Navbar.module.css",
+    "./code/simple-project-updated/src/componets/Navbar/Navbar.tsx",
+    "./code/simple-project-updated/src/componets/ProductPage/ProductPage.tsx",
+    "./code/simple-project-updated/src/componets/Settings/Settings.tsx",
+    "./code/simple-project-updated/src/componets/Shop/Shop.module.css",
+    "./code/simple-project-updated/src/componets/Shop/Shop.tsx",
+    "./code/simple-project-updated/src/componets/User/User.tsx",
+    "./code/simple-project-updated/src/types/Product.ts"
+  ]
+}
