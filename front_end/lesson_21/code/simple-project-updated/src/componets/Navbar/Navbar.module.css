@@ -1,0 +1,21 @@
+.navBarList{
+  background-color: #beb7a4;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 60px;
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  list-style-type: none;
+}
+
+.item a {
+  text-decoration: none;
+  color: white;
+}
+
+.item a.active {
+  color: #cbe896;
+}
