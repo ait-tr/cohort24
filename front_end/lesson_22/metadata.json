@@ -3,7 +3,6 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "./code/simple-project-updated/src/componets/Account/Account.tsx",
     "./code/redux-intro/src/App.tsx",
     "./code/redux-intro/src/index.tsx",
     "./code/redux-intro/src/store.ts",
