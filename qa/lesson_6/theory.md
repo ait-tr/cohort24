@@ -37,10 +37,6 @@
 
 • Согласно исследованиям компании IBM 97% ошибок в ПО возникает при взаимодействии всего двух значений
 
-Pairwise online https://pairwise.teremokgames.com/
-
-Allpairs download https://www.satisfice.com/download/allpairs
-
 #### Алгоритм применения техники
 
 - Определить переменные
