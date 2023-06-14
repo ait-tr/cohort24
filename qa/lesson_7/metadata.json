@@ -7,7 +7,7 @@
     "code/PhoneBook/src/test/java/com/phonebook/tests/TestBase.java",
     "code/PhoneBook/src/test/java/com/phonebook/tests/HomePageTests.java",
     "code/PhoneBook/src/test/java/com/phonebook/tests/CreateAccountTests.java",
-    "qa/lesson_7/code/PhoneBook/src/test/java/com/phonebook/tests/LoginTests.java"
+    "code/PhoneBook/src/test/java/com/phonebook/tests/LoginTests.java"
   ],
   "video": ""
 }
