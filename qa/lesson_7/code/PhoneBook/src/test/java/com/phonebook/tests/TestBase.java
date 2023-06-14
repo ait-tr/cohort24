@@ -4,14 +4,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class HomePageTests {  WebDriver driver;
+public class TestBase {
+    WebDriver driver;
 
     @BeforeMethod
     public void setUp() {
@@ -21,13 +20,6 @@ public class HomePageTests {  WebDriver driver;
         driver.get("https://telranedu.web.app");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-    }
-
-    @Test
-    public void openHomePageTest() {
-        // isHomeComponentPresent();
-        //System.out.println("Home Component is " + isHomeComponentPresent1());
-        Assert.assertTrue(isElementPresent(By.cssSelector("div:nth-child(2)>div>div")));
     }
 
     public boolean isHomeComponentPresent() {
@@ -59,5 +51,15 @@ public class HomePageTests {  WebDriver driver;
     @AfterMethod(enabled = false)
     public void tearDown() {
         driver.quit();
+    }
+
+    public void type(By locator, String text) {
+        driver.findElement(locator).click();
+        driver.findElement(locator).clear();
+        driver.findElement(locator).sendKeys(text);
+    }
+
+    public void click(By locator) {
+        driver.findElement(locator).click();
     }
 }
