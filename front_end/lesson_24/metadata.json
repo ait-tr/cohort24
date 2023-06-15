@@ -1,0 +1,17 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "./code/ts-firebase-reg-log/src/components/Login/Login.tsx",
+    "./code/ts-firebase-reg-log/src/components/UserPage/UserPage.tsx",
+    "./code/ts-firebase-reg-log/src/components/Todos/Todos.tsx",
+    "./code/ts-firebase-reg-log/src/components/Profile/Profile.tsx",
+    "./code/ts-firebase-reg-log/src/components/UsersPage/UsersPage.tsx",
+    "./code/ts-firebase-reg-log/src/components/Register/Register.tsx",
+    "./code/ts-firebase-reg-log/src/components/ProtectedRoute/ProtectedRoute.tsx",
+    "./code/ts-firebase-reg-log/src/contexts/AuthContext.ts",
+    "./code/ts-firebase-reg-log/src/app/App.tsx",
+    "./code/ts-firebase-reg-log/src/api/firebase.ts"
+  ]
+}
