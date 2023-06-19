@@ -12,7 +12,9 @@ public class AddContactTests extends TestBase{
             clickOnSignOutButton();
         }
         clickOnLoginLink();
-        fillLoginRegistrationForm(new User().setEmail("kr@gmail.com").setPassword("Kr1234567$"));
+        fillLoginRegistrationForm(new User()
+                .setEmail("kr@gmail.com")
+                .setPassword("Kr1234567$"));
         clickOnLoginButton();
     }
 

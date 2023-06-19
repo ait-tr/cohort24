@@ -19,7 +19,9 @@ public class LoginTests extends TestBase{
         //click on Login link
         clickOnLoginLink();
         //enter email
-        fillLoginRegistrationForm(new User().setEmail("kr@gmail.com").setPassword("Kr1234567$"));
+        fillLoginRegistrationForm(new User()
+                .setEmail("kr@gmail.com")
+                .setPassword("Kr1234567$"));
         //click on Registration button
         clickOnLoginButton();
         //assert Sign out button is displayed
@@ -31,7 +33,8 @@ public class LoginTests extends TestBase{
         //click on Login link
         clickOnLoginLink();
         //enter email
-        fillLoginRegistrationForm(new User().setEmail("kr@gmail.com"));
+        fillLoginRegistrationForm(new User()
+                .setEmail("kr@gmail.com"));
         //click on Registration button
         clickOnLoginButton();
         //assert Sign out button is displayed
