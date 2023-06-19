@@ -7,6 +7,9 @@
     "code/PhoneBook/src/test/java/com/phonebook/tests/HomePageTests.java",
     "code/PhoneBook/src/test/java/com/phonebook/tests/CreateAccountTests.java",
     "code/PhoneBook/src/test/java/com/phonebook/tests/LoginTests.java",
+    "code/PhoneBook/src/test/java/com/phonebook/tests/AddContactTests.java",
+    "code/PhoneBook/src/test/java/com/phonebook/tests/User.java",
+    "code/PhoneBook/src/test/java/com/phonebook/tests/Contact.java",
     "code/PhoneBook/src/test/java/com/phonebook/tests/TestBase.java"
   ],
   "video": ""
