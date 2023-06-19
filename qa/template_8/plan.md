@@ -1,6 +1,4 @@
 ## Задачи на урок:
 
-1. TestLink - создание тест-кейсов
-2. Выполнение тестов, метрики
-3. Methods type and click. Extract method, introduce parameter
-
+1. TestLink - выполнение тестов, метрики
+2. Add contact. Introduce parameter object. Fluent interface
