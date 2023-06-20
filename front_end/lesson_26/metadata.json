@@ -1,0 +1,19 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "./code/rtk/src/store.ts",
+    "./code/rtk/src/App.tsx",
+    "./code/rtk/src/features/counter/types/Color.ts",
+    "./code/rtk/src/features/counter/types/CounterState.ts",
+    "./code/rtk/src/features/counter/api.ts",
+    "./code/rtk/src/features/counter/Counter.tsx",
+    "./code/rtk/src/features/counter/counterSlice.ts",
+    "./code/rtk/src/features/counter/selectors.ts",
+    "./code/rtk/src/features/auth/types/AuthState.ts",
+    "./code/rtk/src/features/auth/authSlice.ts",
+    "./code/rtk/src/features/auth/Login.tsx",
+    "./code/rtk/src/features/auth/selectors.ts"
+  ]
+}
