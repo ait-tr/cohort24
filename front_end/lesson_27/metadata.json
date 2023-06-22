@@ -1,0 +1,15 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "./code/rtk/src/features/products/selectors.ts",
+    "./code/rtk/src/features/products/productsSlice.ts",
+    "./code/rtk/src/features/products/api.ts",
+    "./code/rtk/src/features/products/types/ProductDto.ts",
+    "./code/rtk/src/features/products/Products.tsx",
+    "./code/rtk/src/features/products/types/ProductsState.ts",
+    "./code/rtk/src/features/products/types/Product.ts",
+    "./code/rtk/src/App.tsx"
+  ]
+}
