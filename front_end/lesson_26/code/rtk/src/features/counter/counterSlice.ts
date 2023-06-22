@@ -7,8 +7,8 @@ import * as api from './api'
 
 const initialState: CounterState = {
     value: 0,
-    color: 'red'
-};
+    color: "red"
+}
 
 // асинхронный action creator
 // мы кидаем fetch
@@ -21,9 +21,17 @@ export const changeColor = createAsyncThunk(
     }
 )
 
+export const saveCounterValue = createAsyncThunk(
+    'counter/saveValue',
+    async (value: number) => {
+        await api.save(value);
+        // возвращает те данные, которые нужны, чтобы поменять стэйт
+        // return value
+    }
+)
 
 const counterSlice = createSlice({
-    name: 'counter',
+    name: "counter",
     initialState,
     reducers: {
         minus(state, action: PayloadAction<number>) {
@@ -35,13 +43,19 @@ const counterSlice = createSlice({
     },
     extraReducers: (builder) => {
         builder.addCase(changeColor.fulfilled, (state, action) => {
-            // в action.payload придет результат из thunk 
+            // в action.payload придет результат из thunk
             const color = action.payload;
-            state.color = color;
+            state.color = color
         })
+        // поскольку стэйт менять не нужно, то мы просто отправляем thunk, а в extraReducers ничего не добавляем
+        // .addCase(
+        //     saveCounterValue.fulfilled, (state, action) => {
+        //         state.value = action.payload;
+        //     }
+        // )
     }
 });
 
-export const {minus, plus} = counterSlice.actions;
+export const { minus, plus } = counterSlice.actions;
 
-export default counterSlice.reducer;
+export default counterSlice.reducer
