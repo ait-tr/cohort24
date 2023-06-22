@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.seleniumhq.selenium:selenium-java:4.9.1'
+    implementation 'org.testng:testng:7.8.0'
+}
+
+test {
+    useTestNG()
+}
+
+task qa(type:Test) {
+    useTestNG()
+    if (project.hasProperty('browser')) {
+        systemProperty 'browser',"${browser}"
+    }
+}
+
+task qa1(type:Test) {
+    useTestNG() {
+        suites 'src/test/resources/testng.xml'
+    }
+    if (project.hasProperty('browser')) {
+        systemProperty 'browser',"${browser}"
+    }
+}
+

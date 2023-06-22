@@ -8,37 +8,37 @@ public class LoginTests extends TestBase{
 
     @BeforeMethod
     public void ensurePrecondition() {
-        if (!isLoginLinkPresent()){
+        if (!app.getUser().isLoginLinkPresent()){
             // xpath - //a[.='LOGIN']
-            clickOnSignOutButton();
+            app.getUser().clickOnSignOutButton();
         }
     }
 
-    @Test
+    @Test(priority = 1)
     public void loginPositiveTest() {
         //click on Login link
-        clickOnLoginLink();
+        app.getUser().clickOnLoginLink();
         //enter email
-        fillLoginRegistrationForm(new User()
+        app.getUser().fillLoginRegistrationForm(new User()
                 .setEmail("kr@gmail.com")
                 .setPassword("Kr1234567$"));
         //click on Registration button
-        clickOnLoginButton();
+        app.getUser().clickOnLoginButton();
         //assert Sign out button is displayed
-        Assert.assertTrue(isSignOutButtonPresent());
+        Assert.assertTrue(app.getUser().isSignOutButtonPresent());
     }
 
-    @Test
+    @Test(priority = 2)
     public void loginNegativeWithoutPasswordTest() {
         //click on Login link
-        clickOnLoginLink();
+        app.getUser().clickOnLoginLink();
         //enter email
-        fillLoginRegistrationForm(new User()
+        app.getUser().fillLoginRegistrationForm(new User()
                 .setEmail("kr@gmail.com"));
         //click on Registration button
-        clickOnLoginButton();
+        app.getUser().clickOnLoginButton();
         //assert Sign out button is displayed
-        Assert.assertTrue(isAlertPresent());
+        Assert.assertTrue(app.getUser().isAlertPresent());
     }
 
 
