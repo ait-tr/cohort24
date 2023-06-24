@@ -1,0 +1,16 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "./code/rtk_3/src/features/carts/types/Cart.ts",
+    "./code/rtk_3/src/features/carts/types/CartProduct.ts",
+    "./code/rtk_3/src/features/carts/types/CartState.ts",
+    "./code/rtk_3/src/features/carts/api.ts",
+    "./code/rtk_3/src/features/carts/CartList.tsx",
+    "./code/rtk_3/src/features/carts/cartsSlice.ts",
+    "./code/rtk_3/src/features/carts/OneCart.tsx",
+    "./code/rtk_3/src/features/carts/selectors.ts",
+    "./code/rtk_3/src/App.tsx"
+  ]
+}
