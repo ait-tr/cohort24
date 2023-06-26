@@ -1,7 +1,8 @@
-package com.phonebook.tests;
+package com.phonebook.fw;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.time.Duration;
@@ -9,7 +10,7 @@ import java.time.Duration;
 public class ApplicationManager {
 
     String browser;
-    WebDriver driver;
+   public WebDriver driver;
 
     UserHelper user;
     ContactHelper contact;
@@ -38,6 +39,11 @@ public class ApplicationManager {
             driver = new ChromeDriver();
         } else if (browser.equalsIgnoreCase("firefox")) {
             driver = new FirefoxDriver();
+        } else if (browser.equalsIgnoreCase("edge")) {
+//            EdgeOptions options = new EdgeOptions();
+//            options.addArguments("remote-allow-origins=*");
+//            driver = new EdgeDriver(options);
+            driver = new EdgeDriver();
         }
 
         driver.get("https://telranedu.web.app");

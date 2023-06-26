@@ -12,6 +12,8 @@ repositories {
 dependencies {
     implementation 'org.seleniumhq.selenium:selenium-java:4.9.1'
     implementation 'org.testng:testng:7.8.0'
+
+    implementation 'ch.qos.logback:logback-classic:1.4.8'
 }
 
 test {
@@ -27,10 +29,19 @@ task qa(type:Test) {
 
 task qa1(type:Test) {
     useTestNG() {
-        suites 'src/test/resources/testng.xml'
+        def suite1 = project.hasProperty("suite1")
+        def suite2 = project.hasProperty("suite2")
+        if (suite1) {
+            suites 'src/test/resources/testng.xml'
+        } else if (suite2) {
+            suites 'src/test/resources/regr.xml'
+        }
+
     }
+
     if (project.hasProperty('browser')) {
         systemProperty 'browser',"${browser}"
     }
 }
+
 
