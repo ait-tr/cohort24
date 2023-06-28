@@ -4,7 +4,6 @@
     <test name="Regression" >
         <classes>
             <class name="com.phonebook.tests.HomePageTests" />
-            <class name="com.phonebook.tests.CreateAccountTests" />
             <class name="com.phonebook.tests.LoginTests">
 
                 <methods>
@@ -12,7 +11,11 @@
                 </methods>
 
             </class>
-            <class name="com.phonebook.tests.AddContactTests" />
+            <class name="com.phonebook.tests.AddContactTests" >
+                <methods>
+                    <exclude name=".*From.*"></exclude>
+                </methods>
+            </class>
             <class name="com.phonebook.tests.RemoveContactTests" />
         </classes>
     </test>

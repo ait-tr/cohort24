@@ -31,7 +31,8 @@ public class TestBase {
         if (result.isSuccess()) {
             logger.info("PASSED: " + result.getMethod().getMethodName());
         } else {
-            logger.info("FAILED: " + result.getMethod().getMethodName());
+            logger.error("FAILED: " + result.getMethod().getMethodName() + " Screenshot: "
+                    + app.getUser().takeScreenshot());
         }
         logger.info("========================================================");
     }
