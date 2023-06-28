@@ -22,7 +22,7 @@
     "code/PhoneBook/src/test/resources/regr.xml",
     "code/PhoneBook/src/test/resources/logback.xml",
     "code/PhoneBook/src/test/resources/contacts.csv",
-    "qa/lesson_11/code/PhoneBook/.gitignore",
+    "code/PhoneBook/.gitignore",
     "code/QA24_POM_DemoMaven/src/test/java/com/demoqa/tests/TestBase.java",
     "code/QA24_POM_DemoMaven/src/test/java/com/demoqa/tests/AlertsTests.java",
     "code/QA24_POM_DemoMaven/src/main/java/com/demoqa/pages/BasePage.java",
