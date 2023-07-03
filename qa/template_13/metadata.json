@@ -1,0 +1,14 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/QA24_POM_DemoMaven/src/test/java/com/demoqa/tests/TestBase.java",
+    "code/QA24_POM_DemoMaven/src/test/java/com/demoqa/tests/AlertsTests.java",
+    "code/QA24_POM_DemoMaven/src/main/java/com/demoqa/pages/BasePage.java",
+    "code/QA24_POM_DemoMaven/src/main/java/com/demoqa/pages/HomePage.java",
+    "code/QA24_POM_DemoMaven/src/main/java/com/demoqa/pages/SidePanel.java",
+    "code/QA24_POM_DemoMaven/pom.xml"
+  ],
+  "video": ""
+}
