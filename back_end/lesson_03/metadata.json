@@ -1,0 +1,13 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/src/main/java/com/example/servingwebcontent/EventsController.java",
+    "code/src/main/java/com/example/servingwebcontent/GreetingController.java",
+    "code/src/main/java/com/example/servingwebcontent/ServingWebContentApplication.java",
+    "code/src/main/resources/static/index.html",
+    "code/src/main/resources/templates/eventsview.html",
+    "code/src/main/resources/templates/greeting.html"
+  ]
+}
