@@ -109,12 +109,5 @@ public class MyController {
 # Thymeleaf
 
 [Introduction to Using Thymeleaf in Spring](https://www.baeldung.com/thymeleaf-in-spring-mvc)
-
-## Добавляем библиотеку в gradle
-
-https://central.sonatype.com/artifact/com.google.zxing/javase/3.5.1
-
-```groovy
-implementation 'com.google.zxing:javase:3.5.1'
-```
+[Методичка по Thymeleaf](https://docs.google.com/document/d/1Alet4zSJQwn4vi7nfFUlQkVw83Zuz-di6qJYeq8_rzg/)
 
