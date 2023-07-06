@@ -108,6 +108,6 @@ public class MyController {
 
 # Thymeleaf
 
-[Introduction to Using Thymeleaf in Spring](https://www.baeldung.com/thymeleaf-in-spring-mvc)
-[Методичка по Thymeleaf](https://docs.google.com/document/d/1Alet4zSJQwn4vi7nfFUlQkVw83Zuz-di6qJYeq8_rzg/)
+- [Introduction to Using Thymeleaf in Spring](https://www.baeldung.com/thymeleaf-in-spring-mvc)
+- [Методичка по Thymeleaf](https://docs.google.com/document/d/1Alet4zSJQwn4vi7nfFUlQkVw83Zuz-di6qJYeq8_rzg/)
 
