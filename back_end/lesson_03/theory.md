@@ -32,6 +32,8 @@ MVC в каждом фреймворке несколько свой, но ос�
 https://www.freecodecamp.org/news/the-model-view-controller-pattern-mvc-architecture-and-frameworks-explained/
 https://www.codejava.net/images/articles/frameworks/spring/Understanding%20Spring%20MVC/SpringMVCArchitecture.jpg
 
+Статья [Составные шаблоны. MVC](https://docs.google.com/document/d/17y80dbR88Pi-JIi10HZgEKrtes_5dN2jPfDlagR2MKA/)
+
 # Model-View-Contoller in Spring
 
 Spring MVC это реализация MVC паттерна. Spring MVC предназначен для разрабтки web-приложений с использованием MVC паттерна.
