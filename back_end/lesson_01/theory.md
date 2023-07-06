@@ -13,7 +13,7 @@
 **Backend**
 
 - Исполняется на мощностях владельца приложения: сервер, облако
-- Вся подковерная работа: сохрание данных, обмен данных между пользователями, работа не видна пользователю
+- Вся подковерная работа: сохранение данных, обмен данных между пользователями, работа не видна пользователю
 - Технологии: Java, JavaScript, Python, PHP, Ruby, Golang и многие другие
 
 Здесь есть некоторая путаница, кто-то называет frontend-ом только js/web, кто-то и мобильные приложения.
@@ -31,11 +31,11 @@ HTTP - это протокол по которому общается почти
 
 Это ключевой протокол и знание как он устроен необходимо для успешной работы.
 
-![backend architecture](https://raw.githubusercontent.com/ait-tr/cohort22/main/back_end/lesson_01/images/backend_arch.png)
+![backend architecture](https://raw.githubusercontent.com/ait-tr/cohort24/main/back_end/lesson_01/images/backend_arch.png)
 
 ### Demo
 
-И прежде чем начнем погружаться в http, немного поиграемся с протоколом. Сделаем несколько запросов.
+Прежде чем начнем погружаться в http, немного поиграем с протоколом. Выполним несколько запросов.
 
 ```sh
 curl https://www.google.com/
@@ -52,9 +52,9 @@ curl -v --http1.1 -X 'GET' 'https://catfact.ninja/fact' -H 'accept: application/
 ### HTTP в деталях
 
 HTTP работает по модели запрос-ответ. В общении участвуют клиент и сервер.
-Клиент, например веб-браузер, иницирует запрос а ему отвечает сервер.
+Клиент, например веб-браузер, инициирует запрос, а ему отвечает сервер.
 
-![HTTP request-response example](https://raw.githubusercontent.com/ait-tr/cohort22/main/back_end/lesson_01/images/http_req_resp.png)
+![HTTP request-response example](https://raw.githubusercontent.com/ait-tr/cohort24/main/back_end/lesson_01/images/http_req_resp.png)
 
 ### Request
 
