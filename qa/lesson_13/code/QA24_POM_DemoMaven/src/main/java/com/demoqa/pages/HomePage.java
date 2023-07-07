@@ -1,5 +1,6 @@
 package com.demoqa.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -32,6 +33,14 @@ public class HomePage extends BasePage {
 
     public SidePanel getInteractions() {
         clickWithJSExecutor(interactions, 0, 300);
+        return new SidePanel(wd);
+    }
+
+    @FindBy(xpath = "//h5[.='Forms']")
+    WebElement forms;
+
+    public SidePanel getForms() {
+        clickWithJSExecutor(forms,0,300);
         return new SidePanel(wd);
     }
 }

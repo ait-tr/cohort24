@@ -19,4 +19,14 @@ public class AlertsTests extends TestBase{
         new AlertsPage(wd).sendMessageToAlert("Hello world!")
                 .assertMessage("Hello world!");
     }
+
+    @Test
+    public void  waitOfAlertTest() {
+        new AlertsPage(wd).acceptTimerAlert();
+    }
+
+    @Test
+    public void confirmAlertTest() {
+        new AlertsPage(wd).selectAlertConfirm("Cancel").assertConfirm("Cancel");
+    }
 }

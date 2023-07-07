@@ -19,4 +19,9 @@ public class DragDropTests extends TestBase{
         new DroppablePage(wd).hideAd();
         new DroppablePage(wd).actionDragMe();
     }
+
+    @Test
+    public void actionDragMeByTest() {
+        new DroppablePage(wd).dragMeBy(20,50);
+    }
 }

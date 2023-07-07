@@ -1,0 +1,23 @@
+{
+  "plan": "plan.md",
+  "homework": "homework.md",
+  "code": [
+    "code/QA24_POM_DemoMaven/src/test/java/com/demoqa/tests/TestBase.java",
+    "code/QA24_POM_DemoMaven/src/main/java/com/demoqa/pages/BasePage.java",
+    "code/QA24_POM_DemoMaven/src/main/java/com/demoqa/pages/HomePage.java",
+    "code/QA24_POM_DemoMaven/src/main/java/com/demoqa/pages/SidePanel.java",
+    "code/QA24_POM_DemoMaven/src/test/java/com/demoqa/tests/AlertsTests.java",
+    "code/QA24_POM_DemoMaven/src/main/java/com/demoqa/pages/AlertsPage.java",
+    "code/QA24_POM_DemoMaven/src/test/java/com/demoqa/tests/BrowserWindowsTests.java",
+    "code/QA24_POM_DemoMaven/src/main/java/com/demoqa/pages/BrowserWindowsPage.java",
+    "code/QA24_POM_DemoMaven/src/test/java/com/demoqa/tests/SelectTests.java",
+    "code/QA24_POM_DemoMaven/src/main/java/com/demoqa/pages/SelectMenuPage.java",
+    "code/QA24_POM_DemoMaven/src/test/java/com/demoqa/tests/DragDropTests.java",
+    "code/QA24_POM_DemoMaven/src/main/java/com/demoqa/pages/DroppablePage.java",
+    "code/QA24_POM_DemoMaven/src/main/java/com/demoqa/data/StudentData.java",
+    "code/QA24_POM_DemoMaven/src/main/java/com/demoqa/pages/PracticeFormPage.java",
+    "code/QA24_POM_DemoMaven/src/test/java/com/demoqa/tests/PracticeFormTests.java",
+    "code/QA24_POM_DemoMaven/pom.xml"
+  ],
+  "video": ""
+}
