@@ -1,0 +1,16 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/QA24_ilCarro_Cucumber/build.gradle",
+    "code/QA24_ilCarro_Cucumber/src/test/resources/features/navigate.feature",
+    "code/QA24_ilCarro_Cucumber/src/test/resources/features/login.feature",
+    "code/QA24_ilCarro_Cucumber/src/test/java/com/ilCarro/TestRunner.java",
+    "code/QA24_ilCarro_Cucumber/src/main/java/com/ilCarro/pages/BasePage.java",
+    "code/QA24_ilCarro_Cucumber/src/main/java/com/ilCarro/pages/HomePage.java",
+    "code/QA24_ilCarro_Cucumber/src/test/java/com/ilCarro/stepDefinitions/HomePageSteps.java",
+    "code/QA24_ilCarro_Cucumber/src/test/java/com/ilCarro/stepDefinitions/LoginSteps.java"
+  ],
+  "video": ""
+}
