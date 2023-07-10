@@ -1,0 +1,8 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/src/main/java/com/example/servingwebcontent/EventsController.java"
+  ]
+}
