@@ -1,4 +1,4 @@
 ## Задачи на урок:
 
-1. BDD. TDD
+1. BDD
 2. Cucumber
