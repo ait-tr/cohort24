@@ -3,16 +3,13 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/DiExample/src/BookingTicketsService.java",
-	  "code/DiExample/src/CardPaymentService.java",
-	  "code/DiExample/src/CryptoPaymentService.java",
-	  "code/DiExample/src/FakePayment.java",
-	  "code/DiExample/src/Main.java",
-	  "code/DiExample/src/PaymentService.java",
-	  "code/InversionOfControl/src/main/java/com/InversionOfControl/InversionOfControl/BookingTicketsService.java",
-	  "code/InversionOfControl/src/main/java/com/InversionOfControl/InversionOfControl/CardPaymentService.java",
-	  "code/InversionOfControl/src/main/java/com/InversionOfControl/InversionOfControl/CryptoPaymentService.java",
-	  "code/InversionOfControl/src/main/java/com/InversionOfControl/InversionOfControl/InversionOfControlApplication.java",
-	  "code/InversionOfControl/src/main/java/com/InversionOfControl/InversionOfControl/PaymentService.java"
+    "code/pom.xml",
+    "code/src/main/java/spring/controller/EventController.java",
+    "code/src/main/java/spring/domain/Event.java",
+    "code/src/main/java/spring/service/EventService.java",
+    "code/src/main/java/spring/Application.java",
+    "code/src/main/resources/templates/list.html",
+    "code/src/main/resources/templates/add.html",
+    "code/src/main/resources/templates/update.html"
   ]
 }
