@@ -1,0 +1,10 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/QA24_FirstMobileProject/build.gradle",
+    "code/QA24_FirstMobileProject/src/test/java/com/remindly/tests/TestBase.java"
+  ],
+  "video": ""
+}
