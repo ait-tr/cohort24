@@ -3,6 +3,12 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/src/main/java/com/example/servingwebcontent/EventsController.java"
+    "code/pom.xml",
+    "code/src/main/java/lesson5/User.java",
+    "code/src/main/java/lesson5/UserDAO.java",
+    "code/src/main/java/lesson5/UserDAODemo.java",
+    "code/src/main/java/lesson5/MyDataSource.java",
+    "code/src/main/java/lesson5/spring/AppConfig.java",
+    "code/src/main/java/lesson5/spring/UserDAOSpringDemo.java"
   ]
 }
