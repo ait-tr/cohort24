@@ -8,14 +8,14 @@ public class CreateReminderTests extends TestBase{
     @Test
     public void addReminderWithDefaultData() {
 
-        int quantityBeforeAdd = app.getReminder().getTotalReminders();
+        int quantityBeforeAdd = app.getMainScreen().getTotalReminders();
         //tap on add reminder
         app.getMainScreen().tapOnAddReminder();
         //fill reminder title
         app.getReminder().enterTitle("Test");
         //save reminder
         app.getReminder().saveReminder();
-        int quantityAfterAdd = app.getReminder().getTotalReminders();
+        int quantityAfterAdd = app.getMainScreen().getTotalReminders();
         //assert to add new reminder
         Assert.assertEquals(quantityAfterAdd,quantityBeforeAdd+1);
 
