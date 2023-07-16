@@ -69,7 +69,7 @@ public class ReminderHelper extends BaseHelper{
                 swipeUntilNeededYear(year,0.5,0.6);
             }
         }
-        tap(By.xpath("month_text_view'"));
+        tap(By.id("month_text_view'"));
     }
 
     public String getSelectedYear() {
