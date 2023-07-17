@@ -66,7 +66,7 @@ DELETE - удаление ресурса
 
 [Документация Postman](https://learning.postman.com/docs/introduction/overview/)
 
-Kоллекция [QA24 ilCarro](https://api.postman.com/collections/8263422-ad116dc6-0c84-472a-9432-f167f0aabe9b?access_key=PMAT-01H5JJ794X9D5SWP3VRJGYNRYP)
+Kоллекция QA24 ilCarro https://api.postman.com/collections/8263422-ad116dc6-0c84-472a-9432-f167f0aabe9b?access_key=PMAT-01H5JJ794X9D5SWP3VRJGYNRYP
 
 команда для запуска из cmd и Jenkins
 
