@@ -8,32 +8,33 @@ import spring.service.EventService;
 import java.util.List;
 
 @RestController
+@RequestMapping("/event")
 public class EventRestController {
 
     @Autowired
     private EventService eventService;
 
-    @GetMapping("/events")
+    @GetMapping("/")
     public List<Event> findAll() {
         return eventService.findAll();
     }
 
-    @GetMapping("/event/{id}")
+    @GetMapping("/{id}")
     public Event findById(@PathVariable Integer id) {
         return eventService.get(id);
     }
 
-    @PostMapping("/event/add")
+    @PostMapping("/add")
     public Event add(@RequestBody Event event) {
         return eventService.add(event);
     }
 
-    @PutMapping("/event/update/{id}")
+    @PutMapping("/update/{id}")
     public Event update(@PathVariable Integer id, @RequestBody Event event) {
         return eventService.update(id, event);
     }
 
-    @DeleteMapping("/event/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     public Event delete(@PathVariable Integer id) {
         return eventService.delete(id);
     }
