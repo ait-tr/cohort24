@@ -1,51 +1,44 @@
 package spring.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import spring.domain.Event;
+import spring.repository.EventRepository;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
 public class EventService {
-    static final List<Event> events = new ArrayList<Event>(){{
-        add(new Event("Opera", "London"));
-        add(new Event("Violin concert", "Prague"));
-        add(new Event("Jazz concert", "Berlin"));
-    }};
+
+    @Autowired
+    private EventRepository eventRepository;
 
     public List<Event> findAll() {
-        return events;
+        return eventRepository.findAll();
     }
 
-    public Event get(int id) {
-        for (Event event : events) {
-            if (event.getId() == id) {
-                return event;
-            }
-        }
-        return null;
+    public Event get(Integer id) {
+        return eventRepository.findById(id).orElse(null);
     }
 
     public Event add(Event event) {
-        Event newEvent = new Event(event.getName(), event.getCity());
-        events.add(newEvent);
-        return newEvent;
+        return eventRepository.save(event);
     }
 
-    public Event update(int id, Event event) {
+    public Event update(Integer id, Event event) {
         Event updEvent = get(id);
         if (updEvent != null) {
             updEvent.setName(event.getName());
             updEvent.setCity(event.getCity());
+            eventRepository.save(updEvent);
         }
         return updEvent;
     }
 
-    public Event delete(int id) {
+    public Event delete(Integer id) {
         Event event = get(id);
         if (event != null) {
-            events.remove(event);
+            eventRepository.delete(event);
         }
         return event;
     }

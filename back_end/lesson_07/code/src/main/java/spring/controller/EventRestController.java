@@ -14,7 +14,7 @@ public class EventRestController {
     @Autowired
     private EventService eventService;
 
-    @GetMapping("/")
+    @GetMapping()
     public List<Event> findAll() {
         return eventService.findAll();
     }

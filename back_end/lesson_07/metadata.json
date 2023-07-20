@@ -7,6 +7,8 @@
     "code/src/main/java/spring/controller/EventRestController.java",
     "code/src/main/java/spring/domain/Event.java",
     "code/src/main/java/spring/service/EventService.java",
+    "code/src/main/java/spring/repository/EventRepository.java",
+    "code/src/main/resources/application.yaml",
     "code/src/main/java/spring/Application.java"
   ]
 }
