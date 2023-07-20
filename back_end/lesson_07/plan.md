@@ -1,0 +1,3 @@
+- JPA and Spring Data JPA.
+- Entities and repositories.
+- Mapping Entities to DTOs and back.
