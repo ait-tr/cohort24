@@ -5,10 +5,15 @@
   "code": [
     "code/pom.xml",
     "code/src/main/java/spring/controller/EventRestController.java",
+    "code/src/main/java/spring/controller/dto/EventDTO.java",
     "code/src/main/java/spring/domain/Event.java",
+    "code/src/main/java/spring/domain/City.java",
     "code/src/main/java/spring/service/EventService.java",
     "code/src/main/java/spring/repository/EventRepository.java",
+    "code/src/main/java/spring/repository/CityRepository.java",
+    "code/src/main/java/spring/Application.java",
     "code/src/main/resources/application.yaml",
-    "code/src/main/java/spring/Application.java"
+    "code/src/main/resources/db/changelog/db.changelog-master.yaml",
+    "code/src/main/resources/db/changelog/changelog.xml"
   ]
 }

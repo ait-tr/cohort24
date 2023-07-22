@@ -11,10 +11,10 @@
     </parent>
 
     <groupId>org.ait-tr</groupId>
-    <artifactId>hello-jpa</artifactId>
+    <artifactId>hello-liquibase</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>hello-jpa</name>
-    <description>JPA project for Spring Boot</description>
+    <name>hello-liquibase</name>
+    <description>Liquibase project for Spring Boot</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -34,6 +34,11 @@
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.liquibase</groupId>
+            <artifactId>liquibase-core</artifactId>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->

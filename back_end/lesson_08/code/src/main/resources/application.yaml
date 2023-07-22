@@ -3,4 +3,8 @@ spring:
     driverClassName: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/cohort24
     username: postgres
-    password: ***
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
