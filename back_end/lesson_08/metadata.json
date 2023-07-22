@@ -14,6 +14,6 @@
     "code/src/main/java/spring/Application.java",
     "code/src/main/resources/application.yaml",
     "code/src/main/resources/db/changelog/db.changelog-master.yaml",
-    "code/src/main/resources/db/changelog/changelog.xml"
+    "code/src/main/resources/db/changelog/db.changelog.xml"
   ]
 }
