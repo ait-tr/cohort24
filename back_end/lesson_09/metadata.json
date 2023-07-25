@@ -3,5 +3,13 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-	]
+    "code/pom.xml",
+    "code/src/main/java/spring/config/WebSecurityConfig.java",
+    "code/src/main/java/spring/controller/HelloController.java",
+    "code/src/main/java/spring/Application.java",
+    "code/src/main/resources/templates/hello.html",
+    "code/src/main/resources/templates/home.html",
+    "code/src/main/resources/templates/login.html",
+    "code/src/main/resources/application.yaml",
+  ]
 }
