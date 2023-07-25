@@ -1,5 +1,6 @@
 package spring.service;
 
+import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,7 +8,6 @@ import org.springframework.stereotype.Service;
 import spring.controller.dto.EventDTO;
 import spring.domain.City;
 import spring.domain.Event;
-import spring.repository.CityRepository;
 import spring.repository.EventRepository;
 
 import java.util.ArrayList;
@@ -22,7 +22,13 @@ public class EventService {
     private EventRepository eventRepository;
 
     @Autowired
-    private CityRepository cityRepository;
+    private CityService cityService;
+
+    private final ModelMapper modelMapper;
+
+    public EventService() {
+        modelMapper = new ModelMapper();
+    }
 
     public List<EventDTO> findAll() {
         List<Event> events = eventRepository.findAll();
@@ -34,21 +40,17 @@ public class EventService {
     public EventDTO findById(Integer id) {
         Event event = eventRepository.findById(id).orElse(null);
         if (event != null) {
-            return EventDTO.getInstance(event);
+            //return EventDTO.getInstance(event);
+            return modelMapper.map(event, EventDTO.class);
         }
         log.error("Event not found evendId: {}", id);
         return null;
     }
 
-    public EventDTO add(EventDTO event) {
+    public EventDTO add(EventDTO eventDTO) {
         Event newEvent = new Event();
-        newEvent.setName(event.getName());
-        City city = cityRepository.findByName(event.getCity());
-        if (city == null) {
-            city = new City();
-            city.setName(event.getCity());
-            cityRepository.save(city);
-        }
+        newEvent.setName(eventDTO.getName());
+        City city = cityService.findOrCreateCityByName(eventDTO.getCity());
         newEvent.setCity(city);
         eventRepository.save(newEvent);
         EventDTO result = EventDTO.getInstance(newEvent);
@@ -57,20 +59,19 @@ public class EventService {
         return result;
     }
 
-    public EventDTO update(Integer id, EventDTO event) {
+    public EventDTO update(Integer id, EventDTO eventDTO) {
         Event updEvent = eventRepository.findById(id).orElse(null);
         if (updEvent != null) {
-            updEvent.setName(event.getName());
-            City city = cityRepository.findByName(event.getCity());
-            if (city == null) {
-                city = new City();
-                city.setName(event.getCity());
-                cityRepository.save(city);
-            }
+            updEvent.setName(eventDTO.getName());
+            City city = cityService.findOrCreateCityByName(eventDTO.getCity());
             updEvent.setCity(city);
             eventRepository.save(updEvent);
+
+            log.info("Event updated: {}", updEvent);
             return EventDTO.getInstance(updEvent);
         }
+
+        log.error("Event not found, eventId={}", id);
         return null;
     }
 

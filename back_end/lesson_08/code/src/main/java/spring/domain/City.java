@@ -3,6 +3,7 @@ package spring.domain;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -19,4 +20,9 @@ public class City {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer cityId;
     private String name;
+
+    @Override
+    public String toString() {
+        return name;
+    }
 }
