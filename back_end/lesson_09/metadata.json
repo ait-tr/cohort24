@@ -10,6 +10,6 @@
     "code/src/main/resources/templates/hello.html",
     "code/src/main/resources/templates/home.html",
     "code/src/main/resources/templates/login.html",
-    "code/src/main/resources/application.yaml",
+    "code/src/main/resources/application.yaml"
   ]
 }
