@@ -1,0 +1,19 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/pom.xml",
+    "code/src/main/java/com/onlineshop/domain/Categories.java",
+    "code/src/main/java/com/onlineshop/domain/Countries.java",
+    "code/src/main/java/com/onlineshop/domain/Customers.java",
+    "code/src/main/java/com/onlineshop/domain/OrderDetails.java",
+    "code/src/main/java/com/onlineshop/domain/Orders.java",
+    "code/src/main/java/com/onlineshop/domain/OrderState.java",
+    "code/src/main/java/com/onlineshop/domain/Products.java",
+    "code/src/main/java/com/onlineshop/domain/Suppliers.java",
+    "code/src/main/java/com/onlineshop/Application.java",
+    "code/src/main/resources/db/changelog/db.changelog.xml",
+    "code/src/main/resources/db/changelog/db.changelog-master.yaml",
+  ]
+}
