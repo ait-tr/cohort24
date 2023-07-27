@@ -14,6 +14,6 @@
     "code/src/main/java/com/onlineshop/domain/Suppliers.java",
     "code/src/main/java/com/onlineshop/Application.java",
     "code/src/main/resources/db/changelog/db.changelog.xml",
-    "code/src/main/resources/db/changelog/db.changelog-master.yaml",
+    "code/src/main/resources/db/changelog/db.changelog-master.yaml"
   ]
 }
