@@ -1,0 +1,32 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/pom.xml",
+    "code/src/main/java/com/onlineshop/controller/PoductController.java",
+    "code/src/main/java/com/onlineshop/domain/Categories.java",
+    "code/src/main/java/com/onlineshop/domain/Countries.java",
+    "code/src/main/java/com/onlineshop/domain/Customers.java",
+    "code/src/main/java/com/onlineshop/domain/OrderDetails.java",
+    "code/src/main/java/com/onlineshop/domain/Orders.java",
+    "code/src/main/java/com/onlineshop/domain/OrderState.java",
+    "code/src/main/java/com/onlineshop/domain/Product.java",
+    "code/src/main/java/com/onlineshop/domain/ProductsInShop.java",
+    "code/src/main/java/com/onlineshop/domain/Shops.java",
+    "code/src/main/java/com/onlineshop/domain/Suppliers.java",
+    "code/src/main/java/com/onlineshop/repository/CategoryRepository.java",
+    "code/src/main/java/com/onlineshop/repository/CountryRepository.java",
+    "code/src/main/java/com/onlineshop/repository/CustomerRepository.java",
+    "code/src/main/java/com/onlineshop/repository/OrderDetailRepository.java",
+    "code/src/main/java/com/onlineshop/repository/OrderRepository.java",
+    "code/src/main/java/com/onlineshop/repository/ProductRepository.java",
+    "code/src/main/java/com/onlineshop/repository/ProductInShopRepository.java",
+    "code/src/main/java/com/onlineshop/repository/ShopRepository.java",
+    "code/src/main/java/com/onlineshop/repository/SupplierRepository.java",
+    "code/src/main/java/com/onlineshop/service/ProductService.java",
+    "code/src/main/java/com/onlineshop/Application.java",
+    "code/src/main/resources/db/changelog/db.changelog.xml",
+    "code/src/main/resources/db/changelog/db.changelog-master.yaml"
+  ]
+}
