@@ -26,6 +26,7 @@
     "code/src/main/java/com/onlineshop/repository/SupplierRepository.java",
     "code/src/main/java/com/onlineshop/service/ProductService.java",
     "code/src/main/java/com/onlineshop/Application.java",
+    "code/src/main/resources/application.yaml",
     "code/src/main/resources/db/changelog/db.changelog.xml",
     "code/src/main/resources/db/changelog/db.changelog-master.yaml"
   ]
