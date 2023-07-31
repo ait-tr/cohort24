@@ -37,6 +37,6 @@
     "code/src/main/resources/db/data/products.csv",
     "code/src/main/resources/db/data/products_in_shop.csv",
     "code/src/main/resources/db/data/shops.csv",
-    "code/src/main/resources/db/data/suppliers.csv",
+    "code/src/main/resources/db/data/suppliers.csv"
   ]
 }
