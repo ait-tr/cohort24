@@ -1,0 +1,6 @@
+supplier_id,supplier_name,address,country_id
+1,Ford,"Dearborn, Michigan, United States",1
+2,Mercedes,"Stuttgart, Baden-Württemberg, Germany",2
+3,Peugeot,"Ave de la Grande Armée, Paris, France",3
+4,Škoda,"Mladá Boleslav, Czech Republic",4
+5,Toyota,"Toyota City, Aichi, Japan",5
