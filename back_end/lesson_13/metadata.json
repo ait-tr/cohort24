@@ -11,7 +11,7 @@
     "code/src/main/java/com/onlineshop/controller/dto/SupplierDTO.java",
     "code/src/main/java/com/onlineshop/controller/AdminController.java",
     "code/src/main/java/com/onlineshop/controller/OrderController.java",
-    "code/src/main/java/com/onlineshop/controller/PoductController.java",
+    "code/src/main/java/com/onlineshop/controller/ProductController.java",
     "code/src/main/java/com/onlineshop/domain/Category.java",
     "code/src/main/java/com/onlineshop/domain/Country.java",
     "code/src/main/java/com/onlineshop/domain/Customer.java",
