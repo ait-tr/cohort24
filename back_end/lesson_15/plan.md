@@ -12,4 +12,4 @@
 10. Создание и использование DTO классов
 11. Наполнение AdminController (/country/all, /country/add)
 12. Продолжение наполнения AdminController (/country/update/{id}, /country/delete/{id})
-13. возврат статуса, класс ResponseEntity, логгирование
+13. Возврат статуса 404 контроллером, класс ResponseEntity, логгирование
