@@ -36,8 +36,15 @@ public class SecurityConfig  {
         http
                 .csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/auth/**").permitAll()
-                .antMatchers("/swagger-ui/**", "/v2**", "/v3/**", "/h2-console/**").permitAll()
+                    .antMatchers("/auth/**").permitAll()
+                    .antMatchers("/swagger-ui/**", "/v2**", "/v3/**", "/h2-console/**").permitAll()
+                    .antMatchers("/helloAll").permitAll()
+                .and()
+                .authorizeRequests()
+                    .antMatchers("/helloUser").hasAnyRole("USER", "ADMIN")
+                .and()
+                .authorizeRequests()
+                    .antMatchers("/helloAdmin").hasRole("ADMIN")
                 .anyRequest().authenticated()
                 .and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and().addFilterBefore(jwtAuthorizationFilter, UsernamePasswordAuthenticationFilter.class);

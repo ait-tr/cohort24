@@ -17,7 +17,7 @@ import java.util.concurrent.TimeUnit;
 public class JwtUtil {
 
     private final String SECRET_KEY = "secretkey";
-    private final int TOKEN_VALIDITY_TIME = 1;
+    private final int TOKEN_VALIDITY_TIME = 10; // in min
 
     private final String TOKEN_HEADER = "Authorization";
     private final String TOKEN_PREFIX = "Bearer ";
@@ -30,8 +30,7 @@ public class JwtUtil {
 
     public String createToken(User user) {
         Claims claims = Jwts.claims().setSubject(user.getLogin());
-        claims.put("firstName", user.getFirstName());
-        claims.put("lastName", user.getLastName());
+        claims.put("authorities", user.getAuthorities());
         Date tokenCreateTime = new Date();
         Date tokenValidity = new Date(tokenCreateTime.getTime() + TimeUnit.MINUTES.toMillis(TOKEN_VALIDITY_TIME));
         return Jwts.builder()

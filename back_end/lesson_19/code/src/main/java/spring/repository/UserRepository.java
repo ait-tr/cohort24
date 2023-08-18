@@ -6,6 +6,6 @@ import spring.domain.User;
 @Repository
 public class UserRepository {
     public User findUserByLogin(String login){
-        return new User(login, "123456", "First", "Last");
+        return new User(login, "123456", null);
     }
 }
