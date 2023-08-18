@@ -31,6 +31,13 @@ public class OrderService {
     @Autowired
     private OrderDetailRepository orderDetailRepository;
 
+    public List<OrderDTO> findAll() {
+        List<Order> orders = orderRepository.findAll();
+        List<OrderDTO> result = new ArrayList<>();
+        orders.forEach(order -> result.add(OrderDTO.getInstance(order)));
+        return result;
+    }
+
     public OrderDTO createOrder(Integer customerId, Integer shopId, Integer productId) {
         Optional<Customer> customer = customerRepository.findById(customerId);
         Optional<Shop> shop = shopRepository.findById(shopId);
@@ -114,12 +121,5 @@ public class OrderService {
         order = orderRepository.save(order);
 
         return OrderDTO.getInstance(order);
-    }
-
-    public List<OrderDTO> findAll() {
-        List<Order> orders = orderRepository.findAll();
-        List<OrderDTO> result = new ArrayList<>();
-        orders.forEach(order -> OrderDTO.getInstance(order));
-        return result;
     }
 }

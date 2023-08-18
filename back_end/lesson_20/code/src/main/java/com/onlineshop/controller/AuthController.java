@@ -12,10 +12,13 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.GrantedAuthority;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.Collection;
 
 @RestController
 @RequestMapping("/auth")
@@ -34,7 +37,9 @@ public class AuthController {
                     authenticationManager.authenticate(
                             new UsernamePasswordAuthenticationToken(loginReq.getLogin(), loginReq.getPassword()));
             String login = authentication.getName();
-            User user = new User(login);
+            Collection<? extends GrantedAuthority> authorities = authentication.getAuthorities();
+            System.out.println(authorities);
+            User user = new User(login, authorities);
             String token = jwtUtil.createToken(user);
             LoginResDto loginRes = new LoginResDto(login, token);
 
