@@ -71,12 +71,4 @@ public class JwtUtil {
             throw e;
         }
     }
-
-//    public String getLogin(Claims claims) {
-//        return claims.getSubject();
-//    }
-//
-//    private List<String> getRoles(Claims claims) {
-//        return (List<String>) claims.get("roles");
-//    }
 }

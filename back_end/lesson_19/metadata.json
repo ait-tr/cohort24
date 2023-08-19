@@ -16,6 +16,7 @@
     "code/src/main/java/spring/domain/User.java",
     "code/src/main/java/spring/repository/UserRepository.java",
     "code/src/main/java/spring/service/CustomUserDetailsService.java",
+    "code/src/main/java/spring/PasswordEncoderApp.java",
     "code/src/main/java/spring/Application.java"
   ]
 }
